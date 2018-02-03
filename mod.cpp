@@ -1,0 +1,11 @@
+name = "XEAT AdminTool";
+actionName = "Steam Profile";
+action = "http://steamcommunity.com/id/xedom/";
+tooltip = "Contact me";
+tooltipOwned = "Contact me";
+author = "XEDOM";
+overview = "XEAT AdminTool created by XEDOM";
+overviewText = "XEDOM";
+logo = "xedom\AdminTool\logo.paa";
+logoOver = "xedom\AdminTool\logo.jpg";
+picture = "xedom\AdminTool\bg.jpg";

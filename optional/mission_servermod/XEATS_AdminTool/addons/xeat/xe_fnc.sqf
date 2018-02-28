@@ -127,7 +127,19 @@ DebugList = [];
 
 //AdminList
 ListaAdmin = [];
-switch (XEATD_MOD) do { case "mission": {{ListaAdmin pushback _x;} forEach ((loadFile "xedom\AdminTool\adminList.txt") splitString toString [13,10]);}; case "client": {_id = getPlayerUID player; ListaAdmin pushback _id;}; };
+switch (XEATD_MOD) do { 
+	case "mission": {
+		{
+			ListaAdmin pushback _x;
+		} forEach (
+			(loadFile "xedom\AdminTool\adminList.txt") splitString toString [13,10]
+		);
+	}; 
+	case "client": {
+			_id = getPlayerUID player; 
+			ListaAdmin pushback _id;
+		}; 
+	};
 publicVariable "ListaAdmin";
 
 if (XEATD_DEBUG) then {DebugList pushback XEATD_MOD};
@@ -303,6 +315,7 @@ XEAT_startSetUp = {
 		[(localize "STR_XEATT_name_date"), "date", false, (localize "STR_XEATT_desc_date"), "ac"],
 		// XEAT_INCORSO [(localize "STR_XEATT_name_fog"), "fog", true, (localize "STR_XEATT_desc_fog"), "a"],
 		[(localize "STR_XEATT_name_destroy"), "destroy", false, (localize "STR_XEATT_desc_destroy"), "abd"],
+		[(localize "STR_XEATT_name_remove"), "remove", false, (localize "STR_XEATT_desc_remove"), "abd"],
 		[(localize "STR_XEATT_name_repair"), "repair", false, (localize "STR_XEATT_desc_repair"), "abc"],
 		[(localize "STR_XEATT_name_spec"), "spec", 	true, (localize "STR_XEATT_desc_spec"), "abcd"],
 		[(localize "STR_XEATT_name_freeCam"), "freeCam", true, (localize "STR_XEATT_desc_freeCam"), "abc"],
@@ -335,11 +348,11 @@ XEAT_startSetUp = {
 		// XEAT_INCORSO ["Tanoa - La Rochelle", [9940.49,13473.6,0], "Tanoa"],
 		// XEAT_INCORSO ["Tanoa - Harcourt", [11272.8,5287.13,0], "Tanoa"],
 		// XEAT_INCORSO ["Tanoa - AirBase", [6920.06,7389.37,0], "Tanoa"],
-		["AltisLife - Banca 1", "life_atmbank", ""],
-		["AltisLife - Banca 2", "life_bank", ""],
-		["AltisLife - Contanti", "life_cash", ""],
-		["AltisLife - Sete", "life_thirst", ""],
-		["AltisLife - Fame", "life_hunger", ""]
+		[(localize "STR_XEATT_VAR_AL_Banca1"), "life_atmbank", ""],
+		[(localize "STR_XEATT_VAR_AL_Banca2"), "life_bank", ""],
+		[(localize "STR_XEATT_VAR_AL_Contanti"), "life_cash", ""],
+		[(localize "STR_XEATT_VAR_AL_Sete"), "life_thirst", ""],
+		[(localize "STR_XEATT_VAR_AL_Fame"), "life_hunger", ""]
 	]; publicVariable "ListaVariabili";
 	if (isMultiplayer) then { XEATV_Players = { ListaGiocatori = allPlayers; }; publicVariable "ListaGiocatori";}
 	else { XEATV_Players = { ListaGiocatori = switchableUnits; }; publicVariable "ListaGiocatori";};
@@ -396,11 +409,12 @@ XEAT_start = {
 				case false : { if ((_this select 1) == ((profileNamespace getVariable "XEATV_StartButton") select 0)) then { [player] call XEAT_openMenu; }; };
 			};
 		}];
-	};
-	if !(
-		(((profileNamespace getVariable "XEATV_Other") select 1) == "DSHET")
-	) then {
-		[parseText format [ "<t align='right' size='1.2'><t font='PuristaBold' size='1.2'>""%1""</t>%2</t>", toUpper "XEAT AdminMenu", " by XEDOM"], [0.5,1,1,1], nil, 7, 0.7, 0] spawn BIS_fnc_textTiles;
+
+		if !(
+			(((profileNamespace getVariable "XEATV_Other") select 1) == "DSHET")
+		) then {
+			[parseText format [ "<t align='right' size='1.2'><t font='PuristaBold' size='1.2'>""%1""</t>%2</t>", toUpper "XEAT AdminMenu", " by XEDOM"], [0.5,1,1,1], nil, 7, 0.7, 0] spawn BIS_fnc_textTiles;
+		};
 	};
 }; if (XEATD_DEBUG) then {DebugList pushback "XEAT_start"};
 
@@ -536,8 +550,12 @@ XEAT_destroy = {
 	if (!(isPlayer cursorObject)) then { cursorObject setDamage 1; };
 	if !(((profileNamespace getVariable "XEATV_Other") select 1) == "DAH") then { hint parseText format[(localize"STR_XEATT_destroy"), XeHintHeader, cursorObject]; };
 }; if (XEATD_DEBUG) then {DebugList pushback "XEAT_destroy"};
+XEAT_remove = {
+	if (!(isPlayer cursorObject)) then { deleteVehicle cursorObject; };
+	if !(((profileNamespace getVariable "XEATV_Other") select 1) == "DAH") then { hint parseText format[(localize"STR_XEATT_remove"), XeHintHeader, cursorObject]; };
+}; if (XEATD_DEBUG) then {DebugList pushback "XEAT_remove"};
 XEAT_repair = {
-	if (!(isPlayer cursorObject)) then { cursorObject setDamage 0; };
+	if (!(isPlayer cursorObject)) then { cursorObject setDamage 1; };
 	if !(((profileNamespace getVariable "XEATV_Other") select 1) == "DAH") then { hint parseText format[(localize"STR_XEATT_repair"), XeHintHeader, cursorObject]; };
 }; if (XEATD_DEBUG) then {DebugList pushback "XEAT_repair"};
 XEAT_spec = {
@@ -1091,4 +1109,5 @@ publicVariable "ListaAzioni"; if (XEATD_DEBUG) then {DebugList pushback 'publicV
 publicVariable "ListaAzioniOff"; if (XEATD_DEBUG) then {DebugList pushback 'publicVariable "ListaAzioniOff";'};
 
 //Start	
-remoteExec ["XEAT_start"]; if (XEATD_DEBUG) then {DebugList pushback 'remoteExec ["XEAT_start"];'};
+//remoteExec ["XEAT_start"]; 
+call XEAT_start; if (XEATD_DEBUG) then {DebugList pushback 'call XEAT_start;'};

@@ -5,10 +5,10 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=1;
+	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=83;
+		nextID=89;
 	};
 	class Camera
 	{
@@ -35,13 +35,17 @@ addons[]=
 	"A3_Weapons_F_Items",
 	"A3_Structures_F_Households_House_Big02",
 	"A3_Structures_F_Households_House_Big01",
-	"A3_Structures_F_Households_House_Small01"
+	"A3_Structures_F_Households_House_Small01",
+	"A3_Soft_F_Exp_Offroad_02",
+	"A3_Soft_F_Orange_Van_02",
+	"A3_Soft_F_Gamma_SUV_01",
+	"A3_Soft_F_Offroad_01"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=7;
+		items=11;
 		class Item0
 		{
 			className="A3_Characters_F";
@@ -88,6 +92,34 @@ class AddonsMetaData
 		{
 			className="A3_Structures_F_Households";
 			name="Arma 3 - Houses";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item7
+		{
+			className="A3_Soft_F_Exp";
+			name="Arma 3 Apex - Unarmored Land Vehicles";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item8
+		{
+			className="A3_Soft_F_Orange";
+			name="Arma 3 Orange - Unarmored Land Vehicles";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item9
+		{
+			className="A3_Soft_F_Gamma";
+			name="Arma 3 - Unarmored Land Vehicles";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item10
+		{
+			className="A3_Soft_F";
+			name="Arma 3 Alpha - Unarmored Land Vehicles";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
@@ -150,7 +182,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=28;
+		items=32;
 		class Item0
 		{
 			dataType="Group";
@@ -2294,6 +2326,69 @@ class Mission
 			};
 			id=75;
 			type="Land_i_House_Small_01_V3_F";
+		};
+		class Item28
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7317.1997,6.5695963,2079.4934};
+				angles[]={-0,5.3214593,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=84;
+			type="C_Offroad_02_unarmed_F";
+		};
+		class Item29
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7327.0205,6.6561403,2077.0984};
+				angles[]={-0,5.2292824,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=86;
+			type="C_Van_02_vehicle_F";
+		};
+		class Item30
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7329.9678,6.5964622,2066.6138};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=87;
+			type="C_SUV_01_F";
+		};
+		class Item31
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7329.2202,6.6115026,2056.5757};
+				angles[]={-0,0.33729336,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=88;
+			type="C_Offroad_01_F";
 		};
 	};
 };

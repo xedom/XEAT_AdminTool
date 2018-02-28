@@ -273,7 +273,6 @@
                 <Original>Kick to lobby the selected player</Original>
                 <Italian>Fai tornare il lobby il giocatore selezionato</Italian>
             </Key>
-
             <Key ID="STR_XEATT_name_kill">
                 <Original>Kill</Original>
                 <Italian>Uccidi</Italian>
@@ -626,6 +625,34 @@
 			<Key ID="STR_XEATT_desc_zeus">
 				<Original>Become Zeus</Original>
 				<Italian>Diventa Zeus</Italian>
+			</Key>
+			<Key ID="STR_XEATT_VAR_AL_Banca1">
+				<Original>AltisLife - Bank 1</Original>
+				<Italian>AltisLife - Banca 1</Italian>
+			</Key>
+			<Key ID="STR_XEATT_VAR_AL_Banca2">
+				<Original>AltisLife - Bank 2</Original>
+				<Italian>AltisLife - Banca 2</Italian>
+			</Key>
+			<Key ID="STR_XEATT_VAR_AL_Contanti">
+				<Original>AltisLife - Cash</Original>
+				<Italian>AltisLife - Contanti</Italian>
+			</Key>
+			<Key ID="STR_XEATT_VAR_AL_Sete">
+				<Original>AltisLife - Thirst</Original>
+				<Italian>AltisLife - Sete</Italian>
+			</Key>
+			<Key ID="STR_XEATT_VAR_AL_Fame">
+				<Original>AltisLife - Hunger</Original>
+				<Italian>AltisLife - Fame</Italian>
+			</Key>
+			<Key ID="STR_XEATT_name_remove">
+				<Original>Remove</Original>
+				<Italian>Rimuovi</Italian>
+			</Key>
+			<Key ID="STR_XEATT_desc_remove">
+                <Original>Remove the object thet you are aiming for</Original>
+                <Italian>Rimuovi l'ogetto che stai mirando</Italian>
 			</Key>
         </Container>
     </Package>

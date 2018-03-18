@@ -333,6 +333,7 @@ XEAT_startSetUp = {
 		// XEAT_INCORSO [(localize "STR_XEATT_name_kickAll"), "kickAll", false, (localize "STR_XEATT_desc_kickAll"), "ad"],
 		[(localize "STR_XEATT_name_hint"), "hint", true, (localize "STR_XEATT_desc_hint"), "abc"],
 		[(localize "STR_XEATT_name_zeus"), "Zeus", false, (localize "STR_XEATT_desc_zeus"), "abcd"],
+		[(localize "STR_XEATT_name_aannews"), "aannews", true, (localize "STR_XEATT_desc_aannews"), "abcd"],
 		[(localize "STR_XEATT_name_exitLobby"), "exitLobby", true, (localize "STR_XEATT_desc_exitLobby"), "a"] 
 	]; publicVariable "ListaAzioniOff";
 	ListaVariabili = [
@@ -772,23 +773,23 @@ XEAT_pees = {
 	{ _x remoteExec ["XEAT_peesExec", _x]; } forEach allUnits;
 	if !(((profileNamespace getVariable "XEATV_Other") select 1) == "DAH") then { hint parseText format[(localize"STR_XEATT_pees"), XeHintHeader]; };
 }; if (XEATD_DEBUG) then {DebugList pushback "XEAT_pees"};
-XEAT_goto = {
-	{
-		if (player != _x) then {
-			_X allowDamage true; 
-			_X enableSimulation true;
-			_x doMove [0,0,0];
-			_x forceSpeed 150;
-			_x enableSimulationGlobal true;
-			_x triggerDynamicSimulation true;
-			_x doMove [0,0,0]; //XEAT_TEST
-			_x switchMove "apanpercmstpsnonwnondnon";
-			_x doMove [0,0,0]; //XEAT_TEST
-			_x moveTo [0,0,0]; //XEAT_TEST
-		};
-	} forEach allUnits;
-	if !(((profileNamespace getVariable "XEATV_Other") select 1) == "DAH") then { hint parseText format[(localize"STR_XEATT_goto"), XeHintHeader]; };
-}; if (XEATD_DEBUG) then {DebugList pushback "XEAT_goto"};
+//	XEAT_goto = {
+//		{
+//			if (player != _x) then {
+//				_X allowDamage true; 
+//				_X enableSimulation true;
+//				_x doMove [0,0,0];
+//				_x forceSpeed 150;
+//				_x enableSimulationGlobal true;
+//				_x triggerDynamicSimulation true;
+//				_x doMove [0,0,0]; //XEAT_TEST
+//				_x switchMove "apanpercmstpsnonwnondnon";
+//				_x doMove [0,0,0]; //XEAT_TEST
+//				_x moveTo [0,0,0]; //XEAT_TEST
+//			};
+//		} forEach allUnits;
+//		if !(((profileNamespace getVariable "XEATV_Other") select 1) == "DAH") then { hint parseText format[(localize"STR_XEATT_goto"), XeHintHeader]; };
+//	}; if (XEATD_DEBUG) then {DebugList pushback "XEAT_goto"};
 XEAT_boomExec = {
 	distanzaBoom = (_this select 1) splitString "";
 	if ( distanzaBoom select 0 == "~") then { distanzaBoom deleteAt 0; distanzaBoom = distanzaBoom joinString ""; distanzaBoom = parseNumber distanzaBoom; }
@@ -978,8 +979,32 @@ XEAT_Zeus = {
 		_curatorObj addCuratorEditableObjects [ (allMissionObjects "") , true];
 	};
 };
+XEAT_aannewsExec = {
+	_titolo = "<t size='3'>" + (_this select 0 select 0) + "</t>";
+	_descrizione = (_this select 0 select 1);
 
+	if !(isNil "_descrizione") then {	
+		for [{_i=0}, {_i < 20}, {_i = _i + 1}] do {
+			_descrizione = format["%1 %2 %3", _descrizione, "         ", _descrizione];
+		};
+		nul = [(parsetext _titolo), (parsetext _descrizione)] spawn BIS_fnc_AAN;
+	} else {
+		nul = [(parsetext _titolo), (parsetext (""))] spawn BIS_fnc_AAN;
+	};
 
+	sleep 35;
+	// 3000 cuttext ["","plain"];
+	(uinamespace getvariable "BIS_AAN") closedisplay 1;
+};
+XEAT_aannews = {
+	params ["_indexGiocatore"];
+	_player = ListaGiocatori select _indexGiocatore;
+	
+	[(ctrlText 8510) splitString "---"] remoteExec ["XEAT_aannewsExec", _player];
+};
+XEAT_acceIlTempo = {
+	setAccTime 0.1;
+};
 
 XEAT_Settings = {
 	createDialog "XEAT_settings";
@@ -1026,8 +1051,12 @@ XEAT_SettingsSave = {
 	profileNamespace setVariable ["XEATV_StartButton_Shift", (cbChecked ((findDisplay 9500) displayCtrl 9506))]; 
 	closeDialog 2;
 };
-
-
+XEAT_resetAllSettings = {
+	profileNamespace setVariable ["XEATV_StartButton", [15, "TAB"]];
+	profileNamespace setVariable ["XEATV_Action", ["ALL", "a"]];
+	profileNamespace setVariable ["XEATV_Other", ["Active All", "def"]];
+	profileNamespace setVariable ["XEATV_StartButton_Shift", false];
+};
 
 
 
@@ -1041,65 +1070,78 @@ XEAT_SettingsSave = {
 
 
 //Public Funtions
-publicVariable "XEAT_checkAdmin"; if (XEATD_DEBUG) then {DebugList pushback 'publicVariable "XEAT_checkAdmin";'};
-publicVariable "XEAT_openMenu"; if (XEATD_DEBUG) then {DebugList pushback 'publicVariable "XEAT_openMenu";'};
-publicVariable "XEAT_update"; if (XEATD_DEBUG) then {DebugList pushback 'publicVariable "XEAT_update";'};
-publicVariable "XEAT_exec"; if (XEATD_DEBUG) then {DebugList pushback 'publicVariable "XEAT_exec";'};
-publicVariable "XEAT_startSetUp"; if (XEATD_DEBUG) then {DebugList pushback 'publicVariable "XEAT_startSetUp";'};
-publicVariable "XEAT_start"; if (XEATD_DEBUG) then {DebugList pushback 'publicVariable "XEAT_start";'};
-publicVariable "XEAT_kill"; if (XEATD_DEBUG) then {DebugList pushback 'publicVariable "XEAT_kill";'};
-publicVariable "XEAT_heal"; if (XEATD_DEBUG) then {DebugList pushback 'publicVariable "XEAT_heal";'};
-publicVariable "XEAT_tpToHim"; if (XEATD_DEBUG) then {DebugList pushback 'publicVariable "XEAT_tpToHim";'};
-publicVariable "XEAT_tpToYou"; if (XEATD_DEBUG) then {DebugList pushback 'publicVariable "XEAT_tpToYou";'};
-publicVariable "XEAT_tpMapExec"; if (XEATD_DEBUG) then {DebugList pushback 'publicVariable "XEAT_tpMapExec";'};
-publicVariable "XEAT_tpMap"; if (XEATD_DEBUG) then {DebugList pushback 'publicVariable "XEAT_tpMap";'};
-publicVariable "XEAT_god"; if (XEATD_DEBUG) then {DebugList pushback 'publicVariable "XEAT_god";'};
-publicVariable "XEAT_vrArsenal"; if (XEATD_DEBUG) then {DebugList pushback 'publicVariable "XEAT_vrArsenal";'};
-publicVariable "XEAT_vrGarage"; if (XEATD_DEBUG) then {DebugList pushback 'publicVariable "XEAT_vrGarage";'};
-publicVariable "XEAT_blockCommand"; if (XEATD_DEBUG) then {DebugList pushback 'publicVariable "XEAT_blockCommand";'};
-publicVariable "XEAT_block"; if (XEATD_DEBUG) then {DebugList pushback 'publicVariable "XEAT_block";'};
-publicVariable "XEAT_info"; if (XEATD_DEBUG) then {DebugList pushback 'publicVariable "XEAT_info";'};
-publicVariable "XEAT_spawn"; if (XEATD_DEBUG) then {DebugList pushback 'publicVariable "XEAT_spawn";'};
-publicVariable "XEAT_dateExec"; if (XEATD_DEBUG) then {DebugList pushback 'publicVariable "XEAT_dateExec";'};
-publicVariable "XEAT_date"; if (XEATD_DEBUG) then {DebugList pushback 'publicVariable "XEAT_date";'};
-publicVariable "XEAT_fogExec"; if (XEATD_DEBUG) then {DebugList pushback 'publicVariable "XEAT_fogExec";'};
-publicVariable "XEAT_fog"; if (XEATD_DEBUG) then {DebugList pushback 'publicVariable "XEAT_fog";'};
-publicVariable "XEAT_destroy"; if (XEATD_DEBUG) then {DebugList pushback 'publicVariable "XEAT_destroy";'};
-publicVariable "XEAT_repair"; if (XEATD_DEBUG) then {DebugList pushback 'publicVariable "XEAT_repair";'};
-publicVariable "XEAT_spec"; if (XEATD_DEBUG) then {DebugList pushback 'publicVariable "XEAT_spec";'};
-publicVariable "XEAT_xeSetVarExec"; if (XEATD_DEBUG) then {DebugList pushback 'publicVariable "XEAT_xeSetVarExec";'};
-publicVariable "XEAT_xeSetVar"; if (XEATD_DEBUG) then {DebugList pushback 'publicVariable "XEAT_xeSetVar";'};
-publicVariable "XEAT_markerExec"; if (XEATD_DEBUG) then {DebugList pushback 'publicVariable "XEAT_markerExec";'};
-publicVariable "XEAT_marker"; if (XEATD_DEBUG) then {DebugList pushback 'publicVariable "XEAT_marker";'};
-publicVariable "XEAT_freeCamExec"; if (XEATD_DEBUG) then {DebugList pushback 'publicVariable "XEAT_freeCamExec";'};
-publicVariable "XEAT_freeCam"; if (XEATD_DEBUG) then {DebugList pushback 'publicVariable "XEAT_freeCam";'};
-publicVariable "XEAT_exitLobbyExec"; if (XEATD_DEBUG) then {DebugList pushback 'publicVariable "XEAT_exitLobbyExec";'};
-publicVariable "XEAT_exitLobby"; if (XEATD_DEBUG) then {DebugList pushback 'publicVariable "XEAT_exitLobby";'};
-publicVariable "XEAT_lifeRevive"; if (XEATD_DEBUG) then {DebugList pushback 'publicVariable "XEAT_lifeRevive";'};
-publicVariable "XEAT_lifeManetteExec"; if (XEATD_DEBUG) then {DebugList pushback 'publicVariable "XEAT_lifeManetteExec";'};
-publicVariable "XEAT_lifeManette"; if (XEATD_DEBUG) then {DebugList pushback 'publicVariable "XEAT_lifeManette";'};
-publicVariable "XEAT_espExec"; if (XEATD_DEBUG) then {DebugList pushback 'publicVariable "XEAT_espExec";'};
-publicVariable "XEAT_esp"; if (XEATD_DEBUG) then {DebugList pushback 'publicVariable "XEAT_esp";'};
-publicVariable "XEAT_SteamName"; if (XEATD_DEBUG) then {DebugList pushback 'publicVariable "XEAT_SteamName";'};
-publicVariable "XEAT_BTracer"; if (XEATD_DEBUG) then {DebugList pushback 'publicVariable "XEAT_BTracer";'};
-publicVariable "XEAT_peesExec"; if (XEATD_DEBUG) then {DebugList pushback 'publicVariable "XEAT_peesExec";'};
-publicVariable "XEAT_pees"; if (XEATD_DEBUG) then {DebugList pushback 'publicVariable "XEAT_pees";'};
-publicVariable "XEAT_goto"; if (XEATD_DEBUG) then {DebugList pushback 'publicVariable "XEAT_goto";'};
-publicVariable "XEAT_boomExec"; if (XEATD_DEBUG) then {DebugList pushback 'publicVariable "XEAT_boomExec";'};
-publicVariable "XEAT_boom"; if (XEATD_DEBUG) then {DebugList pushback 'publicVariable "XEAT_boom";'};
-publicVariable "XEAT_flyAll" ; if (XEATD_DEBUG) then {DebugList pushback 'publicVariable "XEAT_flyAll" ;'};
-publicVariable "XEAT_antiFreezeMessExec"; if (XEATD_DEBUG) then {DebugList pushback 'publicVariable "XEAT_antiFreezeMessExec";'};
-publicVariable "XEAT_antiFreezeMess"; if (XEATD_DEBUG) then {DebugList pushback 'publicVariable "XEAT_antiFreezeMess";'};
-publicVariable "XEAT_antiFreeze"; if (XEATD_DEBUG) then {DebugList pushback 'publicVariable "XEAT_antiFreeze";'};
-publicVariable "XEAT_fakeCheaterDetectedExec"; if (XEATD_DEBUG) then {DebugList pushback 'publicVariable "XEAT_fakeCheaterDetectedExec";'};
-publicVariable "XEAT_fakeCheaterDetected"; if (XEATD_DEBUG) then {DebugList pushback 'publicVariable "XEAT_fakeCheaterDetected";'};
-publicVariable "XEAT_xedomExec"; if (XEATD_DEBUG) then {DebugList pushback 'publicVariable "XEAT_xedomExec";'};
-publicVariable "XEAT_xedom"; if (XEATD_DEBUG) then {DebugList pushback 'publicVariable "XEAT_xedom";'};
-publicVariable "XEAT_hintExec"; if (XEATD_DEBUG) then {DebugList pushback 'publicVariable "XEAT_hintExec";'};
-publicVariable "XEAT_hint"; if (XEATD_DEBUG) then {DebugList pushback 'publicVariable "XEAT_hint";'};
-publicVariable "XEAT_kickAll"; if (XEATD_DEBUG) then {DebugList pushback 'publicVariable "XEAT_kickAll";'};
-publicVariable "XEAT_InfoPlayer"; if (XEATD_DEBUG) then {DebugList pushback 'publicVariable "XEAT_InfoPlayer";'};
-publicVariable "XEAT_flyAllExec"; if (XEATD_DEBUG) then {DebugList pushback 'publicVariable "XEAT_flyAllExec";'};
+//publicVariable "XEAT_checkAdmin"; if (XEATD_DEBUG) then {DebugList pushback 'publicVariable "XEAT_checkAdmin";'};
+//publicVariable "XEAT_openMenu"; if (XEATD_DEBUG) then {DebugList pushback 'publicVariable "XEAT_openMenu";'};
+//publicVariable "XEAT_update"; if (XEATD_DEBUG) then {DebugList pushback 'publicVariable "XEAT_update";'};
+//publicVariable "XEAT_exec"; if (XEATD_DEBUG) then {DebugList pushback 'publicVariable "XEAT_exec";'};
+//publicVariable "XEAT_startSetUp"; if (XEATD_DEBUG) then {DebugList pushback 'publicVariable "XEAT_startSetUp";'};
+//publicVariable "XEAT_start"; if (XEATD_DEBUG) then {DebugList pushback 'publicVariable "XEAT_start";'};
+//publicVariable "XEAT_kill"; if (XEATD_DEBUG) then {DebugList pushback 'publicVariable "XEAT_kill";'};
+//publicVariable "XEAT_heal"; if (XEATD_DEBUG) then {DebugList pushback 'publicVariable "XEAT_heal";'};
+//publicVariable "XEAT_tpToHim"; if (XEATD_DEBUG) then {DebugList pushback 'publicVariable "XEAT_tpToHim";'};
+//publicVariable "XEAT_tpToYou"; if (XEATD_DEBUG) then {DebugList pushback 'publicVariable "XEAT_tpToYou";'};
+//publicVariable "XEAT_tpMapExec"; if (XEATD_DEBUG) then {DebugList pushback 'publicVariable "XEAT_tpMapExec";'};
+//publicVariable "XEAT_tpMap"; if (XEATD_DEBUG) then {DebugList pushback 'publicVariable "XEAT_tpMap";'};
+//publicVariable "XEAT_god"; if (XEATD_DEBUG) then {DebugList pushback 'publicVariable "XEAT_god";'};
+//publicVariable "XEAT_vrArsenal"; if (XEATD_DEBUG) then {DebugList pushback 'publicVariable "XEAT_vrArsenal";'};
+//publicVariable "XEAT_vrGarage"; if (XEATD_DEBUG) then {DebugList pushback 'publicVariable "XEAT_vrGarage";'};
+//publicVariable "XEAT_blockCommand"; if (XEATD_DEBUG) then {DebugList pushback 'publicVariable "XEAT_blockCommand";'};
+//publicVariable "XEAT_block"; if (XEATD_DEBUG) then {DebugList pushback 'publicVariable "XEAT_block";'};
+//publicVariable "XEAT_info"; if (XEATD_DEBUG) then {DebugList pushback 'publicVariable "XEAT_info";'};
+//publicVariable "XEAT_spawn"; if (XEATD_DEBUG) then {DebugList pushback 'publicVariable "XEAT_spawn";'};
+//publicVariable "XEAT_dateExec"; if (XEATD_DEBUG) then {DebugList pushback 'publicVariable "XEAT_dateExec";'};
+//publicVariable "XEAT_date"; if (XEATD_DEBUG) then {DebugList pushback 'publicVariable "XEAT_date";'};
+//publicVariable "XEAT_fogExec"; if (XEATD_DEBUG) then {DebugList pushback 'publicVariable "XEAT_fogExec";'};
+//publicVariable "XEAT_fog"; if (XEATD_DEBUG) then {DebugList pushback 'publicVariable "XEAT_fog";'};
+//publicVariable "XEAT_destroy"; if (XEATD_DEBUG) then {DebugList pushback 'publicVariable "XEAT_destroy";'};
+//publicVariable "XEAT_repair"; if (XEATD_DEBUG) then {DebugList pushback 'publicVariable "XEAT_repair";'};
+//publicVariable "XEAT_spec"; if (XEATD_DEBUG) then {DebugList pushback 'publicVariable "XEAT_spec";'};
+//publicVariable "XEAT_xeSetVarExec"; if (XEATD_DEBUG) then {DebugList pushback 'publicVariable "XEAT_xeSetVarExec";'};
+//publicVariable "XEAT_xeSetVar"; if (XEATD_DEBUG) then {DebugList pushback 'publicVariable "XEAT_xeSetVar";'};
+//publicVariable "XEAT_markerExec"; if (XEATD_DEBUG) then {DebugList pushback 'publicVariable "XEAT_markerExec";'};
+//publicVariable "XEAT_marker"; if (XEATD_DEBUG) then {DebugList pushback 'publicVariable "XEAT_marker";'};
+//publicVariable "XEAT_freeCamExec"; if (XEATD_DEBUG) then {DebugList pushback 'publicVariable "XEAT_freeCamExec";'};
+//publicVariable "XEAT_freeCam"; if (XEATD_DEBUG) then {DebugList pushback 'publicVariable "XEAT_freeCam";'};
+//publicVariable "XEAT_exitLobbyExec"; if (XEATD_DEBUG) then {DebugList pushback 'publicVariable "XEAT_exitLobbyExec";'};
+//publicVariable "XEAT_exitLobby"; if (XEATD_DEBUG) then {DebugList pushback 'publicVariable "XEAT_exitLobby";'};
+//publicVariable "XEAT_lifeRevive"; if (XEATD_DEBUG) then {DebugList pushback 'publicVariable "XEAT_lifeRevive";'};
+//publicVariable "XEAT_lifeManetteExec"; if (XEATD_DEBUG) then {DebugList pushback 'publicVariable "XEAT_lifeManetteExec";'};
+//publicVariable "XEAT_lifeManette"; if (XEATD_DEBUG) then {DebugList pushback 'publicVariable "XEAT_lifeManette";'};
+//publicVariable "XEAT_espExec"; if (XEATD_DEBUG) then {DebugList pushback 'publicVariable "XEAT_espExec";'};
+//publicVariable "XEAT_esp"; if (XEATD_DEBUG) then {DebugList pushback 'publicVariable "XEAT_esp";'};
+//publicVariable "XEAT_SteamName"; if (XEATD_DEBUG) then {DebugList pushback 'publicVariable "XEAT_SteamName";'};
+//publicVariable "XEAT_BTracer"; if (XEATD_DEBUG) then {DebugList pushback 'publicVariable "XEAT_BTracer";'};
+//publicVariable "XEAT_peesExec"; if (XEATD_DEBUG) then {DebugList pushback 'publicVariable "XEAT_peesExec";'};
+//publicVariable "XEAT_pees"; if (XEATD_DEBUG) then {DebugList pushback 'publicVariable "XEAT_pees";'};
+//publicVariable "XEAT_goto"; if (XEATD_DEBUG) then {DebugList pushback 'publicVariable "XEAT_goto";'};
+//publicVariable "XEAT_boomExec"; if (XEATD_DEBUG) then {DebugList pushback 'publicVariable "XEAT_boomExec";'};
+//publicVariable "XEAT_boom"; if (XEATD_DEBUG) then {DebugList pushback 'publicVariable "XEAT_boom";'};
+//publicVariable "XEAT_flyAll" ; if (XEATD_DEBUG) then {DebugList pushback 'publicVariable "XEAT_flyAll" ;'};
+//publicVariable "XEAT_antiFreezeMessExec"; if (XEATD_DEBUG) then {DebugList pushback 'publicVariable "XEAT_antiFreezeMessExec";'};
+//publicVariable "XEAT_antiFreezeMess"; if (XEATD_DEBUG) then {DebugList pushback 'publicVariable "XEAT_antiFreezeMess";'};
+//publicVariable "XEAT_antiFreeze"; if (XEATD_DEBUG) then {DebugList pushback 'publicVariable "XEAT_antiFreeze";'};
+//publicVariable "XEAT_fakeCheaterDetectedExec"; if (XEATD_DEBUG) then {DebugList pushback 'publicVariable "XEAT_fakeCheaterDetectedExec";'};
+//publicVariable "XEAT_fakeCheaterDetected"; if (XEATD_DEBUG) then {DebugList pushback 'publicVariable "XEAT_fakeCheaterDetected";'};
+//publicVariable "XEAT_xedomExec"; if (XEATD_DEBUG) then {DebugList pushback 'publicVariable "XEAT_xedomExec";'};
+//publicVariable "XEAT_xedom"; if (XEATD_DEBUG) then {DebugList pushback 'publicVariable "XEAT_xedom";'};
+//publicVariable "XEAT_hintExec"; if (XEATD_DEBUG) then {DebugList pushback 'publicVariable "XEAT_hintExec";'};
+//publicVariable "XEAT_hint"; if (XEATD_DEBUG) then {DebugList pushback 'publicVariable "XEAT_hint";'};
+//publicVariable "XEAT_kickAll"; if (XEATD_DEBUG) then {DebugList pushback 'publicVariable "XEAT_kickAll";'};
+//publicVariable "XEAT_InfoPlayer"; if (XEATD_DEBUG) then {DebugList pushback 'publicVariable "XEAT_InfoPlayer";'};
+//publicVariable "XEAT_flyAllExec"; if (XEATD_DEBUG) then {DebugList pushback 'publicVariable "XEAT_flyAllExec";'};
+//publicVariable "XEAT_aannewsExec"; if (XEATD_DEBUG) then {DebugList pushback 'publicVariable "XEAT_aannewsExec";'};
+//publicVariable "XEAT_aannews"; if (XEATD_DEBUG) then {DebugList pushback 'publicVariable "XEAT_aannews";'};
+
+
+call XEAT_startSetUp;
+XEAT_pubVariab = {
+	{
+		publicVariable format["XEAT_", _x select 1];
+	} forEach ListaAzioniOff;
+};
+call XEAT_pubVariab;
+
+
 
 //Public Variable
 publicVariable "ListaAdmin"; if (XEATD_DEBUG) then {DebugList pushback 'publicVariable "ListaAdmin";'};

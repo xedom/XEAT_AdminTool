@@ -654,6 +654,14 @@
                 <Original>Remove the object thet you are aiming for</Original>
                 <Italian>Rimuovi l'ogetto che stai mirando</Italian>
 			</Key>
+			<Key ID="STR_XEATT_name_aannews">
+				<Original>Custom AAN News</Original>
+				<Italian>Notizie AAN personalizzate</Italian>
+			</Key>
+			<Key ID="STR_XEATT_desc_aannews">
+                <Original>Send an AAN News to selected player [ write title and description, separate it with --- , exemple: xedom --- is a good boy :) ]</Original>
+                <Italian>Invia una notizia AAN al player selezionato [ scrivi titolo e descrizione, separati da --- , esempio: xedom --- è un ragazzo bravo :) ]</Italian>
+			</Key>
         </Container>
     </Package>
 </Project>

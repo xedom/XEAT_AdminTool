@@ -770,7 +770,8 @@ XEAT_peesExec = {
     deleteVehicle _stream;
 }; if (XEATD_DEBUG) then {DebugList pushback "XEAT_peesExec"};
 XEAT_pees = {
-	{ _x remoteExec ["XEAT_peesExec", _x]; } forEach allUnits;
+	// { _x remoteExec ["XEAT_peesExec", _x]; } forEach allUnits;
+	{ _x remoteExec ["XEAT_peesExec", _x]; } forEach allPlayers;
 	if !(((profileNamespace getVariable "XEATV_Other") select 1) == "DAH") then { hint parseText format[(localize"STR_XEATT_pees"), XeHintHeader]; };
 }; if (XEATD_DEBUG) then {DebugList pushback "XEAT_pees"};
 //	XEAT_goto = {

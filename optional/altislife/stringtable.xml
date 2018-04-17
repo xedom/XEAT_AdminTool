@@ -1,555 +1,828 @@
 <Project name="XEDOM Admin Tool">
     <Package name="traduzioni">
         <Container name="XEAT">
-            <Key ID="STR_XEAT_guiPlayers">
-                <Original>Player list</Original>
-                <Italian>Lista Giocatori</Italian>
-            </Key>
-            <Key ID="STR_XEAT_guiActions">
-                <Original>Action list</Original>
-                <Italian>Lista Azioni</Italian>
-            </Key>
-            <Key ID="STR_XEAT_guiExec">
-                <Original>Execute</Original>
-                <Italian>Esegui</Italian>
-            </Key>
-            <Key ID="STR_XEAT_guiValue">
-                <Original>Value</Original>
-                <Italian>Valore</Italian>
-            </Key>
-            <Key ID="STR_XEAT_guiVariable">
-                <Original>Variable</Original>
-                <Italian>Variabile</Italian>
-            </Key>
-            <Key ID="STR_XEAT_avvioHint">
-                <Original>%1 To start the XEAT Admin Tool &lt;br /&gt; press -> %2</Original>
-                <Italian>%1 Per avviare l'Admin Tool XEAT premi il tasto -> %2</Italian>
-            </Key>
-            <Key ID="STR_XEAT_esecuzioneErrorNoGiocatore">
-                <Original>%1 To execute %2 you need to select a player from the Player list</Original>
-                <Italian>%1 Per l'azione %2 serve che tu scelga un giocatore</Italian>
-            </Key>
-            <Key ID="STR_XEAT_esecuzioneErrorNoAzione">
-                <Original>%1 Select an action</Original>
-                <Italian>%1 Seleziona un azione</Italian>
-            </Key>
-            <Key ID="STR_XEAT_giveErrorNoValore">
-                <Original>%1 The value need to be a &lt;t color='#f4e242'&gt;number&lt;/t&gt;.</Original>
-                <Italian>%1 Il valore deve essere un &lt;t color='#f4e242'&gt;numero&lt;/t&gt;.</Italian>
-            </Key>
-            <Key ID="STR_XEAT_giveErrorNoVariabile">
-                <Original>%1 You need to select a &lt;t color='#f4e242'&gt;variable&lt;/t&gt;.</Original>
-                <Italian>%1 Devi selezionare una &lt;t color='#f4e242'&gt;variabile&lt;/t&gt;.</Italian>
-            </Key>
-            <Key ID="STR_XEAT_godImmortale">
-                <Original>%2&lt;t color='#42ebf4'&gt;%1&lt;/t&gt; is now in GODMODE.</Original>
-                <Italian>%2&lt;t color='#42ebf4'&gt;%1&lt;/t&gt; è ora IMMORTALE.</Italian>
-            </Key>
-            <Key ID="STR_XEAT_godMortale">
-                <Original>%2&lt;t color='#42ebf4'&gt;%1&lt;/t&gt; not longer in GODMODE.</Original>
-                <Italian>%2&lt;t color='#42ebf4'&gt;%1&lt;/t&gt; è ora MORTALE.</Italian>
-            </Key>
-            <Key ID="STR_XEAT_infoText">
-                <Original>%1&lt;t size='1.2' color='#f4e242'&gt;Name: &lt;/t&gt;&lt;br /&gt;%2&lt;br /&gt;&lt;br /&gt;&lt;t size='1.2' color='#f4e242'&gt;UID: &lt;/t&gt;&lt;br /&gt;%3&lt;br /&gt;&lt;br /&gt;&lt;t size='1.2' color='#f4e242'&gt;Position: &lt;/t&gt;&lt;br /&gt;%4&lt;br /&gt;&lt;br /&gt;&lt;t size='1.2' color='#f4e242'&gt;Equip: &lt;/t&gt;&lt;br /&gt;%5&lt;br /&gt;&lt;br /&gt;&lt;t size='1.6' color='#f45f42'&gt;The equipment was copied to clipboard, press CTRL+V in a note program to paste it.&lt;/t&gt;</Original>
-                <Italian>%1&lt;t size='1.2' color='#f4e242'&gt;Nome: &lt;/t&gt;&lt;br /&gt;%2&lt;br /&gt;&lt;br /&gt;&lt;t size='1.2' color='#f4e242'&gt;UID: &lt;/t&gt;&lt;br /&gt;%3&lt;br /&gt;&lt;br /&gt;&lt;t size='1.2' color='#f4e242'&gt;Posizione: &lt;/t&gt;&lt;br /&gt;%4&lt;br /&gt;&lt;br /&gt;&lt;t size='1.2' color='#f4e242'&gt;Equipaggiamento: &lt;/t&gt;&lt;br /&gt;%5&lt;br /&gt;&lt;br /&gt;&lt;t size='1.6' color='#f45f42'&gt;L'Equipaggiamento è stato copiato negli appunti, premi CTRL+V in un programma di nota per incollarlo .&lt;/t&gt;</Italian>
-            </Key>
-            <Key ID="STR_XEAT_spawnnatoText">
-                <Original>%1 You spawned &lt;t color='#f4e242'&gt;%2&lt;/t&gt; near &lt;t color='#f4e242'&gt;%3&lt;/t&gt;</Original>
-                <Italian>%1 Hai spawnato &lt;t color='#f4e242'&gt;%2&lt;/t&gt; vicino a &lt;t color='#f4e242'&gt;%3&lt;/t&gt;</Italian>
-            </Key>
-            <Key ID="STR_XEAT_spettatoreUscitaText">
-                <Original>%1 If you want to leave the spectator mode &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;, press &lt;t color='#f4e242'&gt;F10&lt;/t&gt;.</Original>
-                <Italian>%1 Per uscire dalla modalità spettatore e smettere di spectare &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;, basta che premi il tasto &lt;t color='#f4e242'&gt;F10&lt;/t&gt;.</Italian>
-            </Key>
-            <Key ID="STR_XEAT_tpmapText">
-                <Original>%1 For teleporting map you need to press &lt;t color='#f4e242'&gt;ALT&lt;/t&gt; and click &lt;t color='#f4e242'&gt;on the left mouse button&lt;/t&gt; on one point.</Original>
-                <Italian>%1 Per teleportarti sulla mappa basta che tieni premuto &lt;t color='#f4e242'&gt;ALT&lt;/t&gt; e cliccare con il &lt;t color='#f4e242'&gt;tasto sinistro del mouse&lt;/t&gt; su un punto.</Italian>
-            </Key>
-            <Key ID="STR_XEATT_desc_kill">
-                <Original>Select a player to kill him</Original>
-                <Italian>Seleziona il giocatore da uccidere</Italian>
-            </Key>
-            <Key ID="STR_XEATT_desc_heal">
-                <Original>Select a player to heal him</Original>
-                <Italian>Seleziona il giocatore da curare</Italian>
-            </Key>
-            <Key ID="STR_XEATT_desc_lifeRevive">
-                <Original>Select a player to revive (this works only on RPG and AltisLife)</Original>
-                <Italian>Seleziona il giocatore da rianimare (funziona solo su server Life, tipo AltisLife)</Italian>
-            </Key>
-            <Key ID="STR_XEATT_desc_lifeManette">
-                <Original>Select a player to unrestrain (this works only on RPG and AltisLife)</Original>
-                <Italian>Seleziona îl giocatore a cui togliere le manette (funziona solo sui server Life, tipo AltisLife)</Italian>
-            </Key>
-            <Key ID="STR_XEATT_desc_tpToHim">
-                <Original>Teleport to a player</Original>
-                <Italian>Seleziona un giocatore da cui ti vuoi tippare</Italian>
-            </Key>
-            <Key ID="STR_XEATT_desc_toToYou">
-                <Original>Teleport a player to you</Original>
-                <Italian>Seleziona un giocatore il quale verra tippato da te</Italian>
-            </Key>
-            <Key ID="STR_XEATT_desc_tpMap">
-                <Original>Active Tp on map (ALT + Left mouse)</Original>
-                <Italian>Attiva il TP sulla mappa ( fai ALT + Tasto Sinistro )</Italian>
-            </Key>
-            <Key ID="STR_XEATT_desc_god">
-                <Original>Select a player to give him GODMODE</Original>
-                <Italian>Seleziona un giocatore per metterli la GODMODE</Italian>
-            </Key>
-            <Key ID="STR_XEATT_desc_vrArsenal">
-                <Original>Select a player to open him the Virtual Arsenal</Original>
-                <Italian>Seleziona un giocatore per aprirli l'Arsenale Viruale</Italian>
-            </Key>
-            <Key ID="STR_XEATT_desc_vrGarage">
-                <Original>Select a player to open him the Virtual Garage</Original>
-                <Italian>Seleziona un giocatore per aprirli il Garage Viruale</Italian>
-            </Key>
-            <Key ID="STR_XEATT_desc_block">
-                <Original>Freeze the selected player</Original>
-                <Italian>Seleziona il giocatore da congelare</Italian>
-            </Key>
-            <Key ID="STR_XEATT_desc_info">
-                <Original>Get info of a selected player</Original>
-                <Italian>Seleziona un giocatore per avere le sue informazioni</Italian>
-            </Key>
-            <Key ID="STR_XEATT_desc_spawn">
-                <Original>Spawn the vehicle placed in the value field, in next to the selected player (Inside the Values ​​field you have to put the vehicle classname -> https://community.bistudio.com/wiki/Arma_3_CfgWeapons_Vehicle_Weapons)</Original>
-                <Italian>Spawn il veiocolo messo nel campo Valore vicino al giocatore che hai selezionato (Dentro al campo Valori devi mettere il classname del veicolo -> https://community.bistudio.com/wiki/Arma_3_CfgWeapons_Vehicle_Weapons)</Italian>
-            </Key>
-            <Key ID="STR_XEATT_desc_date">
-                <Original>Put the time in the value field, that you want to set in the server.</Original>
-                <Italian>Metti nel campo valori l'ora che vuoi settare al server</Italian>
-            </Key>
-            <Key ID="STR_XEATT_desc_fog">
-                <Original>Remove / Put the fog on the selected player</Original>
-                <Italian>Togli/Metti la nebbia al giocatore selezionato</Italian>
-            </Key>
-            <Key ID="STR_XEATT_desc_destroy">
-                <Original>Destroy the vehicle you are aiming for</Original>
-                <Italian>Distruggi il veicolo che stai puntando</Italian>
-            </Key>
-            <Key ID="STR_XEATT_desc_repair">
-                <Original>Repair the vehicle you are aiming for</Original>
-                <Italian>Ripara il veicolo che stai puntando</Italian>
-            </Key>
-            <Key ID="STR_XEATT_desc_spec">
-                <Original>Spectate the selected player</Original>
-                <Italian>Specta il giocatore selezionato</Italian>
-            </Key>
-            <Key ID="STR_XEATT_desc_freeCam">
-                <Original>Give FreeCam Mode to the selected player</Original>
-                <Italian>Metti la FreeCam al giocatore selezionato</Italian>
-            </Key>
-            <Key ID="STR_XEATT_desc_xeSetVar">
-                <Original>Set the value in the values ​​field to the variable selected in the Variables ​​field</Original>
-                <Italian>Setta il valore dentro al campo Valori alla variabile selezionata nella campo Variabili</Italian>
-            </Key>
-            <Key ID="STR_XEATT_desc_marker">
-                <Original>Active Markers on the map</Original>
-                <Italian>Metti i marker sulla mappa di dove si trovano i giocatori al giocatore che hai selezionato</Italian>
-            </Key>
-            <Key ID="STR_XEATT_desc_esp">
-                <Original>Active ESP on the selected player</Original>
-                <Italian>Metti l'ESP al giocatore selezionato</Italian>
-            </Key>
-            <Key ID="STR_XEATT_desc_BTracer">
-                <Original>Active BulletTracing on the selected player</Original>
-                <Italian>Tracci i colpi che spari</Italian>
-            </Key>
-            <Key ID="STR_XEATT_desc_exitLobby">
-                <Original>Kick to lobby the selected player</Original>
-                <Italian>Fai tornare il lobby il giocatore selezionato</Italian>
-            </Key>
-            <Key ID="STR_XEATT_name_kill">
-                <Original>Kill</Original>
-                <Italian>Uccidi</Italian>
-            </Key>
-            <Key ID="STR_XEATT_name_heal">
-                <Original>Heal</Original>
-                <Italian>Cura</Italian>
-            </Key>
-            <Key ID="STR_XEATT_name_lifeRevive">
-                <Original>AL - Revive</Original>
-                <Italian>AL - Rianima</Italian>
-            </Key>
-            <Key ID="STR_XEATT_name_lifeManette">
-                <Original>AL - Unrestain</Original>
-                <Italian>AL - Smanetta</Italian>
-            </Key>
-            <Key ID="STR_XEATT_name_tpToHim">
-                <Original>TP to him</Original>
-                <Italian>Teleportati</Italian>
-            </Key>
-            <Key ID="STR_XEATT_name_toToYou">
-                <Original>Tp him to you</Original>
-                <Italian>Teleportalo</Italian>
-            </Key>
-            <Key ID="STR_XEATT_name_tpMap">
-                <Original>TPMAP</Original>
-                <Italian>TPMAP</Italian>
-            </Key>
-            <Key ID="STR_XEATT_name_god">
-                <Original>GODMODE</Original>
-                <Italian>GODMODE</Italian>
-            </Key>
-            <Key ID="STR_XEATT_name_vrArsenal">
-                <Original>Virtual Arsenal</Original>
-                <Italian>Virtual Arsenal</Italian>
-            </Key>
-            <Key ID="STR_XEATT_name_vrGarage">
-                <Original>Virtual Garage</Original>
-                <Italian>Virtual Garage</Italian>
-            </Key>
-            <Key ID="STR_XEATT_name_block">
-                <Original>Freeze</Original>
-                <Italian>Freeze</Italian>
-            </Key>
-            <Key ID="STR_XEATT_name_info">
-                <Original>Info</Original>
-                <Italian>Informazioni</Italian>
-            </Key>
-            <Key ID="STR_XEATT_name_spawn">
-                <Original>Spawn</Original>
-                <Italian>Spawna</Italian>
-            </Key>
-            <Key ID="STR_XEATT_name_date">
-                <Original>Set time</Original>
-                <Italian>Imposta Ora</Italian>
-            </Key>
-            <Key ID="STR_XEATT_name_fog">
-                <Original>Set fog</Original>
-                <Italian>Imposta Nebbia</Italian>
-            </Key>
-            <Key ID="STR_XEATT_name_destroy">
-                <Original>Destroy</Original>
-                <Italian>Distruggi</Italian>
-            </Key>
-            <Key ID="STR_XEATT_name_repair">
-                <Original>Repair</Original>
-                <Italian>Ripara</Italian>
-            </Key>
-            <Key ID="STR_XEATT_name_spec">
-                <Original>Spectate</Original>
-                <Italian>Spettatore</Italian>
-            </Key>
-            <Key ID="STR_XEATT_name_freeCam">
-                <Original>FreeCam</Original>
-                <Italian>FreeCam</Italian>
-            </Key>
-            <Key ID="STR_XEATT_name_xeSetVar">
-                <Original>Set a variable</Original>
-                <Italian>Imposta Variabile</Italian>
-            </Key>
-            <Key ID="STR_XEATT_name_marker">
-                <Original>Marker</Original>
-                <Italian>Marker</Italian>
-            </Key>
-            <Key ID="STR_XEATT_name_esp">
-                <Original>ESP</Original>
-                <Italian>ESP</Italian>
-            </Key>
-            <Key ID="STR_XEATT_name_BTracer">
-                <Original>Bullet Tracing</Original>
-                <Italian>Colpi Tracianti</Italian>
-            </Key>
-            <Key ID="STR_XEATT_name_exitLobby">
-                <Original>Return to lobby</Original>
-                <Italian>Ritorna in lobby</Italian>
-            </Key>
-            <Key ID="STR_XEATT_name_pees">
-                <Original>Pees</Original>
-                <Italian>Piscia</Italian>
-            </Key>
-            <Key ID="STR_XEATT_desc_pees">
-                <Original>Piss all those present on the server / mission</Original>
-                <Italian>Fai pisciare tutti quanti i presenti del server / missione</Italian>
-            </Key>
-            <Key ID="STR_XEATT_nome">
-                <Original>Name: %1</Original>
-                <Italian>Nome: $1</Italian>
-            </Key>
-            <Key ID="STR_XEATT_InfoPlayer">
-                <Original>%1 %2 &lt;br /&gt; %3 &lt;br /&gt; %4 &lt;br /&gt;&lt;br /&gt; &lt;t size='1.6' color='#f45f42'&gt;The equipment was copied to clipboard, press CTRL+V in a note program to paste it.&lt;/t&gt;</Original>
-                <Italian>%1 %2 &lt;br /&gt; %3 &lt;br /&gt; %4 &lt;br /&gt;&lt;br /&gt; &lt;t size='1.6' color='#f45f42'&gt;L'Equipaggiamento è stato copiato negli appunti, premi CTRL+V in un programma di nota per incollarlo.&lt;/t&gt;</Italian>
-            </Key>
-            <Key ID="STR_XEATT_infos">
-                <Original>Name: %1 ~ Steam: %2 ~ UID: %3</Original>
-                <Italian>Nome: %1 ~ Steam: %2 ~ UID: %3</Italian>
-            </Key>
-            <Key ID="STR_XEATT_tpmapTextDis">
-                <Original>%1 TP on map disabled</Original>
-                <Italian>%1 TP sulla mappa disattivato</Italian>
-            </Key>
-            <Key ID="STR_XEATT_Data">
-                <Original>%1 You must enter a value in the value field</Original>
-                <Italian>%1 Devi inserire un valore nel campo valori</Italian>
-            </Key>
-            <Key ID="STR_XEATT_ESPON">
-                <Original>%1 ESP ON &lt;br /&gt; &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;</Original>
-                <Italian>%1 ESP ON &lt;br /&gt; &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;</Italian>
-            </Key>
-            <Key ID="STR_XEATT_ESPOFF">
-                <Original>%1 ESP OFF</Original>
-                <Italian>%1 ESP OFF</Italian>
-            </Key>
-            <Key ID="STR_XEATT_esp">
-                <Original>%1 You've activated / deactivated ESP (&lt;t color='#42ebf4'&gt;%3&lt;/t&gt; meters) on &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;</Original>
-                <Italian>%1 Hai attivato / disattivato l'ESP (&lt;t color='#42ebf4'&gt;%3&lt;/t&gt; metri) su &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;</Italian>
-            </Key>
-            <Key ID="STR_XEATT_name_fakeCheaterDetected">
-                <Original>Fake Cheater Detected</Original>
-                <Italian>Fake Cheater Detected</Italian>
-            </Key>
-            <Key ID="STR_XEATT_name_xedom">
-                <Original>XEDOM</Original>
-                <Italian>XEDOM</Italian>
-            </Key>
-            <Key ID="STR_XEATT_name_boom">
-                <Original>BOOM</Original>
-                <Italian>BOOM</Italian>
-            </Key>
-            <Key ID="STR_XEATT_name_antiFreezeMess">
-                <Original>Anti Freeze</Original>
-                <Italian>Anti Freeze</Italian>
-            </Key>
-            <Key ID="STR_XEATT_name_flyAll">
-                <Original>Fly All</Original>
-                <Italian>Fly All</Italian>
-            </Key>
-            <Key ID="STR_XEATT_name_goto">
-                <Original>Move NPC</Original>
-                <Italian>Muovi NPC</Italian>
-            </Key>
-            <Key ID="STR_XEATT_desc_fakeCheaterDetected">
-                <Original>Makes a fake report for the selected player</Original>
-                <Italian>Fa apparire un messaggio fake di report del giocatore selezionato.</Italian>
-            </Key>
-            <Key ID="STR_XEATT_desc_xedom">
-                <Original>It puts you the loadout of the crazy xedom ;P</Original>
-                <Italian>Ti mette il loadout dello xedom pazzerello ;P</Italian>
-            </Key>
-            <Key ID="STR_XEATT_desc_boom">
-                <Original>It destroys everything in the radius (that you put in the value field) of selected player</Original>
-                <Italian>Distrugge tutto nel raggio (che metti nel campo valori) del giocatore che hai scelto.</Italian>
-            </Key>
-            <Key ID="STR_XEATT_desc_antiFreezeMess">
-                <Original>If an admin freezes you, this function automatically defrosts you and warns you.</Original>
-                <Italian>Se un admin ti congela, questa funzione ti scongela automaticamente, e ti avvisa.</Italian>
-            </Key>
-            <Key ID="STR_XEATT_desc_flyAll">
-                <Original>Teleports all the players 1000 meters above the ground, and gives them a parachute.</Original>
-                <Italian>Teleporta tutti i giocatori a 1000 metri da terra, e gli da un paracadute.</Italian>
-            </Key>
-            <Key ID="STR_XEATT_desc_goto">
-                <Original>Give life to all the Bots / NPCs in the map and make them go to a point.</Original>
-                <Italian>Da vita a tutti i Bot/NPC in mappa e li fa andare in un punto.</Italian>
-            </Key>
-            <Key ID="STR_XEATT_PL">
-                <Original>This is the online player list</Original>
-                <Italian>Questa è la lista giocatori/bot connessi nel server, alcune azioni hanno bisogno che selezioni un giocatore</Italian>
-            </Key>
-            <Key ID="STR_XEATT_AL">
-                <Original>This is the actions list</Original>
-                <Italian>Queste sono le azioni che puoi utilizzare</Italian>
-            </Key>
-            <Key ID="STR_XEATT_EXEC">
-                <Original>Execute a selected action</Original>
-                <Italian>"Esegui l'azione selezionata"</Italian>
-            </Key>
-            <Key ID="STR_XEATT_CHIUDI">
-                <Original>Close</Original>
-                <Italian>Chiudi</Italian>
-            </Key>
-            <Key ID="STR_XEATT_VALORET">
-                <Original>Hier you can give value to some actions</Original>
-                <Italian>Alcune azioni hanno bisogno di un numero, nome, classe, ora ecc.</Italian>
-            </Key>
-            <Key ID="STR_XEATT_VARIABILIT">
-                <Original>Hier you can select variable to some actions</Original>
-                <Italian>Alcune azioni hanno bisogno di una variabile da modificare o da utilizzare</Italian>
-            </Key>
-            <Key ID="STR_XEATT_IMPOSTAZIONIT">
-                <Original>Settings</Original>
-                <Italian>Impostazioni</Italian>
-            </Key>
-            <Key ID="STR_XEATT_antiFreezeActive">
-                <Original>%1 L'AntiFreeze is now activated on &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;</Original>
-                <Italian>%1 L'AntiFreeze è stato attivato su &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;</Italian>
-            </Key>
-            <Key ID="STR_XEATT_kill">
-                <Original>%1 You've killed &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;</Original>
-                <Italian>%1 Hai ucciso &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;</Italian>
-            </Key>
-            <Key ID="STR_XEATT_heal">
-                <Original>%1 You've cured &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;</Original>
-                <Italian>%1 Hai curato &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;</Italian>
-            </Key>
-            <Key ID="STR_XEATT_tpToHim">
-                <Original>%1 You teleported by &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;</Original>
-                <Italian>%1 Ti sei teleportato da &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;</Italian>
-            </Key>
-            <Key ID="STR_XEATT_tpToYou">
-                <Original>%1 You teleported &lt;t color='#42ebf4'&gt;%2&lt;/t&gt; to you</Original>
-                <Italian>%1 Hai teleportato &lt;t color='#42ebf4'&gt;%2&lt;/t&gt; da te</Italian>
-            </Key>
-            <Key ID="STR_XEATT_tpMap">
-                <Original>%1 You've activated the Teleport on Map to &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;</Original>
-                <Italian>%1 Hai attivato il Teletrasporto in Mappa a &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;</Italian>
-            </Key>
-
-            <Key ID="STR_XEATT_vrArsenal">
-                <Original>%1 You've opened the virtual arsenal at &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;</Original>
-                <Italian>%1 Hai aperto l'arsenale virtuale a &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;</Italian>
-            </Key>
-            <Key ID="STR_XEATT_vrGarage">
-                <Original>%1 You've opened the virtual garage at &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;</Original>
-                <Italian>%1 Hai aperto il garage virtuale a &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;</Italian>
-            </Key>
-            <Key ID="STR_XEATT_block">
-                <Original>%1 You've Freezed / Unfrozen &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;</Original>
-                <Italian>%1 Hai Congelato / Scongelato &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;</Italian>
-            </Key>
-            <Key ID="STR_XEATT_destroy">
-                <Original>%1 You've destroyed -> &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;</Original>
-                <Italian>%1 Hai distrutto -> &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;</Italian>
-            </Key>
-            <Key ID="STR_XEATT_repair">
-                <Original>%1 You've repaired -> &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;</Original>
-                <Italian>%1 Hai riparato -> &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;</Italian>
-            </Key>
-            <Key ID="STR_XEATT_fog">
-                <Original>%1 You've activated / deactivated the fog on &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;</Original>
-                <Italian>%1 Hai attivato / disattivato la nebbia su &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;</Italian>
-            </Key>
-            <Key ID="STR_XEATT_marker">
-                <Original>%1 You've activated / deactivated Markers on Map at &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;</Original>
-                <Italian>%1 Hai attivato / disattivato i marker in mappa a &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;</Italian>
-            </Key>
-            <Key ID="STR_XEATT_freeCam">
-                <Original>%1 You've activated the FreeCam on &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;</Original>
-                <Italian>%1 Hai attivato la FreeCam su &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;</Italian>
-            </Key>
-            <Key ID="STR_XEATT_exitLobby">
-                <Original>%1 You've brought out &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;</Original>
-                <Italian>%1 Hai fatto uscire &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;</Italian>
-            </Key>
-            <Key ID="STR_XEATT_lifeRevive">
-                <Original>%1 You've revived &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;</Original>
-                <Italian>%1 Hai rianimato &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;</Italian>
-            </Key>
-            <Key ID="STR_XEATT_lifeManette">
-                <Original>%1 You've removed the handcuffs at &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;</Original>
-                <Italian>%1 Hai tolte le manette a &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;</Italian>
-            </Key>
-            <Key ID="STR_XEATT_pees">
-                <Original>%1 Now everyone in the map is pissing ;P</Original>
-                <Italian>%1 Ora tutti quanti in mappa stanno pisciando ;P</Italian>
-            </Key>
-            <Key ID="STR_XEATT_goto">
-                <Original>%1 Now all the BOTs / NPCs in the map are running towards the 0 point of the map ;P</Original>
-                <Italian>%1 Ora tutti i BOT / NPC in mappa corrono verso il bunto 0 della mappa ;P</Italian>
-            </Key>
-            <Key ID="STR_XEATT_boom">
-                <Original>%1 Everything has exploded within a radius of about &lt;t color='#42ebf4'&gt;%3&lt;/t&gt; meters around the player &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;</Original>
-                <Italian>%1 Nel raggio di &lt;t color='#42ebf4'&gt;%3&lt;/t&gt; metri intorno al giocatore &lt;t color='#42ebf4'&gt;%2&lt;/t&gt; è esploso tutto</Italian>
-            </Key>
-            <Key ID="STR_XEATT_flyAll">
-                <Original>%1 Now everyone has been teleported to 1000 meters high with a parachute</Original>
-                <Italian>%1 Ora tutti sono stati teleportati a 1000 metri d'altezza con un paracadute</Italian>
-            </Key>
-            <Key ID="STR_XEATT_xedom">
-                <Original>%1 You've given the equipment and you run the admin functions on &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;</Original>
-                <Italian>%1 Hai datto l'equipaggiamento e hai esecuto delle funzioni da admin su &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;</Italian>
-            </Key>
-            <Key ID="STR_XEATT_kickAllON">
-                <Original>%1 You've activated the function that kicks everyone from the server except you</Original>
-                <Italian>%1 Hai attivato la funzione che caccia tutti dal server tranne te</Italian>
-            </Key>
-            <Key ID="STR_XEATT_kickAllOFF">
-                <Original>%1 You've disabled the function that kicks everyone from the server except you</Original>
-                <Italian>%1 Hai disattivato la funzione che caccia tutti dal server tranne te</Italian>
-            </Key>
-            <Key ID="STR_XEATT_xeSetVar">
-                <Original>%1 You've set &lt;t color='#42ebf4'&gt;%3 = %2&lt;/t&gt; on &lt;t color='#42ebf4'&gt;%4&lt;/t&gt;</Original>
-                <Italian>%1 Hai settato &lt;t color='#42ebf4'&gt;%3 = %2&lt;/t&gt; su &lt;t color='#42ebf4'&gt;%4&lt;/t&gt;</Italian>
-            </Key>
-            <Key ID="STR_XEATT_BTracerON">
-                <Original>%1 You've activated Bullet Tracking</Original>
-                <Italian>%1 Hai attivato i colpi traccianti</Italian>
-            </Key>
-            <Key ID="STR_XEATT_BTracerOFF">
-                <Original>%1 You've deactivated Bullet Tracing</Original>
-                <Italian>%1 Hai disattivato i colpi traccianti</Italian>
-            </Key>
-            <Key ID="STR_XEATT_dateTime">
-                <Original>%1 You've setted &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;</Original>
-                <Italian>%1 Hai impostato &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;</Italian>
-            </Key>
-            <Key ID="STR_XEATT_name_kickAll">
-                <Original>KickAll</Original>
-                <Italian>Caccia tutti</Italian>
-            </Key>
-            <Key ID="STR_XEATT_desc_kickAll">
-                <Original>Kill all players of the game except you</Original>
-                <Italian>Caccia tutti dalla partita tranne te</Italian>
-            </Key>
-            <Key ID="STR_XEATT_name_hint">
-                <Original>Message</Original>
-                <Italian>Messaggio</Italian>
-            </Key>
-            <Key ID="STR_XEATT_desc_hint">
-                <Original>Sent a message to selected player</Original>
-                <Italian>Invia un messaggio al giocatore selezionato</Italian>
-            </Key>
-            <Key ID="STR_XEATT_hint">
-                <Original>%1 Sent a message to &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;: &lt;t color='#f4e242'&gt;%3&lt;/t&gt;</Original>
-                <Italian>%1 Hai inviato un messaggio a &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;: &lt;t color='#f4e242'&gt;%3&lt;/t&gt;</Italian>
-            </Key>
-            <Key ID="STR_XEATT_name_zeus">
-                <Original>Zeus</Original>
-                <Italian>Zeus</Italian>
-            </Key>
-            <Key ID="STR_XEATT_desc_zeus">
-                <Original>Become Zeus</Original>
-                <Italian>Diventa Zeus</Italian>
-            </Key>
-            <Key ID="STR_XEATT_VAR_AL_Banca1">
-                <Original>AltisLife - Bank 1</Original>
-                <Italian>AltisLife - Banca 1</Italian>
-            </Key>
-            <Key ID="STR_XEATT_VAR_AL_Banca2">
-                <Original>AltisLife - Bank 2</Original>
-                <Italian>AltisLife - Banca 2</Italian>
-            </Key>
-            <Key ID="STR_XEATT_VAR_AL_Contanti">
-                <Original>AltisLife - Cash</Original>
-                <Italian>AltisLife - Contanti</Italian>
-            </Key>
-            <Key ID="STR_XEATT_VAR_AL_Sete">
-                <Original>AltisLife - Thirst</Original>
-                <Italian>AltisLife - Sete</Italian>
-            </Key>
-            <Key ID="STR_XEATT_VAR_AL_Fame">
-                <Original>AltisLife - Hunger</Original>
-                <Italian>AltisLife - Fame</Italian>
-            </Key>
-            <Key ID="STR_XEATT_name_remove">
-                <Original>Remove</Original>
-                <Italian>Rimuovi</Italian>
-            </Key>
-            <Key ID="STR_XEATT_desc_remove">
-                <Original>Remove the object thet you are aiming for</Original>
-                <Italian>Rimuovi l'ogetto che stai mirando</Italian>
-            </Key>
-            <Key ID="STR_XEATT_name_aannews">
-                <Original>Custom AAN News</Original>
-                <Italian>Notizie AAN personalizzate</Italian>
-            </Key>
-            <Key ID="STR_XEATT_desc_aannews">
-                <Original>Send an AAN News to selected player [ write title and description, separate it with --- , exemple: xedom --- is a good boy :) ]</Original>
-                <Italian>Invia una notizia AAN al player selezionato [ scrivi titolo e descrizione, separati da --- , esempio: xedom --- è un ragazzo bravo :) ]</Italian>
-            </Key>
+			<Key ID="STR_XEAT_guiPlayers">
+				<Original>Player list</Original>
+				<Italian>Lista Giocatori</Italian>
+				<French>Liste Joueur</French> 
+				<Danish>Spiller liste</Danish>
+			</Key>
+			<Key ID="STR_XEAT_guiActions">
+				<Original>Action list</Original>
+				<Italian>Lista Azioni</Italian>
+				<French>Liste Action</French> 
+				<Danish>Aktivitet liste</Danish>
+			</Key>
+			<Key ID="STR_XEAT_guiExec">
+				<Original>Execute</Original>
+				<Italian>Esegui</Italian>
+				<French>Executer</French>
+				<Danish>Udfør</Danish>
+			</Key>
+			<Key ID="STR_XEAT_guiValue">
+				<Original>Value</Original>
+				<Italian>Valore</Italian>
+				<French>Valeur</French>
+				<Danish>Værdi</Danish>
+			</Key>
+			<Key ID="STR_XEAT_guiVariable">
+				<Original>Variable</Original>
+				<Italian>Variabile</Italian>
+				<French>Variable</French>
+				<Danish>Variabel</Danish>
+			</Key>
+			<Key ID="STR_XEAT_avvioHint">
+				<Original>%1 To start the XEAT Admin Tool &lt;br /&gt; press -> %2</Original>
+				<Italian>%1 Per avviare l'Admin Tool XEAT premi il tasto -> %2</Italian>
+				<French>%1 Pour démarrer l'outil d'administration XEAT Admin Tool &lt;br /&gt; appuyez sur -> %2</French>
+				<Danish>%1For at starte XEAT Admin Tool &lt;br /&gt; tryk -> %2</Danish>
+			</Key>
+			<Key ID="STR_XEAT_esecuzioneErrorNoGiocatore">
+				<Original>%1 To execute %2 you need to select a player from the Player list</Original>
+				<Italian>%1 Per l'azione %2 serve che tu scelga un giocatore</Italian>
+				<French>%1 Pour exécuter %2 vous devez sélectionner un joueur dans la liste des joueurs</French>
+				<Danish>%1 For at udføre %2 skal du vælge en spiller fra spiller listen</Danish>
+			</Key>
+			<Key ID="STR_XEAT_esecuzioneErrorNoAzione">
+				<Original>%1 Select an action</Original>
+				<Italian>%1 Seleziona un azione</Italian>
+				<French>%1 Sélectionnez une action</French>
+				<Danish>Vælg en handling</Danish>
+			</Key>
+			<Key ID="STR_XEAT_giveErrorNoValore">
+				<Original>%1 The value need to be a &lt;t color='#f4e242'&gt;number&lt;/t&gt;.</Original>
+				<Italian>%1 Il valore deve essere un &lt;t color='#f4e242'&gt;numero&lt;/t&gt;.</Italian>
+				<French>%1 La valeur doit être un &lt;t color='#f4e242'&gt;number&lt;/t&gt;.</French>
+				<Danish>%1 Værdien skal være et &lt;t color='#f4e242'&gt;nummer&lt;/t&gt;.</Danish>
+			</Key>
+			<Key ID="STR_XEAT_giveErrorNoVariabile">
+				<Original>%1 You need to select a &lt;t color='#f4e242'&gt;variable&lt;/t&gt;.</Original>
+				<Italian>%1 Devi selezionare una &lt;t color='#f4e242'&gt;variabile&lt;/t&gt;.</Italian>
+				<French>%1 Vous devez sélectionner un &lt;t color='#f4e242'&gt;variable&lt;/t&gt;.</French>
+				<Danish>%1 Du skal vælge en &lt;t color='#f4e242'&gt;variabel&lt;/t&gt;.</Danish>
+			</Key>
+			<Key ID="STR_XEAT_godImmortale">
+				<Original>%2&lt;t color='#42ebf4'&gt;%1&lt;/t&gt; is now in GODMODE.</Original>
+				<Italian>%2&lt;t color='#42ebf4'&gt;%1&lt;/t&gt; è ora IMMORTALE.</Italian>
+				<French>%2&lt;t color='#42ebf4'&gt;%1&lt;/t&gt; est maintenant en GODMODE.</French>
+				<Danish>%2&lt;t color='42ebf4' &gt;%1&lt;/t&gt; er nu uddødelig.</Danish>
+			</Key>
+			<Key ID="STR_XEAT_godMortale">
+				<Original>%2&lt;t color='#42ebf4'&gt;%1&lt;/t&gt; not longer in GODMODE.</Original>
+				<Italian>%2&lt;t color='#42ebf4'&gt;%1&lt;/t&gt; è ora MORTALE.</Italian>
+				<French>%2&lt;t color='#42ebf4'&gt;%1&lt;/t&gt; n'est plus en GODMODE.</French>
+				<Danish>%2&lt;t color='#42ebf4' &gt;´%1&lt;/t&gt; er ikke længere uddødelig.</Danish>
+			</Key>
+			<Key ID="STR_XEAT_infoText">
+				<Original>%1&lt;t size='1.2' color='#f4e242'&gt;Name: &lt;/t&gt;&lt;br /&gt;%2&lt;br /&gt;&lt;br /&gt;&lt;t size='1.2' color='#f4e242'&gt;UID: &lt;/t&gt;&lt;br /&gt;%3&lt;br /&gt;&lt;br /&gt;&lt;t size='1.2' color='#f4e242'&gt;Position: &lt;/t&gt;&lt;br /&gt;%4&lt;br /&gt;&lt;br /&gt;&lt;t size='1.2' color='#f4e242'&gt;Equip: &lt;/t&gt;&lt;br /&gt;%5&lt;br /&gt;&lt;br /&gt;&lt;t size='1.6' color='#f45f42'&gt;The equipment was copied to clipboard, press CTRL+V in a note program to paste it.&lt;/t&gt;</Original>
+				<Italian>%1&lt;t size='1.2' color='#f4e242'&gt;Nome: &lt;/t&gt;&lt;br /&gt;%2&lt;br /&gt;&lt;br /&gt;&lt;t size='1.2' color='#f4e242'&gt;UID: &lt;/t&gt;&lt;br /&gt;%3&lt;br /&gt;&lt;br /&gt;&lt;t size='1.2' color='#f4e242'&gt;Posizione: &lt;/t&gt;&lt;br /&gt;%4&lt;br /&gt;&lt;br /&gt;&lt;t size='1.2' color='#f4e242'&gt;Equipaggiamento: &lt;/t&gt;&lt;br /&gt;%5&lt;br /&gt;&lt;br /&gt;&lt;t size='1.6' color='#f45f42'&gt;L'Equipaggiamento è stato copiato negli appunti, premi CTRL+V in un programma di nota per incollarlo .&lt;/t&gt;</Italian>
+				<French>%1&lt;t size='1.2' color='#f4e242'&gt;Nom: &lt;/t&gt;&lt;br /&gt;%2&lt;br /&gt;&lt;br /&gt;&lt;t size='1.2' color='#f4e242'&gt;UID: &lt;/t&gt;&lt;br /&gt;%3&lt;br /&gt;&lt;br /&gt;&lt;t size='1.2' color='#f4e242'&gt;Position: &lt;/t&gt;&lt;br /&gt;%4&lt;br /&gt;&lt;br /&gt;&lt;t size='1.2' color='#f4e242'&gt;Equipement: &lt;/t&gt;&lt;br /&gt;%5&lt;br /&gt;&lt;br /&gt;&lt;t size='1.6' color='#f45f42'&gt;L'équipement a été copié dans le presse-papiers, appuyez sur CTRL + V dans un programme de notes pour le coller.&lt;/t&gt;</French>
+				<Danish>%1&lt;t size='1.2' color='#f4e242'&gt;Navn: &lt;/t&gt;&lt;br /&gt;%2&lt;br /&gt;&lt;br /&gt;&lt;t size='1.2' color='#f4e242'&gt;UID: &lt;/t&gt;&lt;br /&gt;%3&lt;br /&gt;&lt;br /&gt;&lt;t size='1.2' color='#f4e242'&gt;Position: &lt;/t&gt;&lt;br /&gt;%4&lt;br /&gt;&lt;br /&gt;&lt;t size='1.2' color='#f4e242'&gt;Tag på: &lt;/t&gt;&lt;br /&gt;%5&lt;br /&gt;&lt;br /&gt;&lt;t size='1.6' color='#f45f42'&gt;Udstyret blev kopieret til clipboardet, tryk CTRL+V i et note program for at indsætte det.&lt;/t&gt;</Danish>
+			</Key>
+			<Key ID="STR_XEAT_spawnnatoText">
+				<Original>%1 You spawned &lt;t color='#f4e242'&gt;%2&lt;/t&gt; near &lt;t color='#f4e242'&gt;%3&lt;/t&gt;</Original>
+				<Italian>%1 Hai spawnato &lt;t color='#f4e242'&gt;%2&lt;/t&gt; vicino a &lt;t color='#f4e242'&gt;%3&lt;/t&gt;</Italian>
+				<French>%1 Vous avez Spawn &lt;t color='#f4e242'&gt;%2&lt;/t&gt; près &lt;t color='#f4e242'&gt;%3&lt;/t&gt;</French>
+				<Danish>%1 Du har spawned &lt;t color='#f4e242'&gt;%2&lt;/t&gt; nær &lt;t color='#f4e242'&gt;%3&lt;/t&gt;</Danish>
+			</Key>
+			<Key ID="STR_XEAT_spettatoreUscitaText">
+				<Original>%1 If you want to leave the spectator mode &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;, press &lt;t color='#f4e242'&gt;F10&lt;/t&gt;.</Original>
+				<Italian>%1 Per uscire dalla modalità spettatore e smettere di spectare &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;, basta che premi il tasto &lt;t color='#f4e242'&gt;F10&lt;/t&gt;.</Italian>
+				<French>%1 Si vous voulez quitter le spectateur &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;, appuyez sur &lt;t color='#f4e242'&gt;F10&lt;/t&gt;.</French>
+				<Danish>%1 Hvis du vil forlade tilskuer tilstand &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;, tryk &lt;t color='#f4e242'&gt;F10&lt;/t&gt;.</Danish>
+			</Key>
+			<Key ID="STR_XEAT_tpmapText">
+				<Original>%1 For teleporting map you need to press &lt;t color='#f4e242'&gt;ALT&lt;/t&gt; and click &lt;t color='#f4e242'&gt;on the left mouse button&lt;/t&gt; on one point.</Original>
+				<Italian>%1 Per teleportarti sulla mappa basta che tieni premuto &lt;t color='#f4e242'&gt;ALT&lt;/t&gt; e cliccare con il &lt;t color='#f4e242'&gt;tasto sinistro del mouse&lt;/t&gt; su un punto.</Italian>
+				<French>%1 Pour la téléportation, vous devez appuyer sur &lt;t color='#f4e242'&gt;ALT&lt;/t&gt; et cliquez &lt;t color='#f4e242'&gt;sur le bouton gauche de la souris&lt;/t&gt; sur un point.</French>
+				<Danish>%1 For at teleportere rundt på kortet skal du trykke &lt;t color='#f4e242'&gt;ALT&lt;/t&gt; og tryk &lt;t color='#f4e242'&gt;på venstre musseknap&lt;/t&gt; på ét punkt.</Danish>
+			</Key>
+			<Key ID="STR_XEATT_desc_kill">
+				<Original>Select a player to kill him</Original>
+				<Italian>Seleziona il giocatore da uccidere</Italian>
+				<French>Sélectionnez un joueur pour le tuer</French>
+				<Danish>Vælg en spiller for at dræbe ham</Danish>
+			</Key>
+			<Key ID="STR_XEATT_desc_heal">
+				<Original>Select a player to heal him</Original>
+				<Italian>Seleziona il giocatore da curare</Italian>
+				<French>Sélectionnez un joueur pour le soigner</French>
+				<Danish>Vælg en spiller for at hele ham</Danish>
+			</Key>
+			<Key ID="STR_XEATT_desc_lifeRevive">
+				<Original>Select a player to revive (this works only on RPG and AltisLife)</Original>
+				<Italian>Seleziona il giocatore da rianimare (funziona solo su server Life, tipo AltisLife)</Italian>
+				<French>Sélectionnez un joueur à revivre (cela ne fonctionne que sur RPG et AltisLife)</French>
+				<Danish>Vælg en spiller for at genoplive ham (Dette virker kun på RPG og AltisLife)</Danish>
+			</Key>
+			<Key ID="STR_XEATT_desc_lifeManette">
+				<Original>Select a player to unrestrain (this works only on RPG and AltisLife)</Original>
+				<Italian>Seleziona îl giocatore a cui togliere le manette (funziona solo sui server Life, tipo AltisLife)</Italian>
+				<French>Sélectionnez un joueur à démenotter (cela ne fonctionne que sur RPG et AltisLife)</French>
+				<Danish>Vælg en spiller for at løslade ham (Dette virker kun på RPG og AltisLife)</Danish>
+			</Key>
+			<Key ID="STR_XEATT_desc_tpToHim">
+				<Original>Teleport to a player</Original>
+				<Italian>Seleziona un giocatore da cui ti vuoi tippare</Italian>
+				<French>Téléporter vers un joueur</French>
+				<Danish>Teleport til en spiller</Danish>
+			</Key>
+			<Key ID="STR_XEATT_desc_toToYou">
+				<Original>Teleport a player to you</Original>
+				<Italian>Seleziona un giocatore il quale verra tippato da te</Italian>
+				<French>Téléporter un joueur à vous</French>
+				<Danish>Teleport en spiller til dig</Danish>
+			</Key>
+			<Key ID="STR_XEATT_desc_tpMap">
+				<Original>Active Tp on map (ALT + Left mouse)</Original>
+				<Italian>Attiva il TP sulla mappa ( fai ALT + Tasto Sinistro )</Italian>
+				<French>Active Tp sur la carte (ALT + souris gauche)</French>
+				<Danish>Aktiv Teleport på kortet (ALT + Venstre mussetast)</Danish>
+			</Key>
+			<Key ID="STR_XEATT_desc_god">
+				<Original>Select a player to give him GODMODE</Original>
+				<Italian>Seleziona un giocatore per metterli la GODMODE</Italian>
+				<French>Sélectionnez un joueur pour lui donner GODMODE</French>
+				<Danish>Vælg en spiller for at give ham udødelighed</Danish>
+			</Key>
+			<Key ID="STR_XEATT_desc_vrArsenal">
+				<Original>Select a player to open him the Virtual Arsenal</Original>
+				<Italian>Seleziona un giocatore per aprirli l'Arsenale Viruale</Italian>
+				<French>Sélectionnez un joueur pour lui ouvrir l'Arsenal virtuel</French>
+				<Danish>Vælg en spiller for at åbne Virtual Arsenal for ham</Danish>
+			</Key>
+			<Key ID="STR_XEATT_desc_vrGarage">
+				<Original>Select a player to open him the Virtual Garage</Original>
+				<Italian>Seleziona un giocatore per aprirli il Garage Viruale</Italian>
+				<French>Sélectionnez un joueur pour lui ouvrir le garage virtuel</French>
+				<Danish>Vælg en spiller for at åbne Virtual Garage for ham</Danish>
+			</Key>
+			<Key ID="STR_XEATT_desc_block">
+				<Original>Freeze the selected player</Original>
+				<Italian>Seleziona il giocatore da congelare</Italian>
+				<French>Freeze le joueur sélectionné</French>
+				<Danish>Frys den valgte spiller</Danish>
+			</Key>
+			<Key ID="STR_XEATT_desc_info">
+				<Original>Get info of a selected player</Original>
+				<Italian>Seleziona un giocatore per avere le sue informazioni</Italian>
+				<French>Obtenir des informations sur un joueur sélectionné</French>
+				<Danish>Få information om den valgte spiller</Danish>
+			</Key>
+			<Key ID="STR_XEATT_desc_spawn">
+				<Original>Spawn the vehicle placed in the value field, in next to the selected player (Inside the Values ​​field you have to put the vehicle classname -> https://community.bistudio.com/wiki/Arma_3_CfgWeapons_Vehicle_Weapons)</Original>
+				<Italian>Spawn il veiocolo messo nel campo Valore vicino al giocatore che hai selezionato (Dentro al campo Valori devi mettere il classname del veicolo -> https://community.bistudio.com/wiki/Arma_3_CfgWeapons_Vehicle_Weapons)</Italian>
+				<French>Faites apparaître le véhicule placé dans le champ de valeur, à côté du joueur sélectionné (Dans le champ Valeurs, vous devez mettre le nom de classe du véhicule -> https://community.bistudio.com/wiki/Arma_3_CfgWeapons_Vehicle_Weapons)</French>
+				<Danish>Spawn køretøjet placeret i værdi feltet ved siden af den valgte spiller (I værdi feltet skal du skrive et køretøj classname ->https://community.bistudio.com/wiki/Arma_3_CfgWeapons_Vehicle_Weapons)</Danish>
+			</Key>
+			<Key ID="STR_XEATT_desc_date">
+				<Original>Put the time in the value field, that you want to set in the server.</Original>
+				<Italian>Metti nel campo valori l'ora che vuoi settare al server</Italian>
+				<French>Mettez l'heure dans le champ de valeur, que vous souhaitez définir dans le serveur.</French>
+				<Danish>Put tiden, som du ønsker skal være på serveren, i værdi feltet</Danish>
+			</Key>
+			<Key ID="STR_XEATT_desc_fog">
+				<Original>Remove / Put the fog on the selected player</Original>
+				<Italian>Togli/Metti la nebbia al giocatore selezionato</Italian>
+				<French>Supprimer / Mettre le brouillard sur le Joueur sélectionné</French>
+				<Danish>Fjern / Put tåge på den valgte spiller</Danish>
+			</Key>
+			<Key ID="STR_XEATT_desc_destroy">
+				<Original>Destroy the vehicle you are aiming for</Original>
+				<Italian>Distruggi il veicolo che stai puntando</Italian>
+				<French>Détruire le véhicule que vous visez</French>
+				<Danish>Ødelæg det køretøj du sigter efter</Danish>
+			</Key>
+			<Key ID="STR_XEATT_desc_repair">
+				<Original>Repair the vehicle you are aiming for</Original>
+				<Italian>Ripara il veicolo che stai puntando</Italian>
+				<French>Réparer le véhicule que vous visez</French>
+				<Danish>Reparer det køretøj du sigter efter</Danish>
+			</Key>
+			<Key ID="STR_XEATT_desc_spec">
+				<Original>Spectate the selected player</Original>
+				<Italian>Specta il giocatore selezionato</Italian>
+				<French>Surveiller le joueur sélectionné</French>
+				<Danish>Overvåg den valgte spiller</Danish>
+			</Key>
+			<Key ID="STR_XEATT_desc_freeCam">
+				<Original>Give FreeCam Mode to the selected player</Original>
+				<Italian>Metti la FreeCam al giocatore selezionato</Italian>
+				<French>Donner le mode FreeCam au joueur sélectionné</French>
+				<Danish>Giv FreeCam mode til den valgte spiller</Danish>
+			</Key>
+			<Key ID="STR_XEATT_desc_xeSetVar">
+				<Original>Set the value in the values ​​field to the variable selected in the Variables ​​field</Original>
+				<Italian>Setta il valore dentro al campo Valori alla variabile selezionata nella campo Variabili</Italian>
+				<French>Définissez la valeur dans le champ des valeurs sur la variable sélectionnée dans le champ Variables</French>
+				<Danish>Sæt værdien i værdi feltet til den valgte variabel i variabel feltet</Danish>
+			</Key>
+			<Key ID="STR_XEATT_desc_marker">
+				<Original>Active Markers on the map</Original>
+				<Italian>Metti i marker sulla mappa di dove si trovano i giocatori al giocatore che hai selezionato</Italian>
+				<French>Marqueurs actifs sur la carte</French>
+				<Danish>Aktive markører på kortet</Danish>
+			</Key>
+			<Key ID="STR_XEATT_desc_esp">
+				<Original>Active ESP on the selected player</Original>
+				<Italian>Metti l'ESP al giocatore selezionato</Italian>
+				<French>ESP actif sur le Joueur sélectionné</French>
+				<Danish>Aktiver ESP på den valgte spiller</Danish>
+			</Key>
+			<Key ID="STR_XEATT_desc_BTracer">
+				<Original>Active BulletTracing on the selected player</Original>
+				<Italian>Tracci i colpi che spari</Italian>
+				<French>BulletTracing actif sur le joueur sélectionné</French>
+				<Danish>Aktiver skudsporing på den valgte spiller</Danish>
+			</Key>
+			<Key ID="STR_XEATT_desc_exitLobby">
+				<Original>Kick to lobby the selected player</Original>
+				<Italian>Fai tornare il lobby il giocatore selezionato</Italian>
+				<French>Kick dans le lobby sur le Joueur sélectionné</French>
+				<Danish>Smid den valgte spiller ud til lobbyen</Danish>
+			</Key>
+			<Key ID="STR_XEATT_name_kill">
+				<Original>Kill</Original>
+				<Italian>Uccidi</Italian>
+				<French>Tuer</French>
+				<Danish>Dræb</Danish>
+			</Key>
+			<Key ID="STR_XEATT_name_heal">
+				<Original>Heal</Original>
+				<Italian>Cura</Italian>
+				<French>Guérir</French>
+				<Danish>Helbrede</Danish>
+			</Key>
+			<Key ID="STR_XEATT_name_lifeRevive">
+				<Original>AL - Revive</Original>
+				<Italian>AL - Rianima</Italian>
+				<French>Tous - Guérir</French>
+				<Danish>AL - Genopliv</Danish>
+			</Key>
+			<Key ID="STR_XEATT_name_lifeManette">
+				<Original>AL - Unrestain</Original>
+				<Italian>AL - Smanetta</Italian>
+				<French>Tous - démenotter</French>
+				<Danish>AL - Løslad</Danish>
+			</Key>
+			<Key ID="STR_XEATT_name_tpToHim">
+				<Original>TP to him</Original>
+				<Italian>Teleportati</Italian>
+				<French>TP sur lui</French>
+				<Danish>Teleport til ham</Danish>
+			</Key>
+			<Key ID="STR_XEATT_name_toToYou">
+				<Original>Tp him to you</Original>
+				<Italian>Teleportalo</Italian>
+				<French>Tp le à toi</French>
+				<Danish>Teleport ham til dig</Danish>
+			</Key>
+			<Key ID="STR_XEATT_name_tpMap">
+				<Original>TPMAP</Original>
+				<Italian>TPMAP</Italian>
+				<French>TPMAP</French>
+				<Danish>TPMAP</Danish>
+			</Key>
+			<Key ID="STR_XEATT_name_god">
+				<Original>GODMODE</Original>
+				<Italian>GODMODE</Italian>
+				<French>GODMODE</French>
+				<Danish>Dødelighed</Danish>
+			</Key>
+			<Key ID="STR_XEATT_name_vrArsenal">
+				<Original>Virtual Arsenal</Original>
+				<Italian>Virtual Arsenal</Italian>
+				<French>Virtual Arsenal</French>
+				<Danish>Virtuel Arsenal</Danish>
+			</Key>
+			<Key ID="STR_XEATT_name_vrGarage">
+				<Original>Virtual Garage</Original>
+				<Italian>Virtual Garage</Italian>
+				<French>Virtual Garage</French>
+				<Danish>Virtuel Garage</Danish>  
+			</Key>
+			<Key ID="STR_XEATT_name_block">
+				<Original>Freeze</Original>
+				<Italian>Freeze</Italian>
+				<French>Freeze</French>
+				<Danish>Frys</Danish>
+			</Key>
+			<Key ID="STR_XEATT_name_info">
+				<Original>Info</Original>
+				<Italian>Informazioni</Italian>
+				<French>Information</French>
+				<Danish>Information</Danish>
+			</Key>
+			<Key ID="STR_XEATT_name_spawn">
+				<Original>Spawn</Original>
+				<Italian>Spawna</Italian>
+				<French>Spawn</French>
+				<Danish>Spawn</Danish>
+			</Key>
+			<Key ID="STR_XEATT_name_date">
+				<Original>Set time</Original>
+				<Italian>Imposta Ora</Italian>
+				<French>Régler le temps</French>
+				<Danish>Fastsæt tiden</Danish>
+			</Key>
+			<Key ID="STR_XEATT_name_fog">
+				<Original>Set fog</Original>
+				<Italian>Imposta Nebbia</Italian>
+				<French>Régler le brouillard</French>
+				<Danish>Sæt tåge</Danish>
+			</Key>
+			<Key ID="STR_XEATT_name_destroy">
+				<Original>Destroy</Original>
+				<Italian>Distruggi</Italian>
+				<French>Détruire</French>
+				<Danish>Ødelæg</Danish>
+			</Key>
+			<Key ID="STR_XEATT_name_repair">
+				<Original>Repair</Original>
+				<Italian>Ripara</Italian>
+				<French>Réparer</French>
+				<Danish>Reparer</Danish>
+			</Key>
+			<Key ID="STR_XEATT_name_spec">
+				<Original>Spectate</Original>
+				<Italian>Spettatore</Italian>
+				<French>Surveiller</French>
+				<Danish>Se på</Danish>
+			</Key>
+			<Key ID="STR_XEATT_name_freeCam">
+				<Original>FreeCam</Original>
+				<Italian>FreeCam</Italian>
+				<French>FreeCam</French>
+				<Danish>FreeCam</Danish>
+			</Key>
+			<Key ID="STR_XEATT_name_xeSetVar">
+				<Original>Set a variable</Original>
+				<Italian>Imposta Variabile</Italian>
+				<French>Définir une variable</French>
+				<Danish>Sæt en variabel</Danish>
+			</Key>
+			<Key ID="STR_XEATT_name_marker">
+				<Original>Marker</Original>
+				<Italian>Marker</Italian>
+				<French>Marker</French>
+				<Danish>Marker</Danish>
+			</Key>
+			<Key ID="STR_XEATT_name_esp">
+				<Original>ESP</Original>
+				<Italian>ESP</Italian>
+				<French>ESP</French>
+				<Danish>ESP</Danish>
+			</Key>
+			<Key ID="STR_XEATT_name_BTracer">
+				<Original>Bullet Tracing</Original>
+				<Italian>Colpi Tracianti</Italian>
+				<French>Bullet Traçante</French>
+				<Danish>Skud sporing</Danish>
+			</Key>
+			<Key ID="STR_XEATT_name_exitLobby">
+				<Original>Return to lobby</Original>
+				<Italian>Ritorna in lobby</Italian>
+				<French>Retourner au Lobby</French>
+				<Danish>Vend tilbage til lobbyen</Danish>
+			</Key>
+			<Key ID="STR_XEATT_name_pees">
+				<Original>Pees</Original>
+				<Italian>Piscia</Italian>
+				<French>Pisser</French>
+				<Danish>Tis</Danish>
+			</Key>
+			<Key ID="STR_XEATT_desc_pees">
+				<Original>Piss all those present on the server / mission</Original>
+				<Italian>Fai pisciare tutti quanti i presenti del server / missione</Italian>
+				<French>Pisser sur tous ceux qui sont présents sur le serveur / la mission</French>
+				<Danish>Få alle på serveren til at tisse</Danish>
+			</Key>
+			<Key ID="STR_XEATT_nome">
+				<Original>Name: %1</Original>
+				<Italian>Nome: $1</Italian>
+				<French>Nom: %1</French>
+				<Danish>Name: %1</Danish>
+			</Key>
+			<Key ID="STR_XEATT_InfoPlayer">
+				<Original>%1 %2 &lt;br /&gt; %3 &lt;br /&gt; %4 &lt;br /&gt;&lt;br /&gt; &lt;t size='1.6' color='#f45f42'&gt;The equipment was copied to clipboard, press CTRL+V in a note program to paste it.&lt;/t&gt;</Original>
+				<Italian>%1 %2 &lt;br /&gt; %3 &lt;br /&gt; %4 &lt;br /&gt;&lt;br /&gt; &lt;t size='1.6' color='#f45f42'&gt;L'Equipaggiamento è stato copiato negli appunti, premi CTRL+V in un programma di nota per incollarlo.&lt;/t&gt;</Italian>
+				<French>%1 %2 &lt;br /&gt; %3 &lt;br /&gt; %4 &lt;br /&gt;&lt;br /&gt; &lt;t size='1.6' color='#f45f42'&gt;L'équipement a été copié dans le presse-papiers, appuyez sur CTRL + V dans un programme de notes pour le coller.&lt;/t&gt;</French>
+				<Danish>%1 %2 &lt;br /&gt; 3% &lt;br /&gt; %4 &lt;br /&gt;&lt;br /&gt; &lt;t size='1.6' color='#f45f42'&gt;L'Udstyret er blevet kopieret til clipboardet, tryk CTRL+V i et note program for at indsætte det.&lt;/t&gt;</Danish>
+			</Key>
+			<Key ID="STR_XEATT_infos">
+				<Original>Name: %1 ~ Steam: %2 ~ UID: %3</Original>
+				<Italian>Nome: %1 ~ Steam: %2 ~ UID: %3</Italian>
+				<French>Nom: %1 ~ Steam: %2 ~ UID: %3</French>
+				<Danish>Name: %1 ~ Steam: %2 ~ UID: %3</Danish>
+			</Key>
+			<Key ID="STR_XEATT_tpmapTextDis">
+				<Original>%1 TP on map disabled</Original>
+				<Italian>%1 TP sulla mappa disattivato</Italian>
+				<French>%1 sur carte désactivé</French>
+				<Danish>%1 TP på kortet er blevet deaktiveret</Danish>
+			</Key>
+			<Key ID="STR_XEATT_Data">
+				<Original>%1 You must enter a value in the value field</Original>
+				<Italian>%1 Devi inserire un valore nel campo valori</Italian>
+				<French>%1 Vous devez entrer une valeur dans le champ de valeur</French>
+				<Danish>%1 Du skal indsætte en værdi i værdifeltet</Danish>
+			</Key>
+			<Key ID="STR_XEATT_ESPON">
+				<Original>%1 ESP ON &lt;br /&gt; &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;</Original>
+				<Italian>%1 ESP ON &lt;br /&gt; &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;</Italian>
+				<French>%1 ESP ON &lt;br /&gt; &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;</French>
+				<Danish>%1 ESP aktiveret &lt;br /&gt; &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;</Danish>
+			</Key>
+			<Key ID="STR_XEATT_ESPOFF">
+				<Original>%1 ESP OFF</Original>
+				<Italian>%1 ESP OFF</Italian>
+				<French>%1 ESP OFF</French>
+				<Danish>%1 ESP deaktiveret</Danish>
+			</Key>
+			<Key ID="STR_XEATT_esp">
+				<Original>%1 You've activated / deactivated ESP (&lt;t color='#42ebf4'&gt;%3&lt;/t&gt; meters) on &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;</Original>
+				<Italian>%1 Hai attivato / disattivato l'ESP (&lt;t color='#42ebf4'&gt;%3&lt;/t&gt; metri) su &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;</Italian>
+				<French>%1 Vous avez activé / désactivé ESP (&lt;t color='#42ebf4'&gt;%3&lt;/t&gt; mètres) on &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;</French>
+				<Danish>%1 Du har aktiveret / deaktiveret ESP (&lt;t color='#42ebf4'&gt;%3&lt;/t&gt; meter) på &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;</Danish>
+			</Key>
+			<Key ID="STR_XEATT_name_fakeCheaterDetected">
+				<Original>Fake Cheater Detected</Original>
+				<Italian>Fake Cheater Detected</Italian>
+				<French>Faux tricheur détecté</French>
+				<Danish>Fake Cheater Detected</Danish>
+			</Key>
+			<Key ID="STR_XEATT_name_xedom">
+				<Original>XEDOM</Original>
+				<Italian>XEDOM</Italian>
+				<French>XEDOM</French>
+				<Danish>XEDOM</Danish>
+			</Key>
+			<Key ID="STR_XEATT_name_boom">
+				<Original>BOOM</Original>
+				<Italian>BOOM</Italian>
+				<French>BOOM</French>
+				<Danish>BOOM</Danish>
+			</Key>
+			<Key ID="STR_XEATT_name_antiFreezeMess">
+				<Original>Anti Freeze</Original>
+				<Italian>Anti Freeze</Italian>
+				<French>Anti Freeze</French>
+				<Danish>Anti Frys</Danish>
+			</Key>
+			<Key ID="STR_XEATT_name_flyAll">
+				<Original>Fly All</Original>
+				<Italian>Fly All</Italian>
+				<French>Fly All</French>
+				<Danish>Fly All</Danish>
+			</Key>
+			<Key ID="STR_XEATT_name_goto">
+				<Original>Move NPC</Original>
+				<Italian>Muovi NPC</Italian>
+				<French>Déplacer NPC</French>
+				<Danish>Flyt NPC</Danish>
+			</Key>
+			<Key ID="STR_XEATT_desc_fakeCheaterDetected">
+				<Original>Makes a fake report for the selected player</Original>
+				<Italian>Fa apparire un messaggio fake di report del giocatore selezionato.</Italian>
+				<French>Fait un faux rapport pour le joueur sélectionné</French>
+				<Danish>Lav en falsk anmeldelse af den valgte spiller.</Danish>
+			</Key>
+			<Key ID="STR_XEATT_desc_xedom">
+				<Original>It puts you the loadout of the crazy xedom ;P</Original>
+				<Italian>Ti mette il loadout dello xedom pazzerello ;P</Italian>
+				<French>Il vous met l'équipement du fou xedom ;P</French>
+				<Danish>Det giver dig det vilde loadout af xedom ;P</Danish>
+			</Key>
+			<Key ID="STR_XEATT_desc_boom">
+				<Original>It destroys everything in the radius (that you put in the value field) of selected player</Original>
+				<Italian>Distrugge tutto nel raggio (che metti nel campo valori) del giocatore che hai scelto.</Italian>
+				<French>Il détruit tout dans le rayon (que vous mettez dans le champ de valeur) du joueur sélectionné</French>
+				<Danish>Det ødelægger alt i en radius af (det du har skrevet i værdi feltet) ved den valgte spiller</Danish>
+			</Key>
+			<Key ID="STR_XEATT_desc_antiFreezeMess">
+				<Original>If an admin freezes you, this function automatically defrosts you and warns you.</Original>
+				<Italian>Se un admin ti congela, questa funzione ti scongela automaticamente, e ti avvisa.</Italian>
+				<French>Si un administrateur vous Frezze, cette fonction vous déFrezze automatiquement et vous avertit.</French>
+				<Danish>Hvis en admin fryser dig, vil denne funktion vil automatisk optø dig og advare dig.</Danish>
+			</Key>
+			<Key ID="STR_XEATT_desc_flyAll">
+				<Original>Teleports all the players 1000 meters above the ground, and gives them a parachute.</Original>
+				<Italian>Teleporta tutti i giocatori a 1000 metri da terra, e gli da un paracadute.</Italian>
+				<French>Téléporte tous les joueurs 1000 mètres au-dessus du sol, et leurs donner un parachute.</French>
+				<Danish>Teleportere alle spillere 1000 meter over jorden, og giver dem en faldskærm.</Danish>
+			</Key>
+			<Key ID="STR_XEATT_desc_goto">
+				<Original>Give life to all the Bots / NPCs in the map and make them go to a point.</Original>
+				<Italian>Da vita a tutti i Bot/NPC in mappa e li fa andare in un punto.</Italian>
+				<French>Donnez vie à tous les Bots / PNJ de la carte et faites-les aller à un point.</French>
+				<Danish>Giver liv til alle bots / NPCs på kortet og får dem til at gå til et punkt.</Danish>
+			</Key>
+			<Key ID="STR_XEATT_PL">
+				<Original>This is the online player list</Original>
+				<Italian>Questa è la lista giocatori/bot connessi nel server, alcune azioni hanno bisogno che selezioni un giocatore</Italian>
+				<French>Ceci est la liste des joueurs en ligne</French>
+				<Danish>Dette er en liste over online spillere</Danish>
+			</Key>
+			<Key ID="STR_XEATT_AL">
+				<Original>This is the actions list</Original>
+				<Italian>Queste sono le azioni che puoi utilizzare</Italian>
+				<French>Ceci est la liste des actions</French>
+				<Danish>Dette er en liste over handlinger</Danish>
+			</Key>
+			<Key ID="STR_XEATT_EXEC">
+				<Original>Execute a selected action</Original>
+				<Italian>"Esegui l'azione selezionata"</Italian>
+				<French>Exécuter une action sélectionnée</French>
+				<Danish>Udfør en valgte handling</Danish>
+			</Key>
+			<Key ID="STR_XEATT_CHIUDI">
+				<Original>Close</Original>
+				<Italian>Chiudi</Italian>
+				<French>Fermer</French>
+				<Danish>Luk</Danish>
+			</Key>
+			<Key ID="STR_XEATT_VALORET">
+				<Original>Hier you can give value to some actions</Original>
+				<Italian>Alcune azioni hanno bisogno di un numero, nome, classe, ora ecc.</Italian>
+				<French>vous pouvez donner de la valeur à certaines actions</French>
+				<Danish>Her kan du give en værdi til nogle af handlingerne</Danish>
+			</Key>
+			<Key ID="STR_XEATT_VARIABILIT">
+				<Original>Hier you can select variable to some actions</Original>
+				<Italian>Alcune azioni hanno bisogno di una variabile da modificare o da utilizzare</Italian>
+				<French>vous pouvez sélectionner une variable pour certaines actions</French>
+				<Danish>Her kan du vælge variablen til nogle af handlingerne</Danish>
+			</Key>
+			<Key ID="STR_XEATT_IMPOSTAZIONIT">
+				<Original>Settings</Original>
+				<Italian>Impostazioni</Italian>
+				<French>Paramètres</French>
+				<Danish>Indstillinger</Danish>
+			</Key>
+			<Key ID="STR_XEATT_antiFreezeActive">
+				<Original>%1 L'AntiFreeze is now activated on &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;</Original>
+				<Italian>%1 L'AntiFreeze è stato attivato su &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;</Italian>
+				<French>%1 L'AntiFreeze est maintenant activé sur &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;</French>
+				<Danish>%1 Anti-frys er nu aktiveret på &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;</Danish>
+			</Key>
+			<Key ID="STR_XEATT_kill">
+				<Original>%1 You've killed &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;</Original>
+				<Italian>%1 Hai ucciso &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;</Italian>
+				<French>%1 Tu as tué &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;</French>
+				<Danish>%1 Du har dræbt &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;</Danish>
+			</Key>
+			<Key ID="STR_XEATT_heal">
+				<Original>%1 You've cured &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;</Original>
+				<Italian>%1 Hai curato &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;</Italian>
+				<French>%1 Vous avez guéri &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;</French>
+				<Danish>%1 Du har helbredt &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;</Danish>
+			</Key>
+			<Key ID="STR_XEATT_tpToHim">
+				<Original>%1 You teleported by &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;</Original>
+				<Italian>%1 Ti sei teleportato da &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;</Italian>
+				<French>%1 Vous vous êtes téléporté par &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;</French>
+				<Danish>%1 Du har teleportet &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;</Danish>
+			</Key>
+			<Key ID="STR_XEATT_tpToYou">
+				<Original>%1 You teleported &lt;t color='#42ebf4'&gt;%2&lt;/t&gt; to you</Original>
+				<Italian>%1 Hai teleportato &lt;t color='#42ebf4'&gt;%2&lt;/t&gt; da te</Italian>
+				<French>%1 Vous vous êtes téléporté &lt;t color='#42ebf4'&gt;%2&lt;/t&gt; à toi</French>
+				<Danish>%1 Du har teleportet &lt;t color='#42ebf4'&gt;%2&lt;/t&gt; til dig</Danish>
+			</Key>
+			<Key ID="STR_XEATT_tpMap">
+				<Original>%1 You've activated the Teleport on Map to &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;</Original>
+				<Italian>%1 Hai attivato il Teletrasporto in Mappa a &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;</Italian>
+				<French>%1 Vous avez activé le téléport sur la carte pour &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;</French>
+				<Danish>%1 Du har aktiveret teleport on map muligheden for &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;</Danish>
+			</Key>
+			<Key ID="STR_XEATT_vrArsenal">
+				<Original>%1 You've opened the virtual arsenal at &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;</Original>
+				<Italian>%1 Hai aperto l'arsenale virtuale a &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;</Italian>
+				<French>%1 Vous avez ouvert l'arsenal virtuel à &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;</French>
+				<Danish>%1 Du har åbnet den virtuelle arsenal ved&lt;t color='#42ebf4'&gt;%2&lt;/t&gt; </Danish>
+			</Key>
+			<Key ID="STR_XEATT_vrGarage">
+				<Original>%1 You've opened the virtual garage at &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;</Original>
+				<Italian>%1 Hai aperto il garage virtuale a &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;</Italian>
+				<French>%1 Vous avez ouvert le garage virtuel à &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;</French>
+				<Danish>%1 Du har åbnet den virtuelle garage ved&lt;t color='#42ebf4'&gt;%2&lt;/t&gt; </Danish>
+			</Key>
+			<Key ID="STR_XEATT_block">
+				<Original>%1 You've Freezed / Unfrozen &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;</Original>
+				<Italian>%1 Hai Congelato / Scongelato &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;</Italian>
+				<French>%1 Vous avez Frezze / DéFrezze &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;</French>
+				<Danish>%1 Du har fanget / befriet &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;</Danish>
+			</Key>
+			<Key ID="STR_XEATT_destroy">
+				<Original>%1 You've destroyed -> &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;</Original>
+				<Italian>%1 Hai distrutto -> &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;</Italian>
+				<French>%1 Vous avez détruit -> &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;</French>
+				<Danish>%1 Du har ødelagt -> &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;</Danish>
+			</Key>
+			<Key ID="STR_XEATT_repair">
+				<Original>%1 You've repaired -> &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;</Original>
+				<Italian>%1 Hai riparato -> &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;</Italian>
+				<French>%1 Vous avez réparé -> &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;</French>
+				<Danish>%1 Du har repareret -> &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;</Danish>
+			</Key>
+			<Key ID="STR_XEATT_fog">
+				<Original>%1 You've activated / deactivated the fog on &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;</Original>
+				<Italian>%1 Hai attivato / disattivato la nebbia su &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;</Italian>
+				<French>%1 Vous avez activé / désactivé le brouillard &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;</French>
+				<Danish>%1 Du har aktiveret / deaktiveret tågen på &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;</Danish>
+			</Key>
+			<Key ID="STR_XEATT_marker">
+				<Original>%1 You've activated / deactivated Markers on Map at &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;</Original>
+				<Italian>%1 Hai attivato / disattivato i marker in mappa a &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;</Italian>
+				<French>%1 Vous avez activé / désactivé les marqueurs sur la carte à &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;</French>
+				<Danish>%1 Du har aktiveret / deaktiveret markører på kortet ved &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;</Danish>
+			</Key>
+			<Key ID="STR_XEATT_freeCam">
+				<Original>%1 You've activated the FreeCam on &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;</Original>
+				<Italian>%1 Hai attivato la FreeCam su &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;</Italian>
+				<French>%1 Vous avez activé la FreeCam sur &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;</French>
+				<Danish>%1 Du har aktiveret FreeCam mode på &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;</Danish>
+			</Key>
+			<Key ID="STR_XEATT_exitLobby">
+				<Original>%1 You've brought out &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;</Original>
+				<Italian>%1 Hai fatto uscire &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;</Italian>
+				<French>%1 Vous avez sorti &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;</French>
+				<Danish>%1 Du forlod serveren&lt;t color='#42ebf4'&gt;%&lt;/t&gt;</Danish>
+			</Key>
+			<Key ID="STR_XEATT_lifeRevive">
+				<Original>%1 You've revived &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;</Original>
+				<Italian>%1 Hai rianimato &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;</Italian>
+				<French>%1 Vous avez revive &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;</French>
+				<Danish>%1 Du har helbredt &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;</Danish>
+			</Key>
+			<Key ID="STR_XEATT_lifeManette">
+				<Original>%1 You've removed the handcuffs at &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;</Original>
+				<Italian>%1 Hai tolte le manette a &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;</Italian>
+				<French>%1 Vous avez retiré les menottes à &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;</French>
+				<Danish>%1 Du har fjernet håndjernene på &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;</Danish>
+			</Key>
+			<Key ID="STR_XEATT_pees">
+				<Original>%1 Now everyone in the map is pissing ;P</Original>
+				<Italian>%1 Ora tutti quanti in mappa stanno pisciando ;P</Italian>
+				<French>%1 Maintenant tout le monde sur la carte pisse ;P</French>
+				<Danish>%1 Nu tisser alle der er på serveren ;P</Danish>
+			</Key>
+			<Key ID="STR_XEATT_goto">
+				<Original>%1 Now all the BOTs / NPCs in the map are running towards the 0 point of the map ;P</Original>
+				<Italian>%1 Ora tutti i BOT / NPC in mappa corrono verso il bunto 0 della mappa ;P</Italian>
+				<French>%1 Maintenant, tous les BOT / NPC de la carte vont vers le point 0 de la carte ;P</French>
+				<Danish>%1 Nu løber alle bots / NPCs i mod kortets nulpunkt ;P</Danish>
+			</Key>
+			<Key ID="STR_XEATT_boom">
+				<Original>%1 Everything has exploded within a radius of about &lt;t color='#42ebf4'&gt;%3&lt;/t&gt; meters around the player &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;</Original>
+				<Italian>%1 Nel raggio di &lt;t color='#42ebf4'&gt;%3&lt;/t&gt; metri intorno al giocatore &lt;t color='#42ebf4'&gt;%2&lt;/t&gt; è esploso tutto</Italian>
+				<French>%1 Tout a explosé dans un rayon d'environ &lt;t color='#42ebf4'&gt;%3&lt;/t&gt; mètres autour du joueur &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;</French>
+				<Danish>%1 Alt indenfor en radius af &lt; color='#42ebf4'&gt;%3&lt;/t&gt; meter omkring den valgte spiller, er blevet eksploderet &lt;t color='#42ebf4'&gt;%2&lt;/t&gt; </Danish>
+			</Key>
+			<Key ID="STR_XEATT_flyAll">
+				<Original>%1 Now everyone has been teleported to 1000 meters high with a parachute</Original>
+				<Italian>%1 Ora tutti sono stati teleportati a 1000 metri d'altezza con un paracadute</Italian>
+				<French>%1 Maintenant, tout le monde a été téléporté à 1000 mètres de haut avec un parachute</French>
+				<Danish>%1 Alle er nu blevet teleportet til 1000 meter over jorden med en faldskærm</Danish>
+			</Key>
+			<Key ID="STR_XEATT_xedom">
+				<Original>%1 You've given the equipment and you run the admin functions on &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;</Original>
+				<Italian>%1 Hai datto l'equipaggiamento e hai esecuto delle funzioni da admin su &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;</Italian>
+				<French>%1 Vous avez donné l'équipement et vous exécutez les fonctions d'administration sur &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;</French>
+				<Danish>%1 Du har givet udstyret og admin funktionerne til &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;</Danish>
+			</Key>
+			<Key ID="STR_XEATT_kickAllON">
+				<Original>%1 You've activated the function that kicks everyone from the server except you</Original>
+				<Italian>%1 Hai attivato la funzione che caccia tutti dal server tranne te</Italian>
+				<French>%1 Vous avez activé la fonction qui kick tout le monde du serveur sauf vous</French>
+				<Danish>%1 Du har aktiveret funktionen der smider alle ud af serveren undtagen dig</Danish>
+			</Key>
+			<Key ID="STR_XEATT_kickAllOFF">
+				<Original>%1 You've disabled the function that kicks everyone from the server except you</Original>
+				<Italian>%1 Hai disattivato la funzione che caccia tutti dal server tranne te</Italian>
+				<French>%1 Vous avez désactivé la fonction qui kick tout le monde du serveur sauf vous</French>
+				<Danish>%1 Du har deaktiveret funktionen der smider alle ud af serveren undtagen dig</Danish>
+			</Key>
+			<Key ID="STR_XEATT_xeSetVar">
+				<Original>%1 You've set &lt;t color='#42ebf4'&gt;%3 = %2&lt;/t&gt; on &lt;t color='#42ebf4'&gt;%4&lt;/t&gt;</Original>
+				<Italian>%1 Hai settato &lt;t color='#42ebf4'&gt;%3 = %2&lt;/t&gt; su &lt;t color='#42ebf4'&gt;%4&lt;/t&gt;</Italian>
+				<French>%1 Vous avez défini &lt;t color='#42ebf4'&gt;%3 = %2&lt;/t&gt; on &lt;t color='#42ebf4'&gt;%4&lt;/t&gt;</French>
+				<Danish>%1 Du har sat &lt;t color='#42ebf4'&gt;%3 = %2&lt;/t&gt; på &lt;t color='#42ebf4'&gt;%4&lt;/t&gt;</Danish>
+			</Key>
+			<Key ID="STR_XEATT_BTracerON">
+				<Original>%1 You've activated Bullet Tracking</Original>
+				<Italian>%1 Hai attivato i colpi traccianti</Italian>
+				<French>%1 Vous avez activé le Bullet Tracking</French>
+				<Danish>%1 Du har aktiveret skudsporing</Danish>
+			</Key>
+			<Key ID="STR_XEATT_BTracerOFF">
+				<Original>%1 You've deactivated Bullet Tracing</Original>
+				<Italian>%1 Hai disattivato i colpi traccianti</Italian>
+				<French>%1 Vous avez désactivé le Bullet Tracking</French>
+				<Danish>%1 Du har deaktiveret skudsporing</Danish>
+			</Key>
+			<Key ID="STR_XEATT_dateTime">
+				<Original>%1 You've setted &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;</Original>
+				<Italian>%1 Hai impostato &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;</Italian>
+				<French>%1 Vous avez mis en place &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;</French>
+				<Danish>%1 Du har sat &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;</Danish>
+			</Key>
+			<Key ID="STR_XEATT_name_kickAll">
+				<Original>KickAll</Original>
+				<Italian>Caccia tutti</Italian>
+				<French>Kick All</French>
+				<Danish>Smid alle ud</Danish>
+			</Key>
+			<Key ID="STR_XEATT_desc_kickAll">
+				<Original>Kill all players of the game except you</Original>
+				<Italian>Caccia tutti dalla partita tranne te</Italian>
+				<French>Tuez tous les joueurs du serveur, sauf vous</French>
+				<Danish>Dræb alle spillere undtagen dig</Danish>
+			</Key>
+			<Key ID="STR_XEATT_name_hint">
+				<Original>Message</Original>
+				<Italian>Messaggio</Italian>
+				<French>Message</French>
+				<Danish>Send en besked</Danish>
+			</Key>
+			<Key ID="STR_XEATT_desc_hint">
+				<Original>Sent a message to selected player</Original>
+				<Italian>Invia un messaggio al giocatore selezionato</Italian>
+				<French>Envoyé un message au joueur sélectionné</French>
+				<Danish>Send en besked til den valgte spiller</Danish>
+			</Key>
+			<Key ID="STR_XEATT_hint">
+				<Original>%1 Sent a message to &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;: &lt;t color='#f4e242'&gt;%3&lt;/t&gt;</Original>
+				<Italian>%1 Hai inviato un messaggio a &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;: &lt;t color='#f4e242'&gt;%3&lt;/t&gt;</Italian>
+				<French>%1 Envoyé un message à &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;: &lt;t color='#f4e242'&gt;%3&lt;/t&gt;</French>
+				<Danish>%1 Du har sendt en besked til &lt;t color='#42ebf4'&gt;%2&lt;/t&gt; &lt;t color='#f4e242'&gt;%3&lt;/t&gt;</Danish>
+			</Key>
+			<Key ID="STR_XEATT_name_zeus">
+				<Original>Zeus</Original>
+				<Italian>Zeus</Italian>
+				<French>Zeus</French>
+				<Danish>Zeus</Danish>
+			</Key>
+			<Key ID="STR_XEATT_desc_zeus">
+				<Original>Become Zeus</Original>
+				<Italian>Diventa Zeus</Italian>
+				<French>Devenez Zeus</French>
+				<Danish>Bliv Zeus</Danish>
+			</Key>
+			<Key ID="STR_XEATT_VAR_AL_Banca1">
+				<Original>AltisLife - Bank 1</Original>
+				<Italian>AltisLife - Banca 1</Italian>
+				<French>AltisLife - Banque 1</French>
+				<Danish>AltisLife - Bank 1</Danish>
+			</Key>
+			<Key ID="STR_XEATT_VAR_AL_Banca2">
+				<Original>AltisLife - Bank 2</Original>
+				<Italian>AltisLife - Banca 2</Italian>
+				<French>AltisLife - Banque 2</French>
+				<Danish>AltisLife - Bank 2</Danish>
+			</Key>
+			<Key ID="STR_XEATT_VAR_AL_Contanti">
+				<Original>AltisLife - Cash</Original>
+				<Italian>AltisLife - Contanti</Italian>
+				<French></French>
+				<Danish>AltisLife - Kontanter</Danish>
+			</Key>
+			<Key ID="STR_XEATT_VAR_AL_Sete">
+				<Original>AltisLife - Thirst</Original>
+				<Italian>AltisLife - Sete</Italian>
+				<French>AltisLife - soif</French>
+				<Danish>AltisLife - Tørst</Danish>
+			</Key>
+			<Key ID="STR_XEATT_VAR_AL_Fame">
+				<Original>AltisLife - Hunger</Original>
+				<Italian>AltisLife - Fame</Italian>
+				<French>AltisLife - Faim</French>
+				<Danish>AltisLife - Sult</Danish>
+			</Key>
+			<Key ID="STR_XEATT_name_remove">
+				<Original>Remove</Original>
+				<Italian>Rimuovi</Italian>
+				<French>Retirer</French>
+				<Danish>Fjern</Danish>
+			</Key>
+			<Key ID="STR_XEATT_desc_remove">
+				<Original>Remove the object thet you are aiming for</Original>
+				<Italian>Rimuovi l'ogetto che stai mirando</Italian>
+				<French>Retirez l'objet que vous visez</French>
+				<Danish>Fjern det objekt du siger på</Danish>
+			</Key>
+			<Key ID="STR_XEATT_name_aannews">
+				<Original>Custom AAN News</Original>
+				<Italian>Notizie AAN personalizzate</Italian>
+				<French>Nouvelles AAN personnalisées</French>
+				<Danish>Specifik AAN News</Danish>
+			</Key>
+			<Key ID="STR_XEATT_desc_aannews">
+				<Original>Send an AAN News to selected player [ write title and description, separate it with --- , exemple: xedom --- is a good boy :) ]</Original>
+				<Italian>Invia una notizia AAN al player selezionato [ scrivi titolo e descrizione, separati da --- , esempio: xedom --- è un ragazzo bravo :) ]</Italian>
+				<French>Envoyer une nouvelle AAN au joueur sélectionné [ écrire le titre et la description, le séparer avec --- , exemple: xedom --- est un bon garçon :) ]</French>
+				<Danish>Send en AAN News til den valgte spiller [ Skriv titel og beskrivelse, seperat det med --- , eksempel: xedom --- is a good boy :) ]</Danish>
+			</Key>
         </Container>
     </Package>
 </Project>

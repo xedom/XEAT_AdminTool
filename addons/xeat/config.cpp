@@ -5,7 +5,7 @@ class CfgPatches {
 		worlds[] = {};
 		requiredAddons[] = {};
 		requiredVersion = 0.1;
-		author[] = {"XEDOM"};
-		authorUrl = "http://steamcommunity.com/id/xedom/";
+		author[] = {"ALEZM"};
+		authorUrl = "http://steamcommunity.com/id/alezm/";
 	};
 };

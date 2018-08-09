@@ -9,3 +9,9 @@ class CfgPatches {
 		authorUrl = "http://steamcommunity.com/id/xedom/";
 	};
 };
+
+#include "gui\defines.hpp"
+#include "gui\main.hpp"
+#include "gui\settings.hpp"
+#include "cfgFunctions.hpp"
+

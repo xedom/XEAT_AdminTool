@@ -98,6 +98,222 @@
 				<French>%1 Pour la téléportation, vous devez appuyer sur &lt;t color='#f4e242'&gt;ALT&lt;/t&gt; et cliquez &lt;t color='#f4e242'&gt;sur le bouton gauche de la souris&lt;/t&gt; sur un point.</French>
 				<Danish>%1 For at teleportere rundt på kortet skal du trykke &lt;t color='#f4e242'&gt;ALT&lt;/t&gt; og tryk &lt;t color='#f4e242'&gt;på venstre musseknap&lt;/t&gt; på ét punkt.</Danish>
 			</Key>
+			<Key ID="STR_XEATT_name_kill">
+				<Original>Kill</Original>
+				<Italian>Uccidi</Italian>
+				<French>Tuer</French>
+				<Danish>Dræb</Danish>
+			</Key>
+			<Key ID="STR_XEATT_name_heal">
+				<Original>Heal</Original>
+				<Italian>Cura</Italian>
+				<French>Guérir</French>
+				<Danish>Helbrede</Danish>
+			</Key>
+			<Key ID="STR_XEATT_name_lifeRevive">
+				<Original>AL - Revive</Original>
+				<Italian>AL - Rianima</Italian>
+				<French>Tous - Guérir</French>
+				<Danish>AL - Genopliv</Danish>
+			</Key>
+			<Key ID="STR_XEATT_name_lifeManette">
+				<Original>AL - Unrestain</Original>
+				<Italian>AL - Smanetta</Italian>
+				<French>Tous - démenotter</French>
+				<Danish>AL - Løslad</Danish>
+			</Key>
+			<Key ID="STR_XEATT_name_tpToHim">
+				<Original>TP to him</Original>
+				<Italian>Teleportati</Italian>
+				<French>TP sur lui</French>
+				<Danish>Teleport til ham</Danish>
+			</Key>
+			<Key ID="STR_XEATT_name_tpToYou">
+				<Original>Tp him to you</Original>
+				<Italian>Teleportalo</Italian>
+				<French>Tp le à toi</French>
+				<Danish>Teleport ham til dig</Danish>
+			</Key>
+			<Key ID="STR_XEATT_name_tpMap">
+				<Original>TPMAP</Original>
+				<Italian>TPMAP</Italian>
+				<French>TPMAP</French>
+				<Danish>TPMAP</Danish>
+			</Key>
+			<Key ID="STR_XEATT_name_god">
+				<Original>GODMODE</Original>
+				<Italian>GODMODE</Italian>
+				<French>GODMODE</French>
+				<Danish>Dødelighed</Danish>
+			</Key>
+			<Key ID="STR_XEATT_name_vrArsenal">
+				<Original>Virtual Arsenal</Original>
+				<Italian>Virtual Arsenal</Italian>
+				<French>Virtual Arsenal</French>
+				<Danish>Virtuel Arsenal</Danish>
+			</Key>
+			<Key ID="STR_XEATT_name_vrGarage">
+				<Original>Virtual Garage</Original>
+				<Italian>Virtual Garage</Italian>
+				<French>Virtual Garage</French>
+				<Danish>Virtuel Garage</Danish>  
+			</Key>
+			<Key ID="STR_XEATT_name_block">
+				<Original>Freeze</Original>
+				<Italian>Freeze</Italian>
+				<French>Freeze</French>
+				<Danish>Frys</Danish>
+			</Key>
+			<Key ID="STR_XEATT_name_info">
+				<Original>Info</Original>
+				<Italian>Informazioni</Italian>
+				<French>Information</French>
+				<Danish>Information</Danish>
+			</Key>
+			<Key ID="STR_XEATT_name_spawn">
+				<Original>Spawn</Original>
+				<Italian>Spawna</Italian>
+				<French>Spawn</French>
+				<Danish>Spawn</Danish>
+			</Key>
+			<Key ID="STR_XEATT_name_date">
+				<Original>Set time</Original>
+				<Italian>Imposta Ora</Italian>
+				<French>Régler le temps</French>
+				<Danish>Fastsæt tiden</Danish>
+			</Key>
+			<Key ID="STR_XEATT_name_fog">
+				<Original>Set fog</Original>
+				<Italian>Imposta Nebbia</Italian>
+				<French>Régler le brouillard</French>
+				<Danish>Sæt tåge</Danish>
+			</Key>
+			<Key ID="STR_XEATT_name_destroy">
+				<Original>Destroy</Original>
+				<Italian>Distruggi</Italian>
+				<French>Détruire</French>
+				<Danish>Ødelæg</Danish>
+			</Key>
+			<Key ID="STR_XEATT_name_repair">
+				<Original>Repair</Original>
+				<Italian>Ripara</Italian>
+				<French>Réparer</French>
+				<Danish>Reparer</Danish>
+			</Key>
+			<Key ID="STR_XEATT_name_spec">
+				<Original>Spectate</Original>
+				<Italian>Spettatore</Italian>
+				<French>Surveiller</French>
+				<Danish>Se på</Danish>
+			</Key>
+			<Key ID="STR_XEATT_name_freeCam">
+				<Original>FreeCam</Original>
+				<Italian>FreeCam</Italian>
+				<French>FreeCam</French>
+				<Danish>FreeCam</Danish>
+			</Key>
+			<Key ID="STR_XEATT_name_xeSetVar">
+				<Original>Set a variable</Original>
+				<Italian>Imposta Variabile</Italian>
+				<French>Définir une variable</French>
+				<Danish>Sæt en variabel</Danish>
+			</Key>
+			<Key ID="STR_XEATT_name_marker">
+				<Original>Marker</Original>
+				<Italian>Marker</Italian>
+				<French>Marker</French>
+				<Danish>Marker</Danish>
+			</Key>
+			<Key ID="STR_XEATT_name_esp">
+				<Original>ESP</Original>
+				<Italian>ESP</Italian>
+				<French>ESP</French>
+				<Danish>ESP</Danish>
+			</Key>
+			<Key ID="STR_XEATT_name_BTracer">
+				<Original>Bullet Tracing</Original>
+				<Italian>Colpi Tracianti</Italian>
+				<French>Bullet Traçante</French>
+				<Danish>Skud sporing</Danish>
+			</Key>
+			<Key ID="STR_XEATT_name_exitLobby">
+				<Original>Return to lobby</Original>
+				<Italian>Ritorna in lobby</Italian>
+				<French>Retourner au Lobby</French>
+				<Danish>Vend tilbage til lobbyen</Danish>
+			</Key>
+			<Key ID="STR_XEATT_name_pees">
+				<Original>Pees</Original>
+				<Italian>Piscia</Italian>
+				<French>Pisser</French>
+				<Danish>Tis</Danish>
+			</Key>
+			<Key ID="STR_XEATT_name_fakeCheaterDetected">
+				<Original>Fake Cheater Detected</Original>
+				<Italian>Fake Cheater Detected</Italian>
+				<French>Faux tricheur détecté</French>
+				<Danish>Fake Cheater Detected</Danish>
+			</Key>
+			<Key ID="STR_XEATT_name_xedom">
+				<Original>XEDOM</Original>
+				<Italian>XEDOM</Italian>
+				<French>XEDOM</French>
+				<Danish>XEDOM</Danish>
+			</Key>
+			<Key ID="STR_XEATT_name_boom">
+				<Original>BOOM</Original>
+				<Italian>BOOM</Italian>
+				<French>BOOM</French>
+				<Danish>BOOM</Danish>
+			</Key>
+			<Key ID="STR_XEATT_name_antiFreezeMess">
+				<Original>Anti Freeze</Original>
+				<Italian>Anti Freeze</Italian>
+				<French>Anti Freeze</French>
+				<Danish>Anti Frys</Danish>
+			</Key>
+			<Key ID="STR_XEATT_name_flyAll">
+				<Original>Fly All</Original>
+				<Italian>Fly All</Italian>
+				<French>Fly All</French>
+				<Danish>Fly All</Danish>
+			</Key>
+			<Key ID="STR_XEATT_name_goto">
+				<Original>Move NPC</Original>
+				<Italian>Muovi NPC</Italian>
+				<French>Déplacer NPC</French>
+				<Danish>Flyt NPC</Danish>
+			</Key>
+			<Key ID="STR_XEATT_name_hint">
+				<Original>Message</Original>
+				<Italian>Messaggio</Italian>
+				<French>Message</French>
+				<Danish>Send en besked</Danish>
+			</Key>
+			<Key ID="STR_XEATT_name_zeus">
+				<Original>Zeus</Original>
+				<Italian>Zeus</Italian>
+				<French>Zeus</French>
+				<Danish>Zeus</Danish>
+			</Key>
+			<Key ID="STR_XEATT_name_remove">
+				<Original>Remove</Original>
+				<Italian>Rimuovi</Italian>
+				<French>Retirer</French>
+				<Danish>Fjern</Danish>
+			</Key>
+			<Key ID="STR_XEATT_name_aannews">
+				<Original>Custom AAN News</Original>
+				<Italian>Notizie AAN personalizzate</Italian>
+				<French>Nouvelles AAN personnalisées</French>
+				<Danish>Specifik AAN News</Danish>
+			</Key>
+			<Key ID="STR_XEATT_name_kickAll">
+				<Original>KickAll</Original>
+				<Italian>Caccia tutti</Italian>
+				<French>Kick All</French>
+				<Danish>Smid alle ud</Danish>
+			</Key>
 			<Key ID="STR_XEATT_desc_kill">
 				<Original>Select a player to kill him</Original>
 				<Italian>Seleziona il giocatore da uccidere</Italian>
@@ -242,161 +458,77 @@
 				<French>Kick dans le lobby sur le Joueur sélectionné</French>
 				<Danish>Smid den valgte spiller ud til lobbyen</Danish>
 			</Key>
-			<Key ID="STR_XEATT_name_kill">
-				<Original>Kill</Original>
-				<Italian>Uccidi</Italian>
-				<French>Tuer</French>
-				<Danish>Dræb</Danish>
-			</Key>
-			<Key ID="STR_XEATT_name_heal">
-				<Original>Heal</Original>
-				<Italian>Cura</Italian>
-				<French>Guérir</French>
-				<Danish>Helbrede</Danish>
-			</Key>
-			<Key ID="STR_XEATT_name_lifeRevive">
-				<Original>AL - Revive</Original>
-				<Italian>AL - Rianima</Italian>
-				<French>Tous - Guérir</French>
-				<Danish>AL - Genopliv</Danish>
-			</Key>
-			<Key ID="STR_XEATT_name_lifeManette">
-				<Original>AL - Unrestain</Original>
-				<Italian>AL - Smanetta</Italian>
-				<French>Tous - démenotter</French>
-				<Danish>AL - Løslad</Danish>
-			</Key>
-			<Key ID="STR_XEATT_name_tpToHim">
-				<Original>TP to him</Original>
-				<Italian>Teleportati</Italian>
-				<French>TP sur lui</French>
-				<Danish>Teleport til ham</Danish>
-			</Key>
-			<Key ID="STR_XEATT_name_toToYou">
-				<Original>Tp him to you</Original>
-				<Italian>Teleportalo</Italian>
-				<French>Tp le à toi</French>
-				<Danish>Teleport ham til dig</Danish>
-			</Key>
-			<Key ID="STR_XEATT_name_tpMap">
-				<Original>TPMAP</Original>
-				<Italian>TPMAP</Italian>
-				<French>TPMAP</French>
-				<Danish>TPMAP</Danish>
-			</Key>
-			<Key ID="STR_XEATT_name_god">
-				<Original>GODMODE</Original>
-				<Italian>GODMODE</Italian>
-				<French>GODMODE</French>
-				<Danish>Dødelighed</Danish>
-			</Key>
-			<Key ID="STR_XEATT_name_vrArsenal">
-				<Original>Virtual Arsenal</Original>
-				<Italian>Virtual Arsenal</Italian>
-				<French>Virtual Arsenal</French>
-				<Danish>Virtuel Arsenal</Danish>
-			</Key>
-			<Key ID="STR_XEATT_name_vrGarage">
-				<Original>Virtual Garage</Original>
-				<Italian>Virtual Garage</Italian>
-				<French>Virtual Garage</French>
-				<Danish>Virtuel Garage</Danish>  
-			</Key>
-			<Key ID="STR_XEATT_name_block">
-				<Original>Freeze</Original>
-				<Italian>Freeze</Italian>
-				<French>Freeze</French>
-				<Danish>Frys</Danish>
-			</Key>
-			<Key ID="STR_XEATT_name_info">
-				<Original>Info</Original>
-				<Italian>Informazioni</Italian>
-				<French>Information</French>
-				<Danish>Information</Danish>
-			</Key>
-			<Key ID="STR_XEATT_name_spawn">
-				<Original>Spawn</Original>
-				<Italian>Spawna</Italian>
-				<French>Spawn</French>
-				<Danish>Spawn</Danish>
-			</Key>
-			<Key ID="STR_XEATT_name_date">
-				<Original>Set time</Original>
-				<Italian>Imposta Ora</Italian>
-				<French>Régler le temps</French>
-				<Danish>Fastsæt tiden</Danish>
-			</Key>
-			<Key ID="STR_XEATT_name_fog">
-				<Original>Set fog</Original>
-				<Italian>Imposta Nebbia</Italian>
-				<French>Régler le brouillard</French>
-				<Danish>Sæt tåge</Danish>
-			</Key>
-			<Key ID="STR_XEATT_name_destroy">
-				<Original>Destroy</Original>
-				<Italian>Distruggi</Italian>
-				<French>Détruire</French>
-				<Danish>Ødelæg</Danish>
-			</Key>
-			<Key ID="STR_XEATT_name_repair">
-				<Original>Repair</Original>
-				<Italian>Ripara</Italian>
-				<French>Réparer</French>
-				<Danish>Reparer</Danish>
-			</Key>
-			<Key ID="STR_XEATT_name_spec">
-				<Original>Spectate</Original>
-				<Italian>Spettatore</Italian>
-				<French>Surveiller</French>
-				<Danish>Se på</Danish>
-			</Key>
-			<Key ID="STR_XEATT_name_freeCam">
-				<Original>FreeCam</Original>
-				<Italian>FreeCam</Italian>
-				<French>FreeCam</French>
-				<Danish>FreeCam</Danish>
-			</Key>
-			<Key ID="STR_XEATT_name_xeSetVar">
-				<Original>Set a variable</Original>
-				<Italian>Imposta Variabile</Italian>
-				<French>Définir une variable</French>
-				<Danish>Sæt en variabel</Danish>
-			</Key>
-			<Key ID="STR_XEATT_name_marker">
-				<Original>Marker</Original>
-				<Italian>Marker</Italian>
-				<French>Marker</French>
-				<Danish>Marker</Danish>
-			</Key>
-			<Key ID="STR_XEATT_name_esp">
-				<Original>ESP</Original>
-				<Italian>ESP</Italian>
-				<French>ESP</French>
-				<Danish>ESP</Danish>
-			</Key>
-			<Key ID="STR_XEATT_name_BTracer">
-				<Original>Bullet Tracing</Original>
-				<Italian>Colpi Tracianti</Italian>
-				<French>Bullet Traçante</French>
-				<Danish>Skud sporing</Danish>
-			</Key>
-			<Key ID="STR_XEATT_name_exitLobby">
-				<Original>Return to lobby</Original>
-				<Italian>Ritorna in lobby</Italian>
-				<French>Retourner au Lobby</French>
-				<Danish>Vend tilbage til lobbyen</Danish>
-			</Key>
-			<Key ID="STR_XEATT_name_pees">
-				<Original>Pees</Original>
-				<Italian>Piscia</Italian>
-				<French>Pisser</French>
-				<Danish>Tis</Danish>
-			</Key>
 			<Key ID="STR_XEATT_desc_pees">
 				<Original>Piss all those present on the server / mission</Original>
 				<Italian>Fai pisciare tutti quanti i presenti del server / missione</Italian>
 				<French>Pisser sur tous ceux qui sont présents sur le serveur / la mission</French>
 				<Danish>Få alle på serveren til at tisse</Danish>
+			</Key>
+			<Key ID="STR_XEATT_desc_fakeCheaterDetected">
+				<Original>Makes a fake report for the selected player</Original>
+				<Italian>Fa apparire un messaggio fake di report del giocatore selezionato.</Italian>
+				<French>Fait un faux rapport pour le joueur sélectionné</French>
+				<Danish>Lav en falsk anmeldelse af den valgte spiller.</Danish>
+			</Key>
+			<Key ID="STR_XEATT_desc_xedom">
+				<Original>It puts you the loadout of the crazy xedom ;P</Original>
+				<Italian>Ti mette il loadout dello xedom pazzerello ;P</Italian>
+				<French>Il vous met l'équipement du fou xedom ;P</French>
+				<Danish>Det giver dig det vilde loadout af xedom ;P</Danish>
+			</Key>
+			<Key ID="STR_XEATT_desc_boom">
+				<Original>It destroys everything in the radius (that you put in the value field) of selected player</Original>
+				<Italian>Distrugge tutto nel raggio (che metti nel campo valori) del giocatore che hai scelto.</Italian>
+				<French>Il détruit tout dans le rayon (que vous mettez dans le champ de valeur) du joueur sélectionné</French>
+				<Danish>Det ødelægger alt i en radius af (det du har skrevet i værdi feltet) ved den valgte spiller</Danish>
+			</Key>
+			<Key ID="STR_XEATT_desc_antiFreezeMess">
+				<Original>If an admin freezes you, this function automatically defrosts you and warns you.</Original>
+				<Italian>Se un admin ti congela, questa funzione ti scongela automaticamente, e ti avvisa.</Italian>
+				<French>Si un administrateur vous Frezze, cette fonction vous déFrezze automatiquement et vous avertit.</French>
+				<Danish>Hvis en admin fryser dig, vil denne funktion vil automatisk optø dig og advare dig.</Danish>
+			</Key>
+			<Key ID="STR_XEATT_desc_flyAll">
+				<Original>Teleports all the players 1000 meters above the ground, and gives them a parachute.</Original>
+				<Italian>Teleporta tutti i giocatori a 1000 metri da terra, e gli da un paracadute.</Italian>
+				<French>Téléporte tous les joueurs 1000 mètres au-dessus du sol, et leurs donner un parachute.</French>
+				<Danish>Teleportere alle spillere 1000 meter over jorden, og giver dem en faldskærm.</Danish>
+			</Key>
+			<Key ID="STR_XEATT_desc_goto">
+				<Original>Give life to all the Bots / NPCs in the map and make them go to a point.</Original>
+				<Italian>Da vita a tutti i Bot/NPC in mappa e li fa andare in un punto.</Italian>
+				<French>Donnez vie à tous les Bots / PNJ de la carte et faites-les aller à un point.</French>
+				<Danish>Giver liv til alle bots / NPCs på kortet og får dem til at gå til et punkt.</Danish>
+			</Key>
+			<Key ID="STR_XEATT_desc_kickAll">
+				<Original>Kill all players of the game except you</Original>
+				<Italian>Caccia tutti dalla partita tranne te</Italian>
+				<French>Tuez tous les joueurs du serveur, sauf vous</French>
+				<Danish>Dræb alle spillere undtagen dig</Danish>
+			</Key>
+			<Key ID="STR_XEATT_desc_hint">
+				<Original>Sent a message to selected player</Original>
+				<Italian>Invia un messaggio al giocatore selezionato</Italian>
+				<French>Envoyé un message au joueur sélectionné</French>
+				<Danish>Send en besked til den valgte spiller</Danish>
+			</Key>
+			<Key ID="STR_XEATT_desc_zeus">
+				<Original>Become Zeus</Original>
+				<Italian>Diventa Zeus</Italian>
+				<French>Devenez Zeus</French>
+				<Danish>Bliv Zeus</Danish>
+			</Key>
+			<Key ID="STR_XEATT_desc_remove">
+				<Original>Remove the object thet you are aiming for</Original>
+				<Italian>Rimuovi l'ogetto che stai mirando</Italian>
+				<French>Retirez l'objet que vous visez</French>
+				<Danish>Fjern det objekt du siger på</Danish>
+			</Key>
+			<Key ID="STR_XEATT_desc_aannews">
+				<Original>Send an AAN News to selected player [ write title and description, separate it with --- , exemple: xedom --- is a good boy :) ]</Original>
+				<Italian>Invia una notizia AAN al player selezionato [ scrivi titolo e descrizione, separati da --- , esempio: xedom --- è un ragazzo bravo :) ]</Italian>
+				<French>Envoyer une nouvelle AAN au joueur sélectionné [ écrire le titre et la description, le séparer avec --- , exemple: xedom --- est un bon garçon :) ]</French>
+				<Danish>Send en AAN News til den valgte spiller [ Skriv titel og beskrivelse, seperat det med --- , eksempel: xedom --- is a good boy :) ]</Danish>
 			</Key>
 			<Key ID="STR_XEATT_nome">
 				<Original>Name: %1</Original>
@@ -445,78 +577,6 @@
 				<Italian>%1 Hai attivato / disattivato l'ESP (&lt;t color='#42ebf4'&gt;%3&lt;/t&gt; metri) su &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;</Italian>
 				<French>%1 Vous avez activé / désactivé ESP (&lt;t color='#42ebf4'&gt;%3&lt;/t&gt; mètres) on &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;</French>
 				<Danish>%1 Du har aktiveret / deaktiveret ESP (&lt;t color='#42ebf4'&gt;%3&lt;/t&gt; meter) på &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;</Danish>
-			</Key>
-			<Key ID="STR_XEATT_name_fakeCheaterDetected">
-				<Original>Fake Cheater Detected</Original>
-				<Italian>Fake Cheater Detected</Italian>
-				<French>Faux tricheur détecté</French>
-				<Danish>Fake Cheater Detected</Danish>
-			</Key>
-			<Key ID="STR_XEATT_name_xedom">
-				<Original>XEDOM</Original>
-				<Italian>XEDOM</Italian>
-				<French>XEDOM</French>
-				<Danish>XEDOM</Danish>
-			</Key>
-			<Key ID="STR_XEATT_name_boom">
-				<Original>BOOM</Original>
-				<Italian>BOOM</Italian>
-				<French>BOOM</French>
-				<Danish>BOOM</Danish>
-			</Key>
-			<Key ID="STR_XEATT_name_antiFreezeMess">
-				<Original>Anti Freeze</Original>
-				<Italian>Anti Freeze</Italian>
-				<French>Anti Freeze</French>
-				<Danish>Anti Frys</Danish>
-			</Key>
-			<Key ID="STR_XEATT_name_flyAll">
-				<Original>Fly All</Original>
-				<Italian>Fly All</Italian>
-				<French>Fly All</French>
-				<Danish>Fly All</Danish>
-			</Key>
-			<Key ID="STR_XEATT_name_goto">
-				<Original>Move NPC</Original>
-				<Italian>Muovi NPC</Italian>
-				<French>Déplacer NPC</French>
-				<Danish>Flyt NPC</Danish>
-			</Key>
-			<Key ID="STR_XEATT_desc_fakeCheaterDetected">
-				<Original>Makes a fake report for the selected player</Original>
-				<Italian>Fa apparire un messaggio fake di report del giocatore selezionato.</Italian>
-				<French>Fait un faux rapport pour le joueur sélectionné</French>
-				<Danish>Lav en falsk anmeldelse af den valgte spiller.</Danish>
-			</Key>
-			<Key ID="STR_XEATT_desc_xedom">
-				<Original>It puts you the loadout of the crazy xedom ;P</Original>
-				<Italian>Ti mette il loadout dello xedom pazzerello ;P</Italian>
-				<French>Il vous met l'équipement du fou xedom ;P</French>
-				<Danish>Det giver dig det vilde loadout af xedom ;P</Danish>
-			</Key>
-			<Key ID="STR_XEATT_desc_boom">
-				<Original>It destroys everything in the radius (that you put in the value field) of selected player</Original>
-				<Italian>Distrugge tutto nel raggio (che metti nel campo valori) del giocatore che hai scelto.</Italian>
-				<French>Il détruit tout dans le rayon (que vous mettez dans le champ de valeur) du joueur sélectionné</French>
-				<Danish>Det ødelægger alt i en radius af (det du har skrevet i værdi feltet) ved den valgte spiller</Danish>
-			</Key>
-			<Key ID="STR_XEATT_desc_antiFreezeMess">
-				<Original>If an admin freezes you, this function automatically defrosts you and warns you.</Original>
-				<Italian>Se un admin ti congela, questa funzione ti scongela automaticamente, e ti avvisa.</Italian>
-				<French>Si un administrateur vous Frezze, cette fonction vous déFrezze automatiquement et vous avertit.</French>
-				<Danish>Hvis en admin fryser dig, vil denne funktion vil automatisk optø dig og advare dig.</Danish>
-			</Key>
-			<Key ID="STR_XEATT_desc_flyAll">
-				<Original>Teleports all the players 1000 meters above the ground, and gives them a parachute.</Original>
-				<Italian>Teleporta tutti i giocatori a 1000 metri da terra, e gli da un paracadute.</Italian>
-				<French>Téléporte tous les joueurs 1000 mètres au-dessus du sol, et leurs donner un parachute.</French>
-				<Danish>Teleportere alle spillere 1000 meter over jorden, og giver dem en faldskærm.</Danish>
-			</Key>
-			<Key ID="STR_XEATT_desc_goto">
-				<Original>Give life to all the Bots / NPCs in the map and make them go to a point.</Original>
-				<Italian>Da vita a tutti i Bot/NPC in mappa e li fa andare in un punto.</Italian>
-				<French>Donnez vie à tous les Bots / PNJ de la carte et faites-les aller à un point.</French>
-				<Danish>Giver liv til alle bots / NPCs på kortet og får dem til at gå til et punkt.</Danish>
 			</Key>
 			<Key ID="STR_XEATT_PL">
 				<Original>This is the online player list</Original>
@@ -728,47 +788,11 @@
 				<French>%1 Vous avez mis en place &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;</French>
 				<Danish>%1 Du har sat &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;</Danish>
 			</Key>
-			<Key ID="STR_XEATT_name_kickAll">
-				<Original>KickAll</Original>
-				<Italian>Caccia tutti</Italian>
-				<French>Kick All</French>
-				<Danish>Smid alle ud</Danish>
-			</Key>
-			<Key ID="STR_XEATT_desc_kickAll">
-				<Original>Kill all players of the game except you</Original>
-				<Italian>Caccia tutti dalla partita tranne te</Italian>
-				<French>Tuez tous les joueurs du serveur, sauf vous</French>
-				<Danish>Dræb alle spillere undtagen dig</Danish>
-			</Key>
-			<Key ID="STR_XEATT_name_hint">
-				<Original>Message</Original>
-				<Italian>Messaggio</Italian>
-				<French>Message</French>
-				<Danish>Send en besked</Danish>
-			</Key>
-			<Key ID="STR_XEATT_desc_hint">
-				<Original>Sent a message to selected player</Original>
-				<Italian>Invia un messaggio al giocatore selezionato</Italian>
-				<French>Envoyé un message au joueur sélectionné</French>
-				<Danish>Send en besked til den valgte spiller</Danish>
-			</Key>
 			<Key ID="STR_XEATT_hint">
 				<Original>%1 Sent a message to &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;: &lt;t color='#f4e242'&gt;%3&lt;/t&gt;</Original>
 				<Italian>%1 Hai inviato un messaggio a &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;: &lt;t color='#f4e242'&gt;%3&lt;/t&gt;</Italian>
 				<French>%1 Envoyé un message à &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;: &lt;t color='#f4e242'&gt;%3&lt;/t&gt;</French>
 				<Danish>%1 Du har sendt en besked til &lt;t color='#42ebf4'&gt;%2&lt;/t&gt; &lt;t color='#f4e242'&gt;%3&lt;/t&gt;</Danish>
-			</Key>
-			<Key ID="STR_XEATT_name_zeus">
-				<Original>Zeus</Original>
-				<Italian>Zeus</Italian>
-				<French>Zeus</French>
-				<Danish>Zeus</Danish>
-			</Key>
-			<Key ID="STR_XEATT_desc_zeus">
-				<Original>Become Zeus</Original>
-				<Italian>Diventa Zeus</Italian>
-				<French>Devenez Zeus</French>
-				<Danish>Bliv Zeus</Danish>
 			</Key>
 			<Key ID="STR_XEATT_VAR_AL_Banca1">
 				<Original>AltisLife - Bank 1</Original>
@@ -799,30 +823,6 @@
 				<Italian>AltisLife - Fame</Italian>
 				<French>AltisLife - Faim</French>
 				<Danish>AltisLife - Sult</Danish>
-			</Key>
-			<Key ID="STR_XEATT_name_remove">
-				<Original>Remove</Original>
-				<Italian>Rimuovi</Italian>
-				<French>Retirer</French>
-				<Danish>Fjern</Danish>
-			</Key>
-			<Key ID="STR_XEATT_desc_remove">
-				<Original>Remove the object thet you are aiming for</Original>
-				<Italian>Rimuovi l'ogetto che stai mirando</Italian>
-				<French>Retirez l'objet que vous visez</French>
-				<Danish>Fjern det objekt du siger på</Danish>
-			</Key>
-			<Key ID="STR_XEATT_name_aannews">
-				<Original>Custom AAN News</Original>
-				<Italian>Notizie AAN personalizzate</Italian>
-				<French>Nouvelles AAN personnalisées</French>
-				<Danish>Specifik AAN News</Danish>
-			</Key>
-			<Key ID="STR_XEATT_desc_aannews">
-				<Original>Send an AAN News to selected player [ write title and description, separate it with --- , exemple: xedom --- is a good boy :) ]</Original>
-				<Italian>Invia una notizia AAN al player selezionato [ scrivi titolo e descrizione, separati da --- , esempio: xedom --- è un ragazzo bravo :) ]</Italian>
-				<French>Envoyer une nouvelle AAN au joueur sélectionné [ écrire le titre et la description, le séparer avec --- , exemple: xedom --- est un bon garçon :) ]</French>
-				<Danish>Send en AAN News til den valgte spiller [ Skriv titel og beskrivelse, seperat det med --- , eksempel: xedom --- is a good boy :) ]</Danish>
 			</Key>
         </Container>
     </Package>

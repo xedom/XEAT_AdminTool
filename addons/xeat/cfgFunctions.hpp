@@ -3,6 +3,7 @@ class CfgFunctions {
 		class core {
 			file="core";
 
+			class init { postInit = 1; };
 			class adminCheck {};
 			class guiLaucher {};
 			class guiUpdater {};

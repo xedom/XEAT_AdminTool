@@ -1,0 +1,14 @@
+
+
+#include "xeScripts\xeConst.hpp"
+#include "xeScripts\xeat\CfgGui.hpp"
+
+class CfgFunctions {
+    #include "xeScripts\xeat\CfgFunctions.hpp"
+}
+
+
+
+
+
+

@@ -1,12 +1,8 @@
 XeHintHeader = "<t color='#41f48c' size='2'>ADMIN TOOL</t><br /><t size='0.68'>by XEDOM</t><br />-------- -_- --------<br /><br />";
-
 publicVariable "XeHintHeader";
 
-
 ListaAzioni = [];
-
 ListaAzioniOff = [
-
 	[(localize "STR_XEATT_name_kill"), "kill", true, (localize "STR_XEATT_desc_kill"), "abcd"],
 	[(localize "STR_XEATT_name_heal"), "heal", true, (localize "STR_XEATT_desc_heal"), "abc"],
 	[(localize "STR_XEATT_name_lifeRevive"), "lifeRevive", true, (localize "STR_XEATT_desc_lifeRevive"), "ac"],
@@ -43,12 +39,10 @@ ListaAzioniOff = [
 	[(localize "STR_XEATT_name_zeus"), "Zeus", false, (localize "STR_XEATT_desc_zeus"), "abcd"],
 	[(localize "STR_XEATT_name_aannews"), "aannews", true, (localize "STR_XEATT_desc_aannews"), "abcd"],
 	[(localize "STR_XEATT_name_exitLobby"), "exitLobby", true, (localize "STR_XEATT_desc_exitLobby"), "a"]
-
 ];
 publicVariable "ListaAzioniOff";
 
 ListaVariabili = [
-
 	// XEAT_INCORSO ["Altis - Kavala", [3646.14,13115.2,0], "Altis"],
 	// XEAT_INCORSO ["Altis - Athira", [14036.9,18745.5,0], "Altis"],
 	// XEAT_INCORSO ["Altis - Pirgos", [16810.1,12664.7,0], "Altis"],
@@ -66,23 +60,15 @@ ListaVariabili = [
 	[(localize "STR_XEATT_VAR_AL_Contanti"), "life_cash", ""],
 	[(localize "STR_XEATT_VAR_AL_Sete"), "life_thirst", ""],
 	[(localize "STR_XEATT_VAR_AL_Fame"), "life_hunger", ""]
-
 ];
 publicVariable "ListaVariabili";
 
 if (isMultiplayer) then {
-	XEATV_Players = {
-		ListaGiocatori = allPlayers;
-	};
-	publicVariable "ListaGiocatori";
+	ListaGiocatori = allPlayers;
 } else {
-	XEATV_Players = {
-		ListaGiocatori = switchableUnits;
-	};
-	publicVariable "ListaGiocatori";
+	ListaGiocatori = switchableUnits;
 };
-
-call XEATV_Players;
+publicVariable "ListaGiocatori";
 
 [] spawn {
 	sleep 5;

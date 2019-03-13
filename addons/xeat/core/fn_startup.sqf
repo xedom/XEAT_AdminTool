@@ -41,23 +41,15 @@ if (_isAdmin) then {
 		switch (profileNamespace getVariable "XEATV_StartButton_Shift") do {
 
 			case true : {
-
 				if ((_this select 2) && ((_this select 1) == ((profileNamespace getVariable "XEATV_StartButton") select 0))) then {
-
 					[player] call XEAT_openMenu;
-
 				};
-
 			};
 
 			case false : {
-
 				if ((_this select 1) == ((profileNamespace getVariable "XEATV_StartButton") select 0)) then {
-
 					[player] call XEAT_openMenu;
-
 				};
-
 			};
 
 		};
@@ -65,9 +57,7 @@ if (_isAdmin) then {
 	}];
 
 	if !( (((profileNamespace getVariable "XEATV_Other") select 1) == "DSHET") ) then {
-
 		[parseText format [ "<t align='right' size='1.2'><t font='PuristaBold' size='1.2'>""%1""</t>%2</t>", toUpper "XEAT AdminMenu", " by XEDOM"], [0.5,1,1,1], nil, 7, 0.7, 0] spawn BIS_fnc_textTiles;
-
 	};
 
 };

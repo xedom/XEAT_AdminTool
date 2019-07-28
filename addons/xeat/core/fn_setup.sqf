@@ -70,18 +70,32 @@ if (isMultiplayer) then {
 };
 publicVariable "ListaGiocatori";
 
-[] spawn {
-	sleep 5;
-	if (isNil {profileNamespace getVariable "XEATV_StartButton"}) then { profileNamespace setVariable ["XEATV_StartButton", [15, "TAB"]];  };
-	if (isNil {profileNamespace getVariable "XEATV_Action"}) then { profileNamespace setVariable ["XEATV_Action", ["ALL", "a"]]; };
-	if (isNil {profileNamespace getVariable "XEATV_Other"}) then { profileNamespace setVariable ["XEATV_Other", ["Active All", "def"]]; };
-	if (isNil {profileNamespace getVariable "XEATV_StartButton_Shift"}) then { profileNamespace setVariable ["XEATV_StartButton_Shift", false]; };
-	_shiftTest = "";
-	if ((profileNamespace getVariable "XEATV_StartButton_Shift")) then {_shiftTest = "Shift + "} else {_shiftTest = ""};
-	if !(
-		(((profileNamespace getVariable "XEATV_Other") select 1) == "DSHET") ||
-		(((profileNamespace getVariable "XEATV_Other") select 1) == "DAH")
-	) then {
-		hint parseText format[localize"STR_XEAT_avvioHint", XeHintHeader, format["<t color='#41f48c'>%1%2</t>", _shiftTest, ((profileNamespace getVariable "XEATV_StartButton") select 1)]];
-	};
+// [] spawn {
+// 	sleep 5;
+if (isNil {profileNamespace getVariable "XEATV_StartButton"}) then {
+	profileNamespace setVariable ["XEATV_StartButton", [15, "TAB"]];
 };
+if (isNil {profileNamespace getVariable "XEATV_Action"}) then {
+	profileNamespace setVariable ["XEATV_Action", ["ALL", "a"]];
+};
+if (isNil {profileNamespace getVariable "XEATV_Other"}) then {
+	profileNamespace setVariable ["XEATV_Other", ["Active All", "def"]];
+};
+if (isNil {profileNamespace getVariable "XEATV_StartButton_Shift"}) then {
+	profileNamespace setVariable ["XEATV_StartButton_Shift", false];
+};
+
+_shiftTest = "";
+if ((profileNamespace getVariable "XEATV_StartButton_Shift")) then {
+	_shiftTest = "Shift + "
+} else {
+	_shiftTest = ""
+};
+
+if !(
+	(((profileNamespace getVariable "XEATV_Other") select 1) == "DSHET") ||
+	(((profileNamespace getVariable "XEATV_Other") select 1) == "DAH")
+) then {
+	hint parseText format[localize"STR_XEAT_avvioHint", XeHintHeader, format["<t color='#41f48c'>%1%2</t>", _shiftTest, ((profileNamespace getVariable "XEATV_StartButton") select 1)]];
+};
+// };

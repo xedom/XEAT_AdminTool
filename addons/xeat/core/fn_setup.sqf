@@ -1,5 +1,4 @@
 XeHintHeader = "<t color='#41f48c' size='2'>ADMIN TOOL</t><br /><t size='0.68'>by XEDOM</t><br />-------- -_- --------<br /><br />";
-publicVariable "XeHintHeader";
 
 ListaAzioni = [];
 ListaAzioniOff = [
@@ -40,7 +39,6 @@ ListaAzioniOff = [
 	[(localize "STR_XEATT_name_aannews"), "aannews", true, (localize "STR_XEATT_desc_aannews"), "abcd"],
 	[(localize "STR_XEATT_name_exitLobby"), "exitLobby", true, (localize "STR_XEATT_desc_exitLobby"), "a"]
 ];
-publicVariable "ListaAzioniOff";
 
 ListaVariabili = [
 	// XEAT_INCORSO ["Altis - Kavala", [3646.14,13115.2,0], "Altis"],
@@ -61,14 +59,12 @@ ListaVariabili = [
 	[(localize "STR_XEATT_VAR_AL_Sete"), "life_thirst", ""],
 	[(localize "STR_XEATT_VAR_AL_Fame"), "life_hunger", ""]
 ];
-publicVariable "ListaVariabili";
 
 if (isMultiplayer) then {
 	ListaGiocatori = allPlayers;
 } else {
 	ListaGiocatori = switchableUnits;
 };
-publicVariable "ListaGiocatori";
 
 // [] spawn {
 // 	sleep 5;

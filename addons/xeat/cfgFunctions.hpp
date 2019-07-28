@@ -1,7 +1,7 @@
 class CfgFunctions {
 	class XEAT {
 		class core {
-			file="core";
+			file="xe\admintool\core";
 
 			class init { postInit = 1; };
 			class adminCheck {};
@@ -12,12 +12,12 @@ class CfgFunctions {
 			class startup {};
 		};
 		class functions {
-			file="functions";
+			file="xe\admintool\functions";
 
 			class publicVar {};
 		};
 		class actions {
-			file="actions";
+			file="xe\admintool\actions";
 
 			class bombAttack {};
 			class bulletTracer {};

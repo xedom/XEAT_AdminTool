@@ -18,7 +18,6 @@ XEAT_xeSetVar = {
 	if (_variabile == -1) exitWith {
 		if !(((profileNamespace getVariable "XEATV_Other") select 1) == "DAH") then { hint parseText format [localize"STR_XEAT_giveErrorNoVariabile", XeHintHeader]; };
 	};
-	publicVariable "ListaVariabili";
 	[_valore, _variabile] remoteExec ["XEAT_xeSetVarExec", _player];
 	if !(((profileNamespace getVariable "XEATV_Other") select 1) == "DAH") then { hint parseText format[(localize"STR_XEATT_xeSetVar"), XeHintHeader, _valore, ((ListaVariabili select _variabile) select 1), name _player]; };
 };

@@ -8,6 +8,7 @@ class CfgFunctions {
 			class guiLaucher {};
 			class guiUpdater {};
 			class openMenu {};
+			class update {};
 			class setup {};
 			class startup {};
 		};

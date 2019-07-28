@@ -1,0 +1,1 @@
+player setVariable ["XEATV_SteamName", profileNameSteam, true];

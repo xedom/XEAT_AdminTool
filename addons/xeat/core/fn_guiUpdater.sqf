@@ -4,7 +4,7 @@
 
 while { !(isNull(findDisplay 8500)) } do {
 
-	call XEATV_Players;
+	call XEAT_fnc_plyListUpdate;
 
 	{
 		remoteExec ["XEAT_SteamName", _x];

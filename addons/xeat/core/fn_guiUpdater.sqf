@@ -7,9 +7,9 @@ while { !(isNull(findDisplay 8500)) } do {
 	call XEAT_fnc_plyListUpdate;
 
 	{
-		remoteExec ["XEAT_SteamName", _x];
+		remoteExec ["XEAT_fnc_getSteamName", _x];
 		lbAdd [8504, name _x];
-		((findDisplay 8500) displayCtrl 8504) ctrlSetEventHandler ["LBDblClick", "_this call XEAT_InfoPlayer;"];
+		((findDisplay 8500) displayCtrl 8504) ctrlSetEventHandler ["LBDblClick", "_this call XEAT_fnc_infoPlayer;"];
 		lbSetTooltip [8504, _forEachIndex, format[(localize "STR_XEATT_infos"), name _x, _x getVariable "XEATV_SteamName", getPlayerUID _x]];
 	} forEach ListaGiocatori;
 
@@ -19,7 +19,7 @@ while { !(isNull(findDisplay 8500)) } do {
 		if (((profileNamespace getVariable "XEATV_Action") select 1) in ((_x select 4) splitString "")) then {
 			ListaAzioni pushback _x;
 		};
-	} forEach ListaAzioniOff; publicVariable "ListaAzioni";
+	} forEach ListaAzioniOff;
 
 	{
 		switch (_x select 1) do {

@@ -3,7 +3,7 @@ params ["_indexGiocatori", "_indexAzioni"];
 if (_indexAzioni != -1) then {
 	if ((ListaAzioni select _indexAzioni) select 2) then {
 		if (_indexGiocatori != -1) then {
-			_code = format ["[%1] call XEAT_%2", _indexGiocatori, (ListaAzioni select _indexAzioni) select 1]; call compile _code;
+			_code = format ["[%1] call XEAT_fnc_%2", _indexGiocatori, (ListaAzioni select _indexAzioni) select 1]; call compile _code;
 		} else {
 			if !(((profileNamespace getVariable "XEATV_Other") select 1) == "DAH") then {
 				if !(((profileNamespace getVariable "XEATV_Other") select 1) == "DAH") then {
@@ -12,7 +12,7 @@ if (_indexAzioni != -1) then {
 			};
 		};
 	} else {
-		_code = format ["[] call XEAT_%1", (ListaAzioni select _indexAzioni) select 1]; call compile _code;
+		_code = format ["[] call XEAT_fnc_%1", (ListaAzioni select _indexAzioni) select 1]; call compile _code;
 	};
 } else {
 	if !(((profileNamespace getVariable "XEATV_Other") select 1) == "DAH") then {

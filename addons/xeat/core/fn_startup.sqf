@@ -3,7 +3,6 @@ waitUntil {time > 0}; sleep 2;
 ListaAdmin = [];
 
 ListaAdmin pushBack "_SP_PLAYER_";
-publicVariable "ListaAdmin";
 
 _isAdmin = player call XEAT_fnc_adminCheck;
 

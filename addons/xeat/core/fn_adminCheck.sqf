@@ -1,6 +1,6 @@
 params ["_player"];
 
-if (getPlayerUID player in ListaAdmin) exitWith {
+if (getPlayerUID _player in ListaAdmin) exitWith {
 	true
 };
 

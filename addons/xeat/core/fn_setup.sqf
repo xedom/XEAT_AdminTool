@@ -69,8 +69,8 @@ PlayerList = [] call XEAT_fnc_plyListUpdate;
 ["XEATV_GuiOpenButton_Shift",false] call XEAT_fnc_setDefaultVariables;
 
 _shiftTest = "";
-if ((profileNamespace getVariable "XEATV_StartButton_Shift")) then {
+if (XEGETVAR("XEATV_StartButton_Shift")) then {
 	_shiftTest = "Shift + "
 };
 
-hint parseText format[localize"STR_XEAT_avvioHint", XeHintHeader, format["<t color='#41f48c'>%1%2</t>", _shiftTest, ((profileNamespace getVariable "XEATV_StartButton") select 1)]];
+hint parseText format[localize"STR_XEAT_avvioHint", XeHintHeader, format["<t color='#41f48c'>%1%2</t>", _shiftTest, (XEGETVAR("XEATV_StartButton") select 1)]];

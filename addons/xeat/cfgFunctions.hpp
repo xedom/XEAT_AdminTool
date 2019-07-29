@@ -5,7 +5,7 @@ class CfgFunctions {
 
 			class init { postInit = 1; };
 			class adminCheck {};
-			class guiLaucher {};
+			class actionLaucher {};
 			class guiUpdater {};
 			class openMenu {};
 			class setup {};
@@ -14,15 +14,12 @@ class CfgFunctions {
 		class functions {
 			file="xe\admintool\functions";
 
-			class publicVar {};
 			class plyListUpdate {};
 			class setDefaultVariables {};
 		};
 		class actions {
 			file="xe\admintool\actions";
 
-			class getSteamName {};
-			class god {};
 		};
 	};
 };

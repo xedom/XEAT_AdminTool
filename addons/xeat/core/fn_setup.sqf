@@ -1,3 +1,5 @@
+#include "../macro.hpp"
+
 XeatHintHeader = "<t color='#41f48c' size='2'>ADMIN TOOL</t><br /><t size='0.68'>by XEDOM</t><br />-------- -_- --------<br /><br />";
 
 ActionsList = [
@@ -61,10 +63,10 @@ VariablesList = [
 
 PlayerList = [] call XEAT_fnc_plyListUpdate;
 
-["XEATV_StartButton",[15, "TAB"]] call XEAT_fnc_setDefaultVariables;
-["XEATV_Action",["ALL", "a"]] call XEAT_fnc_setDefaultVariables;
+["XEATV_GuiOpenButton",[15, "TAB"]] call XEAT_fnc_setDefaultVariables;
+["XEATV_ListedActions",["ALL", "a"]] call XEAT_fnc_setDefaultVariables;
 ["XEATV_Other",["Active All", "def"]] call XEAT_fnc_setDefaultVariables;
-["XEATV_StartButton_Shift",false] call XEAT_fnc_setDefaultVariables;
+["XEATV_GuiOpenButton_Shift",false] call XEAT_fnc_setDefaultVariables;
 
 _shiftTest = "";
 if ((profileNamespace getVariable "XEATV_StartButton_Shift")) then {

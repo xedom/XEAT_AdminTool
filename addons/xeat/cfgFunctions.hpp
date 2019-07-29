@@ -16,6 +16,7 @@ class CfgFunctions {
 
 			class publicVar {};
 			class plyListUpdate {};
+			class setDefaultVariables {};
 		};
 		class actions {
 			file="xe\admintool\actions";

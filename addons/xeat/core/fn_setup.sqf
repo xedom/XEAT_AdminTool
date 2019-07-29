@@ -1,7 +1,6 @@
 XeatHintHeader = "<t color='#41f48c' size='2'>ADMIN TOOL</t><br /><t size='0.68'>by XEDOM</t><br />-------- -_- --------<br /><br />";
 
-ListaAzioni = [];
-ListaAzioniOff = [
+ActionsList = [
 	[(localize "STR_XEATT_name_kill"), "kill", true, (localize "STR_XEATT_desc_kill"), "abcd"],
 	[(localize "STR_XEATT_name_heal"), "heal", true, (localize "STR_XEATT_desc_heal"), "abc"],
 	// [(localize "STR_XEATT_name_lifeRevive"), "lifeRevive", true, (localize "STR_XEATT_desc_lifeRevive"), "ac"],
@@ -40,7 +39,7 @@ ListaAzioniOff = [
 	// [(localize "STR_XEATT_name_exitLobby"), "exitLobby", true, (localize "STR_XEATT_desc_exitLobby"), "a"]
 ];
 
-ListaVariabili = [
+VariablesList = [
 	// XEAT_INCORSO ["Altis - Kavala", [3646.14,13115.2,0], "Altis"],
 	// XEAT_INCORSO ["Altis - Athira", [14036.9,18745.5,0], "Altis"],
 	// XEAT_INCORSO ["Altis - Pirgos", [16810.1,12664.7,0], "Altis"],
@@ -60,38 +59,16 @@ ListaVariabili = [
 	[(localize "STR_XEATT_VAR_AL_Fame"), "life_hunger", ""]
 ];
 
-if (isMultiplayer) then {
-	ListaGiocatori = allPlayers;
-} else {
-	ListaGiocatori = switchableUnits;
-};
+PlayerList = [] call XEAT_fnc_plyListUpdate;
 
-// [] spawn {
-// 	sleep 5;
-if (isNil {profileNamespace getVariable "XEATV_StartButton"}) then {
-	profileNamespace setVariable ["XEATV_StartButton", [15, "TAB"]];
-};
-if (isNil {profileNamespace getVariable "XEATV_Action"}) then {
-	profileNamespace setVariable ["XEATV_Action", ["ALL", "a"]];
-};
-if (isNil {profileNamespace getVariable "XEATV_Other"}) then {
-	profileNamespace setVariable ["XEATV_Other", ["Active All", "def"]];
-};
-if (isNil {profileNamespace getVariable "XEATV_StartButton_Shift"}) then {
-	profileNamespace setVariable ["XEATV_StartButton_Shift", false];
-};
+["XEATV_StartButton",[15, "TAB"]] call XEAT_fnc_setDefaultVariables;
+["XEATV_Action",["ALL", "a"]] call XEAT_fnc_setDefaultVariables;
+["XEATV_Other",["Active All", "def"]] call XEAT_fnc_setDefaultVariables;
+["XEATV_StartButton_Shift",false] call XEAT_fnc_setDefaultVariables;
 
 _shiftTest = "";
 if ((profileNamespace getVariable "XEATV_StartButton_Shift")) then {
 	_shiftTest = "Shift + "
-} else {
-	_shiftTest = ""
 };
 
-if !(
-	(((profileNamespace getVariable "XEATV_Other") select 1) == "DSHET") ||
-	(((profileNamespace getVariable "XEATV_Other") select 1) == "DAH")
-) then {
-	hint parseText format[localize"STR_XEAT_avvioHint", XeHintHeader, format["<t color='#41f48c'>%1%2</t>", _shiftTest, ((profileNamespace getVariable "XEATV_StartButton") select 1)]];
-};
-// };
+hint parseText format[localize"STR_XEAT_avvioHint", XeHintHeader, format["<t color='#41f48c'>%1%2</t>", _shiftTest, ((profileNamespace getVariable "XEATV_StartButton") select 1)]];

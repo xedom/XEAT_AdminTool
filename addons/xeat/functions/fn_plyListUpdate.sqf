@@ -1,5 +1,5 @@
-if (isMultiplayer) then {
-	ListaGiocatori = allPlayers;
-} else {
-	ListaGiocatori = switchableUnits;
+if (isMultiplayer) exitWith {
+	allPlayers
 };
+
+switchableUnits

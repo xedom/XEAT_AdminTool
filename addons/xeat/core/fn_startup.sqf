@@ -14,8 +14,8 @@ if (_isAdmin) then {
 		params ["_displayorcontrol", "_key", "_shift", "_ctrl", "_alt"];
 
 		if (XOR(
-			((XEGETVAR("XEATV_GuiOpenButton_Shift") && _shift) && (_key == XEGETVAR("XEATV_GuiOpenButton"))),
-			(!XEGETVAR("XEATV_GuiOpenButton_Shift") && (_key == XEGETVAR("XEATV_GuiOpenButton")))
+			((XEGETVAR("XEATV_GuiOpenButton_Shift") && _shift) && (_key == (XEGETVAR("XEATV_GuiOpenButton") select 0))),
+			(!(XEGETVAR("XEATV_GuiOpenButton_Shift")) && (_key == (XEGETVAR("XEATV_GuiOpenButton") select 0)))
 		)) then {
 			[player] call XEAT_fnc_openMenu;
 		};

@@ -1,5 +1,6 @@
-#define XEGETVAR(VARNAME) profileNamespace getVariable VARNAME;
-#define XESETVAR(VARNAME,VARVALUE) profileNamespace setVariable [VARNAME, VARVALUE];
+#define XEGETVAR(VARNAME) profileNamespace getVariable VARNAME
+#define XESETVAR(VARNAME,VARVALUE) profileNamespace setVariable [VARNAME, VARVALUE]
+#define XOR(A, B) ((A || B) && !(A && B))
 
 #define XEATD_VERDE [ 0.22, 0.7, 0.2, 1 ]
 #define XEATD_VERDE_DARK [ 0.157, 0.4, 0.157, 1 ]

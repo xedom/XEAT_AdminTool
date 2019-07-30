@@ -10,7 +10,7 @@ ActionsList = [
 	// [(localize "STR_XEATT_name_tpToHim"), "tpToHim", true, (localize "STR_XEATT_desc_tpToHim"), "ac"],
 	// [(localize "STR_XEATT_name_toToYou"), "tpToYou", true, (localize "STR_XEATT_desc_toToYou"), "ac"],
 	// [(localize "STR_XEATT_name_tpMap"), "tpMap", true, (localize "STR_XEATT_desc_tpMap"), "abcd"],
-	[(localize "STR_XEATT_name_god"), "god", true, (localize "STR_XEATT_desc_god"), "abcd"],
+	[(localize "STR_XEATT_name_god"), "god", true, (localize "STR_XEATT_desc_god"), "abcd"]
 	// [(localize "STR_XEATT_name_vrArsenal"), "vrArsenal", true, (localize "STR_XEATT_desc_vrArsenal"), "abcd"],
 	// [(localize "STR_XEATT_name_vrGarage"), "vrGarage", true, (localize "STR_XEATT_desc_vrGarage"), "a"],
 	// [(localize "STR_XEATT_name_block"), "block", true, (localize "STR_XEATT_desc_block"), "abcd"],

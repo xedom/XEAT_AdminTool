@@ -5,17 +5,14 @@
 } forEach VariablesList;
 
 SelectedActions = ActionsList select {
-	(_x#4) find (XEGETVAR("XEATV_ListedActions") select 1) >= 0
+	(_x#4) find ((XEGETVAR("XEATV_ListedActions"))#1) >= 0
 };
 
 while { !(isNull(findDisplay 8500)) } do {
 	call XEAT_fnc_plyListUpdate;
 
 	{
-		// remoteExec ["XEAT_fnc_getSteamName", _x];
 		lbAdd [8504, name _x];
-		// ((findDisplay 8500) displayCtrl 8504) ctrlSetEventHandler ["LBDblClick", "_this call XEAT_fnc_infoPlayer;"];
-		// lbSetTooltip [8504, _forEachIndex, format[(localize "STR_XEATT_infos"), name _x, _x getVariable "XEATV_SteamName", getPlayerUID _x]];
 	} forEach PlayerList;
 
 	{

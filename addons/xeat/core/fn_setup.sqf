@@ -1,6 +1,6 @@
 #include "../macro.hpp"
 
-XeatHintHeader = "<t color='#41f48c' size='2'>ADMIN TOOL</t><br /><t size='0.68'>by XEDOM</t><br />-------- -_- --------<br /><br />";
+XeHintHeader = "<t color='#41f48c' size='2'>ADMIN TOOL</t><br /><t size='0.68'>by XEDOM</t><br />-------- -_- --------<br /><br />";
 
 ActionsList = [
 	[(localize "STR_XEATT_name_kill"), "kill", true, (localize "STR_XEATT_desc_kill"), "abcd"],

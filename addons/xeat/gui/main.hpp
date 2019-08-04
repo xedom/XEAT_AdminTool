@@ -134,7 +134,7 @@ class XEAT_adminTool {
 			x = 0.62 * safezoneW + safezoneX + XEATD_X;
 			y = 0.3 * safezoneH + safezoneY + XEATD_Y;
 			w = 0.03 * safezoneW;
-			h = 0.0305 * safezoneH;
+			h = 0.03025 * safezoneH;
 			tooltip = $STR_XEATT_CHIUDI;
 			colorBackground[] = XEATD_ROSSO;
 			colorBackgroundActive[] = XEATD_ROSSO_DARK;

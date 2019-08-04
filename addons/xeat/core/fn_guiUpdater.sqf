@@ -17,6 +17,7 @@ while { !(isNull(findDisplay 8500)) } do {
 
 	{
 		lbAdd [8506, _x#0];
+		lbSetData [8506, _forEachIndex, _x#1];
 		lbSetTooltip [8506, _forEachIndex, _x#3];
 	} forEach SelectedActions;
 

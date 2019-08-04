@@ -2,6 +2,7 @@
 
 {
 	lbAdd [8512, _x#0];
+	lbSetData [8512, _forEachIndex, _x#1];
 } forEach VariablesList;
 
 SelectedActions = ActionsList select {

@@ -16,6 +16,7 @@ class CfgFunctions {
 
 			class plyListUpdate {};
 			class setDefaultVariables {};
+			class hintInfo {};
 		};
 		class actions {
 			file="xe\admintool\actions";

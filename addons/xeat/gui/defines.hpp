@@ -7,6 +7,8 @@
 #define XEATD_ROSSO_DARK { 0.6, 0.157, 0.157, 1 }
 #define XEATD_BLUE { 0.286, 0.561, 1, 1 }
 #define XEATD_BLUE_DARK { 0.2, 0.392, 0.698, 1 }
+#define XEATD_BLACK { 0.133, 0.133, 0.133, 1 }
+#define XEATD_BLACK_DARK { 0.094, 0.094, 0.094, 1 }
 
 class XEAT_IGUIBack {
 	enableSimulation = true;
@@ -75,7 +77,7 @@ class XEAT_RscButton {
 	soundClick[] = { "\A3\ui_f\data\sound\RscButton\soundClick", 0.09, 1 };
 	soundEscape[] = { "\A3\ui_f\data\sound\RscButton\soundEscape", 0.09, 1 };
 	idc = -1;
-	style = 2;
+	style = "0x02";
 	x = 0;
 	y = 0;
 	w = 0.095589;
@@ -111,9 +113,9 @@ class XEAT_RscEdit {
 	autocomplete = "";
 	text = "";
 	size = 0.2;
-	style = "0x00 + 0x40";
+	style = "0x00 + 0x60";
 	font = "RobotoCondensed";
-	shadow = 2;
+	shadow = 0;
 	sizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
 	canModify = 1;
 	tooltipColorText[] = { 1, 1, 1, 1 };

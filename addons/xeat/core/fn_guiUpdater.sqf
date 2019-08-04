@@ -13,6 +13,7 @@ while { !(isNull(findDisplay 8500)) } do {
 
 	{
 		lbAdd [8504, name _x];
+		lbSetData [8504, _forEachIndex, _x];
 	} forEach PlayerList;
 
 	{

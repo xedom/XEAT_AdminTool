@@ -12,5 +12,9 @@
 #define XEATD_GOLD [ 0.85, 0.85, 0, 1 ]
 #define XEATD_GRIGIO [ 0.5, 0.5, 0.5, 1 ]
 
+#define XEATG_ID_PlayerList 8504
+#define XEATG_ID_ActionList 8506
+#define XEATG_ID_VariableList 8512
+
 #define XEATD_DEBUG false
 #define XEATD_MOD loadFile "xedom\AdminTool\type"

@@ -1,8 +1,8 @@
 #include "../macro.hpp"
 
 {
-	lbAdd [8512, _x#0];
-	lbSetData [8512, _forEachIndex, _x];
+	lbAdd [XEATG_ID_VariableList, _x#0];
+	lbSetData [XEATG_ID_VariableList, _forEachIndex, (_x)];
 } forEach VariablesList;
 
 SelectedActions = ActionsList select {
@@ -13,17 +13,17 @@ while { !(isNull(findDisplay 8500)) } do {
 	call XEAT_fnc_plyListUpdate;
 
 	{
-		lbAdd [8504, name _x];
-		lbSetData [8504, _forEachIndex, _x];
+		lbAdd [XEATG_ID_PlayerList, name _x];
+		lbSetData [XEATG_ID_PlayerList, _forEachIndex, (_X)];
 	} forEach PlayerList;
 
 	{
-		lbAdd [8506, _x#0];
-		lbSetData [8506, _forEachIndex, _x];
-		lbSetTooltip [8506, _forEachIndex, _x#3];
+		lbAdd [XEATG_ID_ActionList, _x#0];
+		lbSetData [XEATG_ID_ActionList, _forEachIndex,  (_X)];
+		lbSetTooltip [XEATG_ID_ActionList, _forEachIndex, _x#3];
 	} forEach SelectedActions;
 
 	sleep 0.5;
-	lbClear 8504;
-	lbClear 8506;
+	lbClear XEATG_ID_PlayerList;
+	lbClear XEATG_ID_ActionList;
 };

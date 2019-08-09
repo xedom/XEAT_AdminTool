@@ -17,10 +17,12 @@ class CfgFunctions {
 			class plyListUpdate {};
 			class setDefaultVariables {};
 			class hintInfo {};
+			class execFunc {};
 		};
 		class actions {
 			file="xe\admintool\actions";
 
+			class kill {};
 		};
 	};
 };

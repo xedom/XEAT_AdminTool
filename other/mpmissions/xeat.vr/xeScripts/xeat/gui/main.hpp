@@ -51,7 +51,7 @@ class XEAT_adminTool {
 		{
 			idc = 8503;
 
-			text = "Player list"; //--- ToDo: Localize;
+			text = "Players:"; //--- ToDo: Localize;
 			x = 0.36875 * safezoneW + safezoneX;
 			y = 0.22 * safezoneH + safezoneY;
 			w = 0.13125 * safezoneW;
@@ -72,7 +72,7 @@ class XEAT_adminTool {
 		{
 			idc = 8505;
 
-			text = "Action list"; //--- ToDo: Localize;
+			text = "Actions:"; //--- ToDo: Localize;
 			x = 0.506562 * safezoneW + safezoneX;
 			y = 0.22 * safezoneH + safezoneY;
 			w = 0.13125 * safezoneW;
@@ -92,7 +92,7 @@ class XEAT_adminTool {
 		class giocatoreSelezionatoTasto: XEAT_RscButton
 		{
 			idc = 8507;
-			onMouseButtonClick = "[(lbCurSel 8504), (lbCurSel 8506)] call XEAT_exec;";
+			onMouseButtonClick = "[(lbCurSel 8504), (lbCurSel 8506)] call XEAT_fnc_guiExecBtn;";
 			colorBackgroundActive[] = {0.157,0.4,0.157,1};
 			colorFocused[] = {0.22,0.7,0.2,1};
 
@@ -165,7 +165,7 @@ class XEAT_adminTool {
 		class tastoImpostazioni: XEAT_RscButton
 		{
 			idc = 8513;
-			onMouseButtonClick = "call XEAT_Settings";
+			onMouseButtonClick = "call XEAT_fnc_guiSettings";
 			colorBackgroundActive[] = {0.2,0.392,0.698,1};
 			colorFocused[] = {0.286,0.561,1,1};
 
@@ -180,7 +180,7 @@ class XEAT_adminTool {
 		class tastoQuitGame: XEAT_RscButton
 		{
 			idc = 8514;
-			onMouseButtonClick = "call XEAT_exitLobbyExec";
+			onMouseButtonClick = "call XEAT_fnc_exitLobbyExec";
 			colorBackgroundActive[] = {0.6,0.157,0.157,1};
 			colorFocused[] = {0.6,0.157,0.157,1};
 

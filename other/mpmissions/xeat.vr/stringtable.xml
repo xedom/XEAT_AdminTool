@@ -6,13 +6,13 @@
 				<Original>TestDesc</Original>
 			</Key>
 			<Key ID="STR_XEAT_Title01">
-				<Original>initSteam</Original>
+				<Original>Steam</Original>
 			</Key>
 			<Key ID="STR_XEAT_Title02">
-				<Original>initSettings</Original>
+				<Original>Settings</Original>
 			</Key>
 			<Key ID="STR_XEAT_Title03">
-				<Original>initSpeedupTime</Original>
+				<Original>SpeedupTime</Original>
 			</Key>
 			<Key ID="STR_XEAT_guiPlayers">
 				<Original>Player list</Original>

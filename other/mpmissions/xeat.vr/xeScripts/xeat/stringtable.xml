@@ -14,6 +14,75 @@
 			<Key ID="STR_XEAT_Title03">
 				<Original>initSpeedupTime</Original>
 			</Key>
+
+			<Key ID="STR_XEAT_varAltisKavala">
+				<Original>Altis-Kavala</Original>
+			</Key>
+			<Key ID="STR_XEAT_varAltisAthira">
+				<Original>Altis-Athira</Original>
+			</Key>
+			<Key ID="STR_XEAT_varAltisPirgos">
+				<Original>Altis-Pirgos</Original>
+			</Key>
+			<Key ID="STR_XEAT_varAltisAirBase">
+				<Original>Altis-AirBase</Original>
+			</Key>
+			<Key ID="STR_XEAT_varMaldenLeTrinite">
+				<Original>Malden-LeTrinite</Original>
+			</Key>
+			<Key ID="STR_XEAT_varMaldenLePort">
+				<Original>Malden-LePort</Original>
+			</Key>
+			<Key ID="STR_XEAT_varMaldenLaPessagne">
+				<Original>Malden-LaPessagne</Original>
+			</Key>
+			<Key ID="STR_XEAT_varMaldenAirBase">
+				<Original>Malden-AirBase</Original>
+			</Key>
+			<Key ID="STR_XEAT_varTanoaGeorgetown">
+				<Original>Tanoa-Georgetown</Original>
+			</Key>
+			<Key ID="STR_XEAT_varTanoaLaRochelle">
+				<Original>Tanoa-LaRochelle</Original>
+			</Key>
+			<Key ID="STR_XEAT_varTanoaHarcourt">
+				<Original>Tanoa-Harcourt</Original>
+			</Key>
+			<Key ID="STR_XEAT_varTanoaAirBase">
+				<Original>Tanoa-AirBase</Original>
+			</Key>
+
+			<Key ID="STR_XEAT_varBank1">
+				<Original>AltisLife-Bank 1</Original>
+				<Italian>AltisLife-Banca 1</Italian>
+				<French>AltisLife-Banque 1</French>
+				<Danish>AltisLife-Bank 1</Danish>
+			</Key>
+			<Key ID="STR_XEAT_varBank2">
+				<Original>AltisLife-Bank 2</Original>
+				<Italian>AltisLife-Banca 2</Italian>
+				<French>AltisLife-Banque 2</French>
+				<Danish>AltisLife-Bank 2</Danish>
+			</Key>
+			<Key ID="STR_XEAT_varCash">
+				<Original>AltisLife-Cash</Original>
+				<Italian>AltisLife-Contanti</Italian>
+				<French></French>
+				<Danish>AltisLife-Kontanter</Danish>
+			</Key>
+			<Key ID="STR_XEAT_varThirst">
+				<Original>AltisLife-Thirst</Original>
+				<Italian>AltisLife-Sete</Italian>
+				<French>AltisLife-soif</French>
+				<Danish>AltisLife-Tørst</Danish>
+			</Key>
+			<Key ID="STR_XEAT_varHunger">
+				<Original>AltisLife-Hunger</Original>
+				<Italian>AltisLife-Fame</Italian>
+				<French>AltisLife-Faim</French>
+				<Danish>AltisLife-Sult</Danish>
+			</Key>
+
 			<Key ID="STR_XEAT_guiPlayers">
 				<Original>Player list</Original>
 				<Italian>Lista Giocatori</Italian>
@@ -805,36 +874,6 @@
 				<Italian>%1 Hai inviato un messaggio a &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;: &lt;t color='#f4e242'&gt;%3&lt;/t&gt;</Italian>
 				<French>%1 Envoyé un message à &lt;t color='#42ebf4'&gt;%2&lt;/t&gt;: &lt;t color='#f4e242'&gt;%3&lt;/t&gt;</French>
 				<Danish>%1 Du har sendt en besked til &lt;t color='#42ebf4'&gt;%2&lt;/t&gt; &lt;t color='#f4e242'&gt;%3&lt;/t&gt;</Danish>
-			</Key>
-			<Key ID="STR_XEATT_VAR_AL_Banca1">
-				<Original>AltisLife - Bank 1</Original>
-				<Italian>AltisLife - Banca 1</Italian>
-				<French>AltisLife - Banque 1</French>
-				<Danish>AltisLife - Bank 1</Danish>
-			</Key>
-			<Key ID="STR_XEATT_VAR_AL_Banca2">
-				<Original>AltisLife - Bank 2</Original>
-				<Italian>AltisLife - Banca 2</Italian>
-				<French>AltisLife - Banque 2</French>
-				<Danish>AltisLife - Bank 2</Danish>
-			</Key>
-			<Key ID="STR_XEATT_VAR_AL_Contanti">
-				<Original>AltisLife - Cash</Original>
-				<Italian>AltisLife - Contanti</Italian>
-				<French></French>
-				<Danish>AltisLife - Kontanter</Danish>
-			</Key>
-			<Key ID="STR_XEATT_VAR_AL_Sete">
-				<Original>AltisLife - Thirst</Original>
-				<Italian>AltisLife - Sete</Italian>
-				<French>AltisLife - soif</French>
-				<Danish>AltisLife - Tørst</Danish>
-			</Key>
-			<Key ID="STR_XEATT_VAR_AL_Fame">
-				<Original>AltisLife - Hunger</Original>
-				<Italian>AltisLife - Fame</Italian>
-				<French>AltisLife - Faim</French>
-				<Danish>AltisLife - Sult</Danish>
 			</Key>
         </Container>
     </Package>

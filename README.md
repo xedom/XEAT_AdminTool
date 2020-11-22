@@ -1,8 +1,6 @@
 # XEAT ADMINTOOL
 
-I have crated this AdminTool for you with <3 ;P
-
-You can use it in your server or clientSide.
+You can use it in your server or client side.
 
 * If you want to use the AdminTool as a mod, just the activity on the Laucher.
 * If you want to put the adminTool on your server, go to the mod folder >> XEAT_AdminTool\optional there are 2 more folders.

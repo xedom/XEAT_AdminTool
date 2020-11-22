@@ -4,6 +4,7 @@ class XEAT {
 
 		class init { postInit = 1; };
 		class adminCheck {};
+		class getActions {};
 		class guiLaucher {};
 		class guiUpdater {};
 		class openMenu {};
@@ -15,6 +16,7 @@ class XEAT {
 
 		class publicVar {};
 		class call {};
+		class getPlayers {};
 	};
 	class actions {
 		file="xeScripts\xeat\actions";

@@ -2,6 +2,18 @@
 <Project name="XEDOM Admin Tool">
     <Package name="traduzioni">
         <Container name="XEAT">
+			<Key ID="STR_XEAT_DescExemple">
+				<Original>TestDesc</Original>
+			</Key>
+			<Key ID="STR_XEAT_Title01">
+				<Original>initSteam</Original>
+			</Key>
+			<Key ID="STR_XEAT_Title02">
+				<Original>initSettings</Original>
+			</Key>
+			<Key ID="STR_XEAT_Title03">
+				<Original>initSpeedupTime</Original>
+			</Key>
 			<Key ID="STR_XEAT_guiPlayers">
 				<Original>Player list</Original>
 				<Italian>Lista Giocatori</Italian>

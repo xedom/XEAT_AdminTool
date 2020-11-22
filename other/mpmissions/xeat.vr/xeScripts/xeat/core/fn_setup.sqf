@@ -70,6 +70,7 @@ ListaVariabili = [
 ];
 publicVariable "ListaVariabili";
 
+
 if (isMultiplayer) then {
 	XEATV_Players = {
 		ListaGiocatori = allPlayers;

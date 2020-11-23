@@ -92,7 +92,7 @@ class XEAT_adminTool {
 		class giocatoreSelezionatoTasto: XEAT_RscButton
 		{
 			idc = 8507;
-			onMouseButtonClick = "[(lbCurSel 8504), (lbCurSel 8506)] call XEAT_fnc_guiExecBtn;";
+			onMouseButtonClick = "[] call XEAT_fnc_guiExecBtn;";
 			colorBackgroundActive[] = {0.157,0.4,0.157,1};
 			colorFocused[] = {0.22,0.7,0.2,1};
 

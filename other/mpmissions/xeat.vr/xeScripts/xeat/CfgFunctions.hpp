@@ -2,21 +2,27 @@ class XEAT {
 	class core {
 		file="xeScripts\xeat\core";
 
-		class init { postInit = 1; };
 		class adminCheck {};
-		class guiUpdater {};
 		class guiExecBtn {};
 		class guiOpen {};
+		class guiUpdater {};
+		class init { postInit = 1; };
 		class setup {};
 		class startup {};
 	};
 	class functions {
 		file="xeScripts\xeat\functions";
 
-		class publicVar {};
-		class getPlayers {};
 		class getActions {};
+		class getPlayers {};
 		class getVariables {};
+		class log {};
+		class publicVar {};
+	};
+	class remote {
+		file="xeScripts\xeat\remote";
+
+		class initSteam {};
 	};
 	class actions {
 		file="xeScripts\xeat\actions";
@@ -52,7 +58,6 @@ class XEAT {
 		class initSpawn {};
 		class initSpectate {};
 		class initSpeedupTime {};
-		class initSteam {};
 		class initTpHier {};
 		class initTpMap {};
 		class initTpTo {};

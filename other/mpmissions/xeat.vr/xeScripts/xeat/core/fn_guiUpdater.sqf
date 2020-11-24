@@ -14,10 +14,10 @@ _updateActions = {
 	lbClear XEAT_G_Actions;
 	_actionsList = call XEAT_fnc_getActions;
 	{
-		// _x = [_func, _name, _desc, _icon];
+		// _x = [_func, _name, _desc, _icon, _remote];
 		lbAdd [XEAT_G_Actions, _x#1];
 		lbSetData [XEAT_G_Actions, _forEachIndex, _x#0];
-		// lbSetValue [XEAT_G_Actions, _forEachIndex, 22];
+		lbSetValue [XEAT_G_Actions, _forEachIndex, _x#4];
 		lbSetTooltip [XEAT_G_Actions, _forEachIndex, _x#2];
 		lbSetPicture [XEAT_G_Actions, _forEachIndex, _x#3];
 	} forEach _actionsList;

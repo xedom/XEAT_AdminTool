@@ -1,5 +1,3 @@
-#include "xeScripts\xeConst.hpp"
-#include "xeScripts\xeGuis.hpp"
 #include "xeScripts\xeConfigs.hpp"
 
 class CfgFunctions {

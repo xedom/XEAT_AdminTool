@@ -16,9 +16,19 @@ switch (_playerIndex) do {
 };
 
 _func = lbData [XEAT_G_Actions, _actionIndex];
+_remote = lbValue [XEAT_G_Actions, _actionIndex];
 _variable = lbData [XEAT_G_Variable, _variableIndex];
 _value = ctrlText XEAT_G_Value;
 
 //---------------------------------------------------------------------------------------------
 
-[_player,_variable,_value] call call compile format["XEAT_fnc_%1",_func];
+switch (_remote) do {
+	case 1: {
+		[_player,_variable,_value] remoteExec [format["XEAT_fnc_%1",_func], _player];
+	};
+	case 2: { };
+	default {
+		[_player,_variable,_value] call call compile format["XEAT_fnc_%1",_func];
+	};
+};
+

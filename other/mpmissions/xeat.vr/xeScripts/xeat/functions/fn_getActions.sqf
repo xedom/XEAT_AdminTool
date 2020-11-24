@@ -9,8 +9,9 @@ _actionsList = [];
 	_desc = getText(_x >> "description");
 	_icon = getText(_x >> "icon");
 	_cond = getText(_x >> "condition");
+	_remote = getNumber(_x >> "remote");
 	if (_cond == "" || {call compile _cond}) then {
-		_actionsList pushBack [_func, _name, _desc, _icon];
+		_actionsList pushBack [_func, _name, _desc, _icon, _remote];
 	};
 } forEach _actionsConfig;
 

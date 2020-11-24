@@ -25,7 +25,10 @@ class XEAT {
 		file="xeScripts\xeat\actions";
 
 		class damage {};
+		class fog {};
 		class heal {};
 		class kill {};
+		class pees {};
+		class vrArsenale {};
 	};
 };

@@ -1,3 +1,3 @@
-params ["_player","_varData","_val"];
+params ["_player","_variable","_value"];
 
 _player setDamage 1;

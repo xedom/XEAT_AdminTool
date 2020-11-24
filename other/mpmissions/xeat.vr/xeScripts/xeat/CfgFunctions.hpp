@@ -25,6 +25,7 @@ class XEAT {
 		file="xeScripts\xeat\actions";
 
 		class damage {};
+		class heal {};
 		class kill {};
 	};
 };

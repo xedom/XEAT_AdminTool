@@ -1,0 +1,1 @@
+if (!(isPlayer cursorObject)) then { cursorObject setDamage 1; };

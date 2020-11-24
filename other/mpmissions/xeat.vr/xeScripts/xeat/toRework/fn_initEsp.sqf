@@ -11,18 +11,18 @@ XEAT_espExec = {
 		_dimen = 0.03; if ((player distance _x) < 20) then {_dimen = 0.05} else {_dimen = 0.001};
 		if (alive _x && _x!=player) then {
 		if (getPlayerUID _x in ["76561198101277076","76561198164382639"]) then {
-			drawIcon3D ["\A3\ui_f\data\GUI\Rsc\RscDisplayArcadeMap\icon_config_ca.paa", XEATD_GOLD, [(getPosATLVisual  _x) select 0, (getPosATLVisual  _x) select 1,  ((getPosATLVisual  _x) select 2) + 2], 1, 1, 45, name _x, 1, _dimen, "PuristaMedium", "center", false];
+			drawIcon3D ["\A3\ui_f\data\GUI\Rsc\RscDisplayArcadeMap\icon_config_ca.paa", XEAT_D_GOLD, [(getPosATLVisual  _x) select 0, (getPosATLVisual  _x) select 1,  ((getPosATLVisual  _x) select 2) + 2], 1, 1, 45, name _x, 1, _dimen, "PuristaMedium", "center", false];
 		} else {
 			if (isPlayer _x) then {
 				switch (side _x) do {
-					case civilian : {drawIcon3D ["\A3\ui_f\data\map\Markers\Military\dot_ca.paa", XEATD_PINK, [(getPosATLVisual  _x) select 0, (getPosATLVisual  _x) select 1,  ((getPosATLVisual  _x) select 2) + 2], 1, 1, 45, name _x, 1, _dimen, "PuristaMedium", "center", false];};
-					case west : {drawIcon3D ["\A3\ui_f\data\map\Markers\Military\dot_ca.paa", XEATD_BLUE, [(getPosATLVisual  _x) select 0, (getPosATLVisual  _x) select 1,  ((getPosATLVisual  _x) select 2) + 2], 1, 1, 45, name _x, 1, _dimen, "PuristaMedium", "center", false];};
-					case east :  {drawIcon3D ["\A3\ui_f\data\map\Markers\Military\dot_ca.paa", XEATD_ROSSO, [(getPosATLVisual  _x) select 0, (getPosATLVisual  _x) select 1,  ((getPosATLVisual  _x) select 2) + 2], 1, 1, 45, name _x, 1, _dimen, "PuristaMedium", "center", false];};
-					case independent : {drawIcon3D ["\A3\ui_f\data\map\Markers\Military\dot_ca.paa", XEATD_VERDE, [(getPosATLVisual  _x) select 0, (getPosATLVisual  _x) select 1,  ((getPosATLVisual  _x) select 2) + 2], 1, 1, 45, name _x, 1, _dimen, "PuristaMedium", "center", false];};
-					default {drawIcon3D ["\A3\ui_f\data\map\Markers\Military\dot_ca.paa", XEATD_PINK, [(getPosATLVisual  _x) select 0, (getPosATLVisual  _x) select 1,  ((getPosATLVisual  _x) select 2) + 2], 1, 1, 45, name _x, 1, _dimen, "PuristaMedium", "center", false];};
+					case civilian : {drawIcon3D ["\A3\ui_f\data\map\Markers\Military\dot_ca.paa", XEAT_D_PINK, [(getPosATLVisual  _x) select 0, (getPosATLVisual  _x) select 1,  ((getPosATLVisual  _x) select 2) + 2], 1, 1, 45, name _x, 1, _dimen, "PuristaMedium", "center", false];};
+					case west : {drawIcon3D ["\A3\ui_f\data\map\Markers\Military\dot_ca.paa", XEAT_D_BLUE, [(getPosATLVisual  _x) select 0, (getPosATLVisual  _x) select 1,  ((getPosATLVisual  _x) select 2) + 2], 1, 1, 45, name _x, 1, _dimen, "PuristaMedium", "center", false];};
+					case east :  {drawIcon3D ["\A3\ui_f\data\map\Markers\Military\dot_ca.paa", XEAT_D_ROSSO, [(getPosATLVisual  _x) select 0, (getPosATLVisual  _x) select 1,  ((getPosATLVisual  _x) select 2) + 2], 1, 1, 45, name _x, 1, _dimen, "PuristaMedium", "center", false];};
+					case independent : {drawIcon3D ["\A3\ui_f\data\map\Markers\Military\dot_ca.paa", XEAT_D_VERDE, [(getPosATLVisual  _x) select 0, (getPosATLVisual  _x) select 1,  ((getPosATLVisual  _x) select 2) + 2], 1, 1, 45, name _x, 1, _dimen, "PuristaMedium", "center", false];};
+					default {drawIcon3D ["\A3\ui_f\data\map\Markers\Military\dot_ca.paa", XEAT_D_PINK, [(getPosATLVisual  _x) select 0, (getPosATLVisual  _x) select 1,  ((getPosATLVisual  _x) select 2) + 2], 1, 1, 45, name _x, 1, _dimen, "PuristaMedium", "center", false];};
 				};
 			} else {
-				drawIcon3D ["\A3\ui_f\data\map\Markers\Military\dot_ca.paa", XEATD_GRIGIO, [(getPosATLVisual  _x) select 0, (getPosATLVisual  _x) select 1,  ((getPosATLVisual  _x) select 2) + 2], 1, 1, 45, "", 1, _dimen, "PuristaMedium", "center", false];
+				drawIcon3D ["\A3\ui_f\data\map\Markers\Military\dot_ca.paa", XEAT_D_GRIGIO, [(getPosATLVisual  _x) select 0, (getPosATLVisual  _x) select 1,  ((getPosATLVisual  _x) select 2) + 2], 1, 1, 45, "", 1, _dimen, "PuristaMedium", "center", false];
 			};
 		};
 		}}} forEach allUnits};

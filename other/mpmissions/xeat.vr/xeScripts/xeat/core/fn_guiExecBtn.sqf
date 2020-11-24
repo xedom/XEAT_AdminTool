@@ -1,27 +1,24 @@
-_playersGuiID = 8504;
-_actionsGuiID = 8506;
-_variableGuiID = 8512;
-_valueGuiID = 8510;
+#include "../CfgGuiIDs.hpp"
 
-_playerIndex = (lbCurSel _playersGuiID);
-_actionIndex = (lbCurSel _actionsGuiID);
-_variableIndex = (lbCurSel _variableGuiID);
+_playerIndex = (lbCurSel XEAT_G_TargetsList);
+_actionIndex = (lbCurSel XEAT_G_Actions);
+_variableIndex = (lbCurSel XEAT_G_Variable);
+
+//---------------------------------------------------------------------------------------------
+_player = "";
+switch (_playerIndex) do {
+	case 0: { _player = cursorObject};
+	case 1: { _player = player};
+	default {
+		_playerIndex = _playerIndex-2;
+		_player = call XEAT_fnc_getPlayers#_playerIndex;
+	};
+};
+
+_func = lbData [XEAT_G_Actions, _actionIndex];
+_variable = lbData [XEAT_G_Variable, _variableIndex];
+_value = ctrlText XEAT_G_Value;
 
 //---------------------------------------------------------------------------------------------
 
-// _playerName = lbText [_playersGuiID, _playerIndex]; // KajOs
-_playerEntity = call XEAT_fnc_getPlayers#_playerIndex; // xxxxxxxxxxx
-
-// _actionValue = lbValue [_actionsGuiID, _actionIndex]; // 0
-_actionText = lbText [_actionsGuiID, _actionIndex]; // ESP
-_actionData = lbData [_actionsGuiID, _actionIndex]; // initEsp
-
-// _varText = lbText [_variableGuiID, _variableIndex]; // Altis-Pirgos
-_varData = lbData [_variableGuiID, _variableIndex]; // [16810.1,12664.7,0]
-
-_val = ctrlText _valueGuiID; // var_value
-
-//---------------------------------------------------------------------------------------------
-
-[_playerEntity,_actionText,_actionData,_varData,_val] call XEAT_fnc_log;
-[_actionIndex,_playerIndex,_playerName,_playerEntity,_varData,_val] call call compile format["XEAT_fnc_%1",_actionData];
+[_player,_variable,_value] call call compile format["XEAT_fnc_%1",_func];

@@ -1,12 +1,12 @@
 // Defines
-#define XEATD_X 0 //-0.962
-#define XEATD_Y 0 //-0.49
-#define XEATD_VERDE { 0.22, 0.7, 0.2, 1 }
-#define XEATD_VERDE_DARK { 0.157, 0.4, 0.157, 1 }
-#define XEATD_ROSSO { 1, 0.22, 0.22, 1 }
-#define XEATD_ROSSO_DARK { 0.6, 0.157, 0.157, 1 }
-#define XEATD_BLUE { 0.286, 0.561, 1, 1 }
-#define XEATD_BLUE_DARK { 0.2, 0.392, 0.698, 1 }
+#define XEAT_D_X 0 //-0.962
+#define XEAT_D_Y 0 //-0.49
+#define XEAT_D_VERDE { 0.22, 0.7, 0.2, 1 }
+#define XEAT_D_VERDE_DARK { 0.157, 0.4, 0.157, 1 }
+#define XEAT_D_ROSSO { 1, 0.22, 0.22, 1 }
+#define XEAT_D_ROSSO_DARK { 0.6, 0.157, 0.157, 1 }
+#define XEAT_D_BLUE { 0.286, 0.561, 1, 1 }
+#define XEAT_D_BLUE_DARK { 0.2, 0.392, 0.698, 1 }
 
 class XEAT_IGUIBack {
 	enableSimulation = true;

@@ -1,4 +1,3 @@
-
 _updateVariables = {
 	_playersGuiID = 8504;
 	_actionsGuiID = 8506;
@@ -39,12 +38,16 @@ _updatePlayers = {
 	_valueGuiID = 8510;
 
 	lbClear _playersGuiID;
+	lbAdd [_playersGuiID, "Cursor Object"];
+	lbAdd [_playersGuiID, "Me"];
 	_players = call XEAT_fnc_getPlayers;
 	{
+		_forEachIndex = _forEachIndex + 2;
 		// remoteExec ["XEAT_SteamName", _x]; // get SteamID
 		lbAdd [_playersGuiID, name _x];
-		lbSetData [_playersGuiID, _forEachIndex, _x];
+		// lbSetData [_playersGuiID, _forEachIndex, _x];
 		lbSetPicture [_playersGuiID,_forEachIndex,getText(configfile >> "CfgVehicles" >> typeOf(vehicle _x) >> "picture")];
+		lbSetColor [_playersGuiID, _forEachIndex, [_x] call XEAT_fnc_getSideColor];
 		// ((findDisplay 8500) displayCtrl _playersGuiID) ctrlSetEventHandler ["LBDblClick", "_this call XEAT_InfoPlayer;"];
 		// lbSetTooltip [_playersGuiID, _forEachIndex, format[(localize "STR_XEATT_infos"), name _x, _x getVariable "XEATV_SteamName", getPlayerUID _x]];
 	} forEach _players;
@@ -52,6 +55,7 @@ _updatePlayers = {
 
 [] spawn _updateActions;
 while {!(isNull(findDisplay 8500))} do {
+
 	[] spawn _updatePlayers;
 	[] spawn _updateVariables;
 	sleep 0.5;

@@ -41,5 +41,6 @@ class XEAT {
 		class tpTo {};
 		class vrArsenale {};
 		class vrGarage {};
+		class zeus {};
 	};
 };

@@ -29,9 +29,11 @@ class XEAT {
 		class exitLobby {};
 		class fog {};
 		class freeze {};
+		class god {};
 		class heal {};
 		class kill {};
 		class pees {};
+		class remove {};
 		class tpHier {};
 		class tpMap {};
 		class tpTo {};

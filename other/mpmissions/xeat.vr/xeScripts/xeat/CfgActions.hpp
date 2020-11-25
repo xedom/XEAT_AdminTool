@@ -1,5 +1,7 @@
 class XEAT_Actions {
 	// class xxxxxxxx { name = "xxxxxxxx_Name"; description = "xxxxxxxx_Desc"; icon = ""; remote = 0; condition = ""; };
+	class alArrest { name = "alArrest_Name"; description = "alArrest_Desc"; icon = ""; remote = 0; condition = ""; }; // xeToTest - altislife server
+	class alRevive { name = "alRevive_Name"; description = "alRevive_Desc"; icon = ""; remote = 0; condition = ""; }; // xeToTest - altislife server
 	class remove { name = "remove_Name"; description = "remove_Desc"; icon = ""; remote = 0; condition = ""; };
 	class god { name = "god_Name"; description = "god_Desc"; icon = ""; remote = 0; condition = ""; };
 	class exitLobby { name = "exitLobby_Name"; description = "exitLobby_Desc"; icon = ""; remote = 1; condition = ""; }; // xeToTest - remote

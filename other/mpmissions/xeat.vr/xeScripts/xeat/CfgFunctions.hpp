@@ -25,6 +25,8 @@ class XEAT {
 		file="xeScripts\xeat\actions";
 
 		class adminSetup {};
+		class alArrest {};
+		class alRevive {};
 		class damage {};
 		class exitLobby {};
 		class fog {};

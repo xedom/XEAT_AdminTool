@@ -24,11 +24,16 @@ class XEAT {
 	class actions {
 		file="xeScripts\xeat\actions";
 
+		class adminSetup {};
 		class damage {};
 		class fog {};
 		class heal {};
 		class kill {};
 		class pees {};
+		class tpHier {};
+		class tpMap {};
+		class tpTo {};
 		class vrArsenale {};
+		class vrGarage {};
 	};
 };

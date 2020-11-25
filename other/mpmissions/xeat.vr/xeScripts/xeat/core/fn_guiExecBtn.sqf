@@ -24,7 +24,11 @@ _value = ctrlText XEAT_G_Value;
 
 switch (_remote) do {
 	case 1: {
-		[_player,_variable,_value] remoteExec [format["XEAT_fnc_%1",_func], _player];
+		// if (_player == player) {
+		// 	[_player,_variable,_value] call call compile format["XEAT_fnc_%1",_func];
+		// } else {
+			[_player,_variable,_value] remoteExec [format["XEAT_fnc_%1",_func], _player];
+		// };
 	};
 	case 2: { };
 	default {

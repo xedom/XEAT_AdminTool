@@ -39,7 +39,7 @@ class XEAT_adminTool {
 		{
 			idc = 8502;
 
-			text = "XEAT - AdminTool"; //--- ToDo: Localize;
+			text = "XEAT-AdminTool"; //--- ToDo: Localize;
 			x = 0.368749 * safezoneW + safezoneX;
 			y = 0.178 * safezoneH + safezoneY;
 			w = 0.269062 * safezoneW;
@@ -51,7 +51,7 @@ class XEAT_adminTool {
 		{
 			idc = 8503;
 
-			text = "Players:"; //--- ToDo: Localize;
+			text = "Targets:"; //--- ToDo: Localize;
 			x = 0.36875 * safezoneW + safezoneX;
 			y = 0.22 * safezoneH + safezoneY;
 			w = 0.13125 * safezoneW;

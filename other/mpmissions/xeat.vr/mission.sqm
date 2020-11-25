@@ -8,14 +8,18 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=214;
+		nextID=215;
+	};
+	class MarkerIDProvider
+	{
+		nextID=1;
 	};
 	class Camera
 	{
-		pos[]={7316.0986,34.838165,2046.5983};
-		dir[]={-0.0068798768,-0.87009197,0.492998};
-		up[]={-0.012142265,0.49264687,0.87013972};
-		aside[]={0.99998009,1.3888421e-006,0.013954561};
+		pos[]={7361.0542,34.838165,2083.4358};
+		dir[]={-0.74001682,-0.60539871,-0.29330567};
+		up[]={-0.56306994,0.79570127,-0.22317208};
+		aside[]={-0.36849245,1.0546064e-006,0.92971867};
 	};
 };
 binarizationWanted=0;
@@ -40,13 +44,14 @@ addons[]=
 	"A3_Soft_F_Orange_Van_02",
 	"A3_Soft_F_Gamma_SUV_01",
 	"A3_Soft_F_Offroad_01",
-	"A3_Structures_F_Exp_Cultural_Fortress_01"
+	"A3_Structures_F_Exp_Cultural_Fortress_01",
+	"A3_Ui_F"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=12;
+		items=13;
 		class Item0
 		{
 			className="A3_Characters_F";
@@ -131,6 +136,13 @@ class AddonsMetaData
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
+		class Item12
+		{
+			className="A3_Ui_F";
+			name="Arma 3 - User Interface";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
 	};
 };
 randomSeed=11909878;
@@ -190,7 +202,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=86;
+		items=87;
 		class Item0
 		{
 			dataType="Group";
@@ -4879,6 +4891,20 @@ class Mission
 			{
 			};
 			id=212;
+		};
+		class Item86
+		{
+			dataType="Marker";
+			position[]={7311.2627,5,2062.2542};
+			name="marker_0";
+			markerType="ELLIPSE";
+			type="ellipse";
+			colorName="ColorRed";
+			fillName="Border";
+			a=90;
+			b=90;
+			drawBorder=1;
+			id=214;
 		};
 	};
 };

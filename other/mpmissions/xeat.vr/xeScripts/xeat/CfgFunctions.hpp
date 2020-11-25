@@ -26,7 +26,9 @@ class XEAT {
 
 		class adminSetup {};
 		class damage {};
+		class exitLobby {};
 		class fog {};
+		class freeze {};
 		class heal {};
 		class kill {};
 		class pees {};

@@ -1,5 +1,7 @@
 class XEAT_Actions {
 	// class xxxxxxxx { name = "xxxxxxxx_Name"; description = "xxxxxxxx_Desc"; icon = ""; remote = 0; condition = ""; };
+	class exitLobby { name = "exitLobby_Name"; description = "exitLobby_Desc"; icon = ""; remote = 1; condition = ""; }; // xeToTest - remote
+	class freeze { name = "freeze_Name"; description = "freeze_Desc"; icon = ""; remote = 0; condition = ""; };
 	class tpMap { name = "tpMap_Name"; description = "tpMap_Desc"; icon = ""; remote = 1; condition = ""; }; // xeToTest - remote
 	class tpHier { name = "tpHier_Name"; description = "tpHier_Desc"; icon = ""; remote = 0; condition = ""; };
 	class tpTo { name = "tpTo_Name"; description = "tpTo_Desc"; icon = ""; remote = 0; condition = ""; };

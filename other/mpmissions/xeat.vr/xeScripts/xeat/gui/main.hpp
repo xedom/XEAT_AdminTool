@@ -180,7 +180,7 @@ class XEAT_adminTool {
 		class tastoQuitGame: XEAT_RscButton
 		{
 			idc = 8514;
-			onMouseButtonClick = "call XEAT_fnc_exitLobbyExec";
+			onMouseButtonClick = "[] call XEAT_fnc_exitLobby";
 			colorBackgroundActive[] = {0.6,0.157,0.157,1};
 			colorFocused[] = {0.6,0.157,0.157,1};
 
@@ -190,7 +190,7 @@ class XEAT_adminTool {
 			w = 0.0721875 * safezoneW;
 			h = 0.028 * safezoneH;
 			colorBackground[] = {0.6,0.157,0.157,1};
-			tooltip = "Quit Server"; //--- ToDo: Localize;
+			tooltip = "Exit to lobby"; //--- ToDo: Localize;
 		};
     };
 };

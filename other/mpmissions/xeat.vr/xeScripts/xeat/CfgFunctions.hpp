@@ -30,12 +30,14 @@ class XEAT {
 		class damage {};
 		class exitLobby {};
 		class fog {};
+		class freeCamera {};
 		class freeze {};
 		class god {};
 		class heal {};
 		class kill {};
 		class pees {};
 		class remove {};
+		class spectate {};
 		class tpHier {};
 		class tpMap {};
 		class tpTo {};

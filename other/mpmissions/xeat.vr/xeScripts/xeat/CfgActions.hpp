@@ -1,6 +1,8 @@
 class XEAT_Actions {
 	// class xxxxxxxx { name = "xxxxxxxx_Name"; description = "xxxxxxxx_Desc"; icon = ""; remote = 0; condition = ""; };
-	class zeus { name = "zeus_Name"; description = "zeus_Desc"; icon = ""; remote = 0; condition = ""; }; // xeToTest - remote & server
+	class spectate { name = "spectate_Name"; description = "spectate_Desc"; icon = ""; remote = 0; condition = ""; }; // xeToTest - remote & server
+	class freeCamera { name = "freeCamera_Name"; description = "freeCamera_Desc"; icon = ""; remote = 1; condition = ""; }; // xeToTest - remote & server
+	class zeus { name = "zeus_Name"; description = "zeus_Desc"; icon = ""; remote = 1; condition = ""; }; // xeToTest - remote & server
 	class alArrest { name = "alArrest_Name"; description = "alArrest_Desc"; icon = ""; remote = 0; condition = ""; }; // xeToTest - altislife server
 	class alRevive { name = "alRevive_Name"; description = "alRevive_Desc"; icon = ""; remote = 0; condition = ""; }; // xeToTest - altislife server
 	class remove { name = "remove_Name"; description = "remove_Desc"; icon = ""; remote = 0; condition = ""; };
